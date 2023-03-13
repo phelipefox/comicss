@@ -1,0 +1,178 @@
+/* basics */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Luckiest Guy", cursive;
+/*  background-color: #e9dff0; */
+}
+
+h1 {
+  margin: 0;
+  font-size: 6em;
+  padding: 0;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-shadow: 0 0.1em 20px rgba(184, 162, 173, 0.8), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+
+/* animation1 */
+
+@keyframes ssa1 {
+  0% {
+    transform: scale(0.9);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes ssa2 {
+  0% {
+    transform: scale(0.9);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
+
+
+/* the grid */
+.grid {
+  display: grid;
+  grid-template-columns: 40px minmax(480px, 3fr) 1fr;
+  justify-content: center;
+}
+
+/*  animation bubble */
+
+.ball {
+  animation: float 4s ease-in-out infinite;
+  height: 100px;
+  width: 100px;
+  margin-top: 260px;
+  margin-left: 120px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 70%;
+
+  background: radial-gradient(
+    circle at 28% 30%,
+    white 5px,
+    aqua 8%,
+    darkblue 60%,
+    aqua 100%
+  );
+  box-shadow: 0 0 0 1.6px #000, inset 10px 0 66px #eaf5fc,
+    inset 22px 0px 15px #c2d8fe, inset 25px -20px 20px #fde9ea,
+    inset 10px 10px 10px #fde9ea, 40px 40px 20px #fff;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-80px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.shadow {
+  background: #4a2f35;
+  width: 50px;
+  height: 30px;
+  margin-top: 430px;
+  margin-left: 160px;
+  animation: expand 4s 2.5s infinite;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 10%;
+}
+@keyframes expand {
+  0%,
+  100% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.ball {
+  animation: float 4s ease-in-out infinite;
+  height: 100px;
+  width: 100px;
+  margin-top: 260px;
+  margin-left: 120px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 70%;
+
+  background: radial-gradient(
+    circle at 28% 30%,
+    white 5px,
+    aqua 8%,
+    darkblue 60%,
+    aqua 100%
+  );
+  box-shadow: 0 0 0 1.6px #000, inset 10px 0 66px #eaf5fc,
+    inset 22px 0px 15px #c2d8fe, inset 25px -20px 20px #fde9ea,
+    inset 10px 10px 10px #fde9ea, 40px 40px 20px #fff;
+}
+  .shadow {
+    width: 90px;
+    height: 20px;
+    top: 78%;
+    animation: expand 5s infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-50px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+}
+
+/* illust */
+
+.ani1 {
+  margin-top: 160px;
+  z-index: -1;
+  animation: ssa1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+      alternate;
+}
+
+.ani2 {
+  animation: ssa2 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+      infinite alternate;
+}
+
+.character {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.character-karen {
+  background-image: url(/assets/images/cover/karen-cover.png);
+}
+

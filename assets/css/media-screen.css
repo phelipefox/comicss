@@ -1,0 +1,96 @@
+@media only screen and (max-width: 400px) {
+
+.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.panel-locked {
+    min-width: 110vw;
+}
+
+.panel {
+    min-width: 110vw;
+}
+
+.bubbleL {
+    max-width: 7rem;
+    height: 12rem;
+}
+
+/*----------------*/
+
+section:nth-child(1) {
+  --h1font-size: 6vh;
+  --textx-size: 1.2rem;
+  --textx-right: 36%;
+  --textx-bottom: 2%;
+}
+
+
+section:nth-child(2) {
+}
+
+.floatingtexty {
+  position: relative;
+  --fontsize: 6rem;
+  --ttop: 160%; --tleft: 74%;
+}
+.balloon1 {
+  position: relative;
+  font-size: 4vw;
+   --ltop: 60%; --lleft: 10%;
+   --brcolor: #ffffff;
+}
+.balloon2 {
+  position: absolute;
+  font-size: 4vw;
+   --ltop: 174%; --lleft: 2%;
+}
+
+
+section:nth-child(3) {
+  position: relative;
+  --bltransform: rotate(-12deg);
+  --ltop: 12%; --lleft: -12%;
+}
+
+section:nth-child(4) {
+  position: relative;
+  font-size: 4vw;
+  --ltop: 13%; --lleft: -24%;
+}
+
+section:nth-child(5) {
+  position: relative;
+  --ltop: 12%; --lleft: -12%;
+}
+
+section:nth-child(6) {
+  position: relative;
+  font-size: 4vw;
+  --ltop: 38%; --lleft: -32%;
+}
+section:nth-child(7) {
+  position: relative;
+  --h2top: 190%;
+}
+section:nth-child(8) {
+  --transform: rotate(12deg);
+  --h1top: 19rem;
+}
+section:nth-child(9) {
+}
+
+section:nth-child(10) {
+  position: relative;
+}
+section:nth-child(11) {
+}
+.balloon7 {
+   font-size: 4vw;
+   --bcolor: #fed9f5;
+   --btop: 66vh; --bright: 6%;
+
+}
+

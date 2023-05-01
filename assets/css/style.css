@@ -23,6 +23,7 @@ section {
   font-family: 'Boogaloo';
   /*font-weight: bold;*/
   font-style: italic;
+  color: var(--textx-color);
   top: var(--textx-top); bottom: var(--textx-bottom); left: var(--textx-left); right: var(--textx-right);
   /*font-weight: bold;*/
   font-size: var(--textx-size);
@@ -49,7 +50,7 @@ section {
 }
 
 .textshadow {
-  text-shadow: -6px -6px 0 #251b19, 6px -6px 0 #251b19, -6px 6px 0 #251b19, 6px 6px 0 #251b19;
+  text-shadow: -6px -6px 0 #484848, 6px -6px 0 #484848, -6px 6px 0 #484848, 6px 6px 0 #484848;
 }
 
 .page {
@@ -113,23 +114,29 @@ section {
     background-size: cover;
 }
 
-.floating-panel {
-    width: 100vw;
+.screen-cover {
+    min-width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
     object-fit: cover;
+    object-position: 50% 20%
 }
 
 /*----------------*/
 
 section:nth-child(1) {
+
   --h1color: #fff;
+  --h1top: 50%;
+  --h1font-size: 9vh;
+  --h1color: #fff;
+  --textx-color: #fff;
   --textx-size: 1.2rem;
-  --textx-right: 50%;
+  --textx-right: 45%;
   --textx-bottom: 2%;
 }
+
 
 
 section:nth-child(2) {
@@ -142,12 +149,14 @@ section:nth-child(2) {
 }
 .balloon1 {
   position: relative;
+  font-size: 2vw;
    --lleft: 10%;
    --ltop: 120%;
    --brcolor: #ffffff;
 }
 .balloon2 {
   position: relative;
+  font-size: 2vw;
    --lleft: 5%;
    --ltop: 164%;
 }
@@ -162,6 +171,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
   position: relative;
+  font-size: 2vw;
  --lleft: -12%;  --ltop: 2%;
 }
 
@@ -173,15 +183,17 @@ section:nth-child(5) {
 
 section:nth-child(6) {
   position: relative;
+  font-size: 2vw;
   --ltop: 32%; --lleft: -24%;
 }
 section:nth-child(7) {
   position: relative;
-  --h2top: 60%;
+  --h2top: 30%;
 }
 section:nth-child(8) {
   --transform: rotate(12deg);
   --h1top: 19rem;
+  --h1font-size: 16vw;
 }
 section:nth-child(9) {
 
@@ -189,10 +201,12 @@ section:nth-child(9) {
 
 section:nth-child(10) {
   position: relative;
+  --h1font-size: 14vw;
 }
 section:nth-child(11) {
 }
 .balloon7 {
+   font-size: 3vw;
    --bcolor: #fed9f5;
    --btop: 66vh; --bright: 6%;
 

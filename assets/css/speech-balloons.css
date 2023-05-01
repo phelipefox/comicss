@@ -1,0 +1,190 @@
+
+.floatingtexty {
+  display: flex;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #fff;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  font-family: 'Titan One', cursive;
+  font-weight: bold;
+  font-size: var(--fontsize);
+  line-height: 10px;
+  letter-spacing: -1px;
+  top: var(--ttop); left: var(--tleft); right: var(--tright);
+}
+
+.bubble {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--btop); left: var(--bleft); right: var(--bright);
+  max-width: 34vw;
+  height: 28vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid 3px #3d3935;
+  border-radius: 50%;
+  background-color: var(--bcolor);
+  color: #3d3935;
+  z-index: 3;
+}
+
+.bubbleR {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--rtop); left: var(--rleft); right: var(--rright);
+  max-width: 24vw;
+  height: 38vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid 3px #3d3935;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #3d3935;
+  transform: var(--brtransform);
+  z-index: 3;
+}
+
+.bubbleL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--ltop); left: var(--lleft); right: var(--lright);
+  max-width: 24vw;
+  height: 38vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid 3px #3d3935;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #3d3935;
+  transform: var(--bltransform);
+  z-index: 3;
+}
+
+.bubbleR::after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: -15px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  content: "";
+}
+
+.bubbleR::before {
+  position: absolute;
+  left: -35px;
+  width: 15px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #3d3935;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  content: "";
+}
+
+
+.bubbleL::after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -15px;
+  border-top: 8px solid transparent;
+  border-left: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+}
+
+.bubbleL::before {
+  position: absolute;
+  right: -36px;
+  width: 15px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #3d3935;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+}
+
+
+ .bubbleR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--rtop); left: var(--rleft); right: var(--lright);
+  width: 208px;
+  height: 290px;
+  padding-top: 3%;
+  border: solid 3px #3d3935;
+  border-radius: 50%;
+  background-color: var(--brcolor);
+  color: #3d3935;
+}
+
+.bubbleR::after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: -15px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  content: "";
+}
+
+.bubbleR::before {
+  position: absolute;
+  left: -35px;
+  width: 15px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #3d3935;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  content: "";
+}
+
+
+.bubbleL::after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  right: -15px;
+  border-top: 8px solid transparent;
+  border-left: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+}
+
+.burst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--bbtop); left: var(--bbleft); right: var(--bbright);
+  width: 30%;
+  height: 60%;
+  clip-path: polygon(47.64% 4.73%, 68.19% 22.85%, 89.94% 34.71%, 81.15% 59.94%, 83.29% 90.53%, 54.04% 99.75%, 16.64% 86.65%, 16.64% 59.94%, 11.19% 34.71%, 30.55% 24.12%);
+  background-color: #ffffff;
+  z-index: 1;
+
+}
+
+.shadow {
+  box-shadow: 0 0 3px 2px #000;
+  }
+  /*filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));*/
+}

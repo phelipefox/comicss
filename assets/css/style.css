@@ -3,7 +3,7 @@ html, body, section {
   scrollbar-width: none;
   background: #f8f7f2;
   padding: 0 10%;
-  font: 100%/1.5 'Komika Axis', cursive;
+  font: 100%/1.5 'Boogaloo', cursive;
 }
 
 html {
@@ -75,7 +75,17 @@ section {
     height: 200%;
     justify-content: center;
     align-items: center;
+}
 
+.floating-image {
+    width: var(--floating-image-w);
+    height: var(--floating-image-h);
+    margin: 2%;
+    /*background-color: #8e8e8e;*/
+    /*border: 4px solid #000;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: scale-down;
 }
 
 .panel-locked {
@@ -91,8 +101,8 @@ section {
 }
 
 .panel {
-    width: 60vw;
-    min-width: 80vw;
+    width: 50vw;
+    min-width: 70vw;
     height: auto;
     margin: 2%;
     background-color: #fff;
@@ -100,6 +110,19 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.panel-custom {
+    width: var(--panel-custom-w);
+    height: var(--panel-custom-h);
+    margin: 2%;
+    background-color: #fff;
+    border: 4px solid #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: var(--panel-custom-position);
 }
 
 .full-panel {
@@ -120,7 +143,7 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: cover;
-    object-position: 50% 20%
+    object-position: 50% 20%;
 }
 
 /*----------------*/
@@ -137,8 +160,6 @@ section:nth-child(1) {
   --textx-bottom: 2%;
 }
 
-
-
 section:nth-child(2) {
 }
 
@@ -149,14 +170,14 @@ section:nth-child(2) {
 }
 .balloon1 {
   position: relative;
-  font-size: 2vw;
+  font-size: 3.4vw;
    --lleft: 10%;
    --ltop: 120%;
    --brcolor: #ffffff;
 }
 .balloon2 {
   position: relative;
-  font-size: 2vw;
+  font-size: 3.4vw;
    --lleft: 5%;
    --ltop: 164%;
 }
@@ -171,7 +192,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
   position: relative;
-  font-size: 2vw;
+  font-size: 3.4vw;
  --lleft: -12%;  --ltop: 2%;
 }
 
@@ -183,7 +204,7 @@ section:nth-child(5) {
 
 section:nth-child(6) {
   position: relative;
-  font-size: 2vw;
+  font-size: 3.4vw;
   --ltop: 32%; --lleft: -24%;
 }
 section:nth-child(7) {
@@ -195,18 +216,17 @@ section:nth-child(8) {
   --h1top: 19rem;
   --h1font-size: 16vw;
 }
-section:nth-child(9) {
 
+section:nth-child(9) {
 }
 
 section:nth-child(10) {
   position: relative;
   --h1font-size: 14vw;
 }
-section:nth-child(11) {
-}
+
 .balloon7 {
-   font-size: 3vw;
+   font-size: 3.4vw;
    --bcolor: #fed9f5;
    --btop: 66vh; --bright: 6%;
 
@@ -220,4 +240,25 @@ section:nth-child(11) {
    background: rgb(2,0,36);
    background: linear-gradient(180deg, rgba(2,0,36,0) 16%, rgba(248, 247, 242) 80%);
    z-index: 3;
+}
+
+section:nth-child(11) {
+}
+.panel-custom {
+   --panel-custom-w: 60vw;
+   --panel-custom-h: 40vh;
+   --panel-custom-position: 10% 20%;
+   }
+
+.floating-image {
+   --floating-image-w: 60vw;
+   --floating-image-h: 40vh;
+   margin-bottom: -30%;
+   }
+
+.bubbleR {
+  --rright: 10%;
+  font-size: 4vw;
+}
+
 }

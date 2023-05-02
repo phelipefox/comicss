@@ -8,5 +8,4 @@ I'm no expert in drawing or web programming, but I hope that my studies in this 
 
 Thanks and bye!
 
-# Sorceress also go to the beach
-[a link](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)
+# [Sorceress also go to the beach](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)

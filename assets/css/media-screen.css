@@ -13,6 +13,12 @@
     min-width: 110vw;
 }
 
+.panel-custom {
+    width: calc(var(--panel-custom-w) * 1.5);
+    height: calc(var(--panel-custom-h) * 1.5);
+    --panel-custom-position: 40% 20%;
+}
+
 .bubbleL {
     max-width: 7rem;
     height: 12rem;
@@ -27,7 +33,6 @@ section:nth-child(1) {
   --textx-bottom: 2%;
 }
 
-
 section:nth-child(2) {
 }
 
@@ -38,26 +43,26 @@ section:nth-child(2) {
 }
 .balloon1 {
   position: relative;
-  font-size: 4vw;
+  font-size: 5vw;
    --ltop: 60%; --lleft: 10%;
    --brcolor: #ffffff;
 }
 .balloon2 {
   position: absolute;
-  font-size: 4vw;
+  font-size: 6vw;
    --ltop: 174%; --lleft: 2%;
 }
 
-
 section:nth-child(3) {
   position: relative;
+  font-size: 5vw;
   --bltransform: rotate(-12deg);
   --ltop: 12%; --lleft: -12%;
 }
 
 section:nth-child(4) {
   position: relative;
-  font-size: 4vw;
+  font-size: 5vw;
   --ltop: 13%; --lleft: -24%;
 }
 
@@ -68,7 +73,7 @@ section:nth-child(5) {
 
 section:nth-child(6) {
   position: relative;
-  font-size: 4vw;
+  font-size: 6vw;
   --ltop: 38%; --lleft: -32%;
 }
 section:nth-child(7) {
@@ -83,14 +88,19 @@ section:nth-child(9) {
 }
 
 section:nth-child(10) {
-  position: relative;
-}
-section:nth-child(11) {
 }
 .balloon7 {
-   font-size: 4vw;
+   font-size: 6vw;
    --bcolor: #fed9f5;
    --btop: 66vh; --bright: 6%;
-
 }
 
+section:nth-child(11) {
+}
+
+.bubbleR {
+  --rright: 5%;
+  font-size: 6vw;
+}
+
+}

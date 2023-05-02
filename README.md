@@ -7,3 +7,6 @@ This combination of comics and css can provide in addition to interactions and a
 I'm no expert in drawing or web programming, but I hope that my studies in this combination will increase artists' interest and create even more interesting works!
 
 Thanks and bye!
+
+# Sorceress also go to the beach
+[a link](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)

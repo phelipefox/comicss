@@ -2,3 +2,10 @@
    filter: grayscale(100%);
 }
 
+.blur {
+    filter: blur(4px);
+}
+
+.back-blur {
+    backdrop-filter: blur(6px);
+}

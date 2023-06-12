@@ -79,4 +79,55 @@
 
 .lens-flare  {
   background-image:radial-gradient(25% 25% at 70% 70%, rgba(0, 0, 255, 0) 93%, rgba(0, 0, 255, 0.01) 93.14%, rgba(0, 0, 255, 0.03) 93.29%, rgba(0, 0, 255, 0.04) 93.43%, rgba(0, 0, 255, 0.05) 93.57%, rgba(0, 0, 255, 0.06) 93.71%, rgba(0, 0, 255, 0.09) 94%, rgba(0, 99, 159, 0.09) 94.14%, rgba(0, 124, 157, 0.08) 94.29%, rgba(0, 149, 162, 0.08) 94.43%, rgba(0, 173, 168, 0.07) 94.57%, rgba(0, 199, 168, 0.07) 94.71%, rgba(0, 255, 0, 0.06) 95%, rgba(111, 254, 0, 0.08) 95.29%, rgba(150, 254, 0, 0.09) 95.57%, rgba(177, 254, 0, 0.11) 95.86%, rgba(200, 254, 0, 0.12) 96.14%, rgba(220, 254, 0, 0.14) 96.43%, rgba(255, 255, 0, 0.17) 97%, rgba(255, 230, 57, 0.16) 97.14%, rgba(254, 206, 0, 0.15) 97.29%, rgba(250, 182, 0, 0.14) 97.43%, rgba(246, 157, 0, 0.13) 97.57%, rgba(243, 130, 0, 0.12) 97.71%, rgba(255, 0, 0, 0.1) 98%, rgba(255, 0, 0, 0.09) 98.29%, rgba(255, 0, 0, 0.07) 98.57%, rgba(255, 0, 0, 0.06) 98.86%, rgba(255, 0, 0, 0.04) 99.14%, rgba(255, 0, 0, 0.03) 99.43%, rgba(255, 0, 0, 0) 100%), radial-gradient(40% 40% at 65% 65%, rgba(27, 199, 0, 0.04) 13%, rgba(86, 207, 0, 0.07) 13.71%, rgba(119, 215, 0, 0.1) 14.43%, rgba(146, 224, 0, 0.13) 15.14%, rgba(170, 232, 0, 0.16) 15.86%, rgba(193, 241, 0, 0.19) 16.57%, rgba(239, 255, 117, 0.25) 18%, rgba(239, 255, 117, 0.22) 18.57%, rgba(239, 255, 117, 0.19) 19.14%, rgba(239, 255, 117, 0.16) 19.71%, rgba(239, 255, 117, 0.13) 20.29%, rgba(239, 255, 117, 0.1) 20.86%, rgba(239, 255, 117, 0.04) 22%), radial-gradient(25% 25% at 37% 37%, rgba(51, 112, 255, 0.1) 0%, rgba(82, 171, 255, 0.25) 14%, rgba(82, 134, 255, 0) 15%), radial-gradient(25% 25% at 23% 23%, rgba(230, 138, 0, 0) 44%, rgba(230, 0, 69, 0.17) 50%, rgba(230, 80, 0, 0) 54%), radial-gradient(25% 25% at 14% 14%, rgba(246, 224, 94, 0) 0%, rgba(254, 252, 190, 0.37) 20%, rgba(246, 224, 94, 0) 22%), radial-gradient(100% 100% at 23% 23%, rgba(26, 32, 44, 0) 0%, rgba(26, 32, 44, 0) 42%, rgba(45, 26, 34, 0.06) 47%), radial-gradient(25% 25% at 23% 23%, #fffff0 0%, #ffffff 14%, rgba(254, 215, 215, 0) 70%), radial-gradient(50% 50% at 25% 25%, rgba(255, 204, 214, 0.3) 1%, rgba(255, 245, 247, 0.3) 50%, rgba(255, 245, 247, 0) 100%);
-  }
+}
+
+.lightining-screen {
+	/*top:0;*/
+	/*left:0;*/
+	/*right:0;*/
+	/*bottom:0;*/
+	/*z-index:1;*/
+	/*width:100vw;*/
+	/*height:100vh;*/
+	/*overflow:hidden;*/
+	/*position:absolute;*/
+	animation:lightining-screen 12s linear infinite;
+}
+
+@keyframes lightining-screen{
+  0%,  95%,  98% {filter: brightness(1);}
+  96%, 99%, 100% {filter: brightness(2);} 
+}
+
+/*@keyframes lightining-screen{*/
+/*  0%,  95%,  98% {background-color:transparent}*/
+/*  96%, 99%, 100% {background-color:#ffffff82} */
+/*}*/
+
+.flashit{
+animation: flash ease-out 9s infinite;
+animation-delay: 2s;
+}
+
+@keyframes flash {
+	from { filter: brightness(1); }
+	60% { filter: brightness(1); }
+	61% { filter: brightness(1.1); }
+	66% { filter: brightness(1); }
+    92% { filter: brightness(1); }
+	93% { filter: brightness(2); }
+    94% { filter: brightness(1.4); }
+    96% { filter: brightness(2); }
+	to { filter: brightness(1); }
+}
+
+.rain {
+    height: 100%;
+    background: url(images/rainy-day/rain.png);
+    animation: rain .3s linear infinite;
+}
+
+@keyframes rain {
+    0% { background-position: 23% 100%; }
+    100% { background-position: 0% 0%; }
+}

@@ -1,0 +1,300 @@
+.textx {
+  position: absolute;
+  font-family: 'Boogaloo';
+  /*font-weight: bold;*/
+  font-style: italic;
+  color: var(--textx-color);
+  top: var(--textx-top); bottom: var(--textx-bottom); left: var(--textx-left); right: var(--textx-right);
+  /*font-weight: bold;*/
+  font-size: var(--textx-size);
+  line-height: 40px;
+  /*letter-spacing: -9px;*/
+  word-spacing: 10px;
+  transform: var(--textx-transform);
+}
+
+.texty {
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Boogaloo';
+  /*font-weight: bold;*/
+  font-style: italic;
+  top: var(--texty-top); left: var(--texty-left); right: var(--texty-right);
+  /*font-weight: bold;*/
+  font-size: var(--texty-size);
+  line-height: 40px;
+  letter-spacing: -9px;
+  word-spacing: 10px;
+  transform: var(--ttransform);
+}
+
+.textshadow {
+  text-shadow: -6px -6px 0 #484848, 6px -6px 0 #484848, -6px 6px 0 #484848, 6px 6px 0 #484848;
+}
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   width: 60vw;
+   margin: 0 auto;
+   /*border: 4px solid black;*/
+}
+
+.floating-image {
+    width: var(--floating-image-w);
+    height: var(--floating-image-h);
+    margin: 2%;
+    /*background-color: #8e8e8e;*/
+    /*border: 4px solid #000;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: scale-down;
+}
+
+.panel {
+  background-color: #fff;
+  background-color: var(--bg-color);
+  border: 4px solid #000;
+  margin: 1.4%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  }
+
+.full-panel {
+    width: auto;
+    min-width: auto;
+    height: 100vh;
+    margin: 3%;
+    background-color: #fff;
+    border: 4px solid #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.screen-cover {
+    min-width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    object-position: 50% 15%;
+    z-index: -2;
+}
+
+/*----------------*/
+
+
+section:nth-child(1) {
+}
+.title {
+  --h1color: #fff;
+  --h1top: 100%;
+  --h1font-size: 12vh;
+}
+
+.author {
+  --textx-color: #fff;
+  --textx-size: 1.2rem;
+  --textx-right: 35%;
+  --textx-bottom: -2%;
+}
+
+section:nth-child(2) {
+}
+
+.p-warnig-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    background-image: url("assets/images/rainy-day/karen-warning.png");
+    object-fit: scale-down;
+}
+
+.p-warnig {
+    grid-row: span 4;
+    grid-column: span 3;
+    margin-top: -18%;
+    border-radius: 50%;
+    background-image: url("assets/images/spin-warning.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #d09b9b;
+    object-fit: cover;
+}
+
+.balloon-warning {
+  position: relative;
+  font-size: 2.4vw;
+  margin-left: 70%;
+  margin-top: 20%;
+   --brcolor: #ffffff;
+}
+
+.balloon0 {
+  position: relative;
+  margin-top: 68vh;
+  margin-left: -10%;
+  font-size: 2.4vw;
+   --scolor: #ffffff;
+}
+}
+
+section:nth-child(3) {
+}
+
+.p1 {
+    grid-row: span 2;
+    grid-column: span 3;
+    margin-top: -3%;
+    background-position: center bottom;
+    background-image: url(assets/images/rainy-day/p1.jpg);
+}
+.balloon1 {
+  position: relative;
+  font-size: 2.4vw;
+  margin-left: -10%;
+  margin-top: 4%;
+   --brcolor: #ffffff;
+}
+
+.p2 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-position: top;
+    background-image: url(assets/images/rainy-day/p2.jpg);
+}
+
+.p3 {
+    grid-row: span 2;
+    grid-column: span 1;
+    background-position: left;
+    background-image: url(assets/images/rainy-day/p3.jpg);
+    margin-left: -40px;
+    transform: scaleX(-1);
+}
+
+.p4 {
+    grid-row: span 2;
+    grid-column: span 2;
+    --bg-color: #6b6b82;
+    background-image: url(assets/images/rainy-day/window.png);
+}
+
+section:nth-child(4) {
+}
+.p5 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url(assets/images/rainy-day/p5.jpg);
+    z-index: 3;
+}
+
+.balloon2 {
+  position: relative;
+  font-size: 2.4vw;
+  margin-top: 30%;
+  margin-left: 2%;
+}
+
+.p6 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url(assets/images/rainy-day/p6.jpg);
+}
+
+section:nth-child(5) {
+}
+
+.p7 {
+    grid-row: span 5;
+    grid-column: span 3;
+     background-image: url("assets/images/rainy-day/p1.jpg");
+}
+
+.balloon4 {
+  position: relative;
+  font-size: 2.4vw;
+  margin-top: 21%;
+  margin-left: -28%;
+}
+
+.image-over {
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("assets/images/rainy-day/karen-on-chair.png");
+    z-index: 3;
+
+}
+
+section:nth-child(6) {
+}
+.end {
+  --h1color: #000;
+  --h1font-size: 18vh;
+}
+
+@media only screen and (max-width: 490px) {
+
+.balloon0 {
+   font-size: 1.6rem;
+   margin-top: 44vh;
+}
+
+.balloon2 {
+   margin-top: 84%;
+}
+
+.balloon1,.balloon2,.balloon4,.balloon-warning {
+   font-size: 1.6rem;
+}
+
+.balloon4 {
+   margin-top: 59%;
+   margin-left: -17%;
+}
+
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 80px);
+   grid-template-columns: repeat(3, minmax(140px, 1fr));
+   grid-gap: 50px 4px;
+   width: 80vw;
+   margin: 0 auto;
+}
+
+.p-warnig {
+    grid-row: span 3;
+    grid-column: span 3;
+}
+}
+
+@media only screen and (max-height: 916px) {
+
+.balloon0,.balloon1,.balloon2,.balloon4,.balloon-warning {
+font-size: 1.5rem;
+}
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 90px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   grid-gap: 50px 4px;
+   width: 80vw;
+   margin: 0 auto;
+}
+
+
+}

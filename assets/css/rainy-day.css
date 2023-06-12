@@ -113,7 +113,7 @@ section:nth-child(2) {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
-    background-image: url("../assets/images/rainy-day/karen-warning.png");
+    background-image: url("../../assets/images/rainy-day/karen-warning.png");
     object-fit: scale-down;
 }
 
@@ -122,7 +122,7 @@ section:nth-child(2) {
     grid-column: span 3;
     margin-top: -18%;
     border-radius: 50%;
-    background-image: url("assets/images/spin-warning.svg");
+    background-image: url("../../assets/images/spin-warning.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-color: #d09b9b;
@@ -154,7 +154,7 @@ section:nth-child(3) {
     grid-column: span 3;
     margin-top: -3%;
     background-position: center bottom;
-    background-image: url(assets/images/rainy-day/p1.png);
+    background-image: url(../../assets/images/rainy-day/p1.png);
 }
 .balloon1 {
   position: relative;
@@ -168,14 +168,14 @@ section:nth-child(3) {
     grid-row: span 2;
     grid-column: span 3;
     background-position: top;
-    background-image: url(assets/images/rainy-day/p2.png);
+    background-image: url(../../assets/images/rainy-day/p2.png);
 }
 
 .p3 {
     grid-row: span 2;
     grid-column: span 1;
     background-position: left;
-    background-image: url(assets/images/rainy-day/p3.jpg);
+    background-image: url(../../assets/images/rainy-day/p3.jpg);
     margin-left: -40px;
     transform: scaleX(-1);
 }
@@ -184,7 +184,7 @@ section:nth-child(3) {
     grid-row: span 2;
     grid-column: span 2;
     --bg-color: #6b6b82;
-    background-image: url(assets/images/rainy-day/window.png);
+    background-image: url(../../assets/images/rainy-day/window.png);
 }
 
 section:nth-child(4) {
@@ -192,7 +192,7 @@ section:nth-child(4) {
 .p5 {
     grid-row: span 3;
     grid-column: span 3;
-    background-image: url(assets/images/rainy-day/p5.png);
+    background-image: url(../../assets/images/rainy-day/p5.png);
     z-index: 3;
 }
 
@@ -206,7 +206,7 @@ section:nth-child(4) {
 .p6 {
     grid-row: span 3;
     grid-column: span 3;
-    background-image: url(assets/images/rainy-day/p6.png);
+    background-image: url(../../assets/images/rainy-day/p6.png);
 }
 
 section:nth-child(5) {
@@ -215,7 +215,7 @@ section:nth-child(5) {
 .p7 {
     grid-row: span 5;
     grid-column: span 3;
-     background-image: url("assets/images/rainy-day/p1.png");
+     background-image: url("../../assets/images/rainy-day/p1.png");
 }
 
 .balloon4 {
@@ -233,7 +233,7 @@ section:nth-child(5) {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-image: url("assets/images/rainy-day/karen-on-chair.png");
+    background-image: url("../../assets/images/rainy-day/karen-on-chair.png");
     z-index: 3;
 
 }

@@ -113,7 +113,7 @@ section:nth-child(2) {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
-    background-image: url("../../images/rainy-day/karen-warning.png");
+    background-image: url("../../assets/images/rainy-day/karen-warning.png");
     object-fit: scale-down;
 }
 
@@ -122,7 +122,7 @@ section:nth-child(2) {
     grid-column: span 3;
     margin-top: -18%;
     border-radius: 50%;
-    background-image: url("../../images/spin-warning.svg");
+    background-image: url("../../assets/images/spin-warning.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-color: #d09b9b;

@@ -154,7 +154,7 @@ section:nth-child(3) {
     grid-column: span 3;
     margin-top: -3%;
     background-position: center bottom;
-    background-image: url(../../assets/rainy-day/p1.png);
+    background-image: url(../../assets/images/rainy-day/p1.png);
 }
 .balloon1 {
   position: relative;
@@ -175,7 +175,7 @@ section:nth-child(3) {
     grid-row: span 2;
     grid-column: span 1;
     background-position: left;
-    background-image: url(../../assets/rainy-day/p3.jpg);
+    background-image: url(../../assets/images/rainy-day/p3.jpg);
     margin-left: -40px;
     transform: scaleX(-1);
 }

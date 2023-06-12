@@ -1,3 +1,10 @@
+@media only screen and (max-width: 490px) {
+
+.bubble,.bubbleR,.bubbleL {
+  max-height: 20vh;
+}
+}
+
 .floatingtexty {
   display: flex;
   position: absolute;
@@ -21,13 +28,13 @@
   top: var(--btop); left: var(--bleft); right: var(--bright);
   max-width: 34vw;
   height: 28vh;
-  padding-left: 2%;
+  padding-left: 4%;
   padding-right: 2%;
   border: solid 3px #3d3935;
   border-radius: 50%;
   background-color: var(--bcolor);
   color: #3d3935;
-  z-index: 3;
+  z-index: 4;
 }
 
 .bubbleR {
@@ -45,7 +52,7 @@
   background-color: #fff;
   color: #3d3935;
   transform: var(--brtransform);
-  z-index: 3;
+  z-index: 4;
 }
 
 .bubbleL {
@@ -63,7 +70,7 @@
   background-color: #fff;
   color: #3d3935;
   transform: var(--bltransform);
-  z-index: 3;
+  z-index: 4;
 }
 
 .bubbleR::after {
@@ -112,6 +119,21 @@
   border-bottom: 10px solid transparent;
   border-right: 10px solid transparent;
   content: "";
+}
+
+.square {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 2%;
+  border: solid 3px #3d3935;
+  background-color: var(--scolor);
+  color: #3d3935;
+  z-index: 4;
 }
 
 .burst {

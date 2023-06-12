@@ -154,7 +154,7 @@ section:nth-child(3) {
     grid-column: span 3;
     margin-top: -3%;
     background-position: center bottom;
-    background-image: url(assets/images/rainy-day/p1.jpg);
+    background-image: url(assets/images/rainy-day/p1.png);
 }
 .balloon1 {
   position: relative;
@@ -168,7 +168,7 @@ section:nth-child(3) {
     grid-row: span 2;
     grid-column: span 3;
     background-position: top;
-    background-image: url(assets/images/rainy-day/p2.jpg);
+    background-image: url(assets/images/rainy-day/p2.png);
 }
 
 .p3 {
@@ -192,7 +192,7 @@ section:nth-child(4) {
 .p5 {
     grid-row: span 3;
     grid-column: span 3;
-    background-image: url(assets/images/rainy-day/p5.jpg);
+    background-image: url(assets/images/rainy-day/p5.png);
     z-index: 3;
 }
 
@@ -206,7 +206,7 @@ section:nth-child(4) {
 .p6 {
     grid-row: span 3;
     grid-column: span 3;
-    background-image: url(assets/images/rainy-day/p6.jpg);
+    background-image: url(assets/images/rainy-day/p6.png);
 }
 
 section:nth-child(5) {
@@ -215,7 +215,7 @@ section:nth-child(5) {
 .p7 {
     grid-row: span 5;
     grid-column: span 3;
-     background-image: url("assets/images/rainy-day/p1.jpg");
+     background-image: url("assets/images/rainy-day/p1.png");
 }
 
 .balloon4 {

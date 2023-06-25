@@ -162,3 +162,37 @@
 	85% { transform: scale(1.2,1)  }
 	100% { transform: scale(1,1); }
 }
+
+.zoomIn {
+    animation: zoom 5s ease 0s infinite normal forwards;
+}
+
+@keyframes zoom {
+	0% {
+		background-position: center top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center top;
+		background-size: 150%;
+	}
+}
+
+.pan {
+	animation: pan 18s ease 0s infinite normal forwards;
+}
+
+@keyframes pan {
+	0% {
+		background-position: 100% 50%;
+	}
+
+	50% {
+		background-position: 0% 50%;
+	}
+	
+	100% {
+		background-position: 100% 50%;
+	}
+}

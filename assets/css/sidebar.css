@@ -2,10 +2,11 @@
     position: fixed;
     align-items: center;
     top: 0;
+    left: -8px;
     width: 80px;
-    height: 400px;
-    border-radius: 0px 0px 14px 14px;
-    /*background: cyan;*/
+    height: 100vh;
+    /*border-radius: 0px 0px 14px 14px;*/
+    background: #242424;
 }
 
 .logo {
@@ -21,4 +22,32 @@
     margin-left: -44%;
     width: 100px;
 }
+}
+
+.selector > fieldset {
+    border= 0;
+    margin-top: 64vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+    padding: 3rem 1.5rem;
+    border: 0;
+}
+
+.selector input[type="radio"] {
+    appearence: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 3px;
+    filter: var(--grayscale(0%)), currentColor;
+    border-radius: 50%;
+}
+
+:root:has(#coloron:checked) {
+
+}
+
+:root:has(#coloroff:checked) {
+    filter: grayscale(100%);
 }

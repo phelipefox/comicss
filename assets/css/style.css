@@ -205,7 +205,7 @@ section:nth-child(5) {
 section:nth-child(6) {
   position: relative;
   font-size: 3.4vw;
-  --ltop: 32%; --lleft: -24%;
+  --ltop: 32%; --lleft: -9%;
 }
 section:nth-child(7) {
   position: relative;

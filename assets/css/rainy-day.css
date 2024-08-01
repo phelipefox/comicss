@@ -281,15 +281,15 @@ section:nth-child(6) {
 }
 }
 
-@media only screen and (max-height: 916px) {
+@media only screen and (min-height: 2100px) {
 
 .balloon0,.balloon1,.balloon2,.balloon4,.balloon-warning {
-font-size: 1.5rem;
+font-size: 3.4rem;
 }
 
 .page-layout {
    display: grid;
-   grid-template-rows: repeat(6, 90px);
+   grid-template-rows: repeat(6, 220px);
    grid-template-columns: repeat(3, minmax(33%, 1fr));
    grid-gap: 50px 4px;
    width: 80vw;

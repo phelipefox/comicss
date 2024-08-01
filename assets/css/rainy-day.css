@@ -281,7 +281,7 @@ section:nth-child(6) {
 }
 }
 
-@media only screen and (min-height: 2100px) {
+@media only screen and (min-height: 2000px) {
 
 .balloon0,.balloon1,.balloon2,.balloon4,.balloon-warning {
 font-size: 3.4rem;

@@ -245,7 +245,7 @@ section:nth-child(6) {
   --h1font-size: 18vh;
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 700px) {
 
 .balloon0 {
    font-size: 1.6rem;
@@ -259,12 +259,6 @@ section:nth-child(6) {
 .balloon1,.balloon2,.balloon4,.balloon-warning {
    font-size: 1.6rem;
 }
-
-.balloon4 {
-   margin-top: 59%;
-   margin-left: -17%;
-}
-
 
 .page-layout {
    display: grid;
@@ -295,6 +289,5 @@ font-size: 3.4rem;
    width: 80vw;
    margin: 0 auto;
 }
-
 
 }

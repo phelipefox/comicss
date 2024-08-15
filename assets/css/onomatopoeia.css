@@ -30,6 +30,35 @@ h2 {
 
 /* effects */
 
+  .slideUp {
+  animation: slideUp 3s infinite normal;
+}
+
+  .slideLeft {
+  animation: slideLeft 3s infinite normal;
+}
+
+  .slideRight {
+  animation: slideRight 3s infinite normal;
+  font-size: 1.2em;
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(150px);
+	}
+	
+	60% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1) rotateZ(-24deg);
+	}
+}
+
 @keyframes slideLeft {
 	0% {
 		opacity: 0;
@@ -43,6 +72,22 @@ h2 {
 	100% {
 		opacity: 0;
 		transform: scale(1) rotateZ(-24deg);
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+	
+	60% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(1) rotateZ(24deg);
 	}
 }
 
@@ -92,7 +137,6 @@ h2 {
 
 .shakeText {
     position: absolute;
-    margin-top: -800px;
     animation: shakeHard 100ms ease-in-out infinite;
 }
 

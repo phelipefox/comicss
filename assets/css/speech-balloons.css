@@ -26,8 +26,8 @@
   align-items: center;
   position: absolute;
   top: var(--btop); left: var(--bleft); right: var(--bright);
-  max-width: 34vw;
-  height: 28vh;
+  max-width: 12em;
+  height: 10em;
   padding-left: 4%;
   padding-right: 2%;
   border: solid 3px #3d3935;
@@ -43,8 +43,8 @@
   align-items: center;
   position: absolute;
   top: var(--rtop); bottom: var(--rbottom); left: var(--rleft); right: var(--rright);
-  max-width: 24vw;
-  height: 38vh;
+  max-width: 12em;
+  height: 10em;
   padding-left: 2%;
   padding-right: 2%;
   border: solid 3px #3d3935;
@@ -61,8 +61,8 @@
   align-items: center;
   position: absolute;
   top: var(--ltop); left: var(--lleft); right: var(--lright);
-  max-width: 24vw;
-  height: 38vh;
+  max-width: 12em;
+  height: 10em;
   padding-left: 2%;
   padding-right: 2%;
   border: solid 3px #3d3935;

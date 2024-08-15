@@ -10,4 +10,4 @@ Thanks and bye!
 
 # 🏖 [Sorceress also go to the beach](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)
 # ☔️ [Rainy Day](https://phelipefox.github.io/comicss/rainy-day.html)
-# 🐈‍⬛ [Rainy Day](https://phelipefox.github.io/comicss/darkness.html)
+# 🐈‍⬛ [Darkness](https://phelipefox.github.io/comicss/darkness.html)

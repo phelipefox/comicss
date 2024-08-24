@@ -6,6 +6,7 @@ body {
   margin: 0;
   background: #f0e6dc;
   font: 200%/1.5 'Boogaloo', cursive;
+  mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/white-construction-paper-texture.jpg");
 }
 
 html {

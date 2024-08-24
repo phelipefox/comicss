@@ -1,11 +1,3 @@
-html, body, section {
-  block-size: 100vh;
-  scrollbar-width: none;
-  background: #f8f7f2;
-  padding: 0 10%;
-  font: 100%/1.5 'Boogaloo', cursive;
-}
-
 html {
   scroll-snap-type: y mandatory;
 }

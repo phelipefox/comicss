@@ -973,7 +973,7 @@
 }
 
 .moving-stars span {
-    background-image: url("images/effects/white-star.svg");
+    background-image: url("../../assets/images/effects/white-star.svg");
     background-repeat: no-repeat;
     width: 24vmin;
     height: 24vmin;

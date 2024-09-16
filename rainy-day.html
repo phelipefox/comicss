@@ -17,12 +17,23 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo">
 </head>
 
+<header class="sidebar">
+<p class="comic-name">Rainy Day</p>
+
+<a><form action="" class="selector">
+<fieldset class="toggle" style="cursor:pointer;" title="Change Page Visual">
+<legend class="hidden-label">Select the visual</legend>
+<label for="theme" class="hidden-label">Colored</label>
+<input type="checkbox" id="switch" /><label for="switch">Gray Scale</label>
+</fieldset>
+</form><a/>
+</header>
+
 <body>
 <!--<body class="grayscale">-->
 <audio controls autoplay loop hidden>
 <source src="assets/sounds/rain.mp3" type="audio/mp3">
 </audio>
-
 
 <section class="rain"> <!--start-page-->
 
@@ -86,17 +97,6 @@
 
 </div> <!--end-page-->
 </section>
-
-<div class="sidebar">
-<a><img class="logo" src="comicss-logo.svg"></a>
-<form action="" class="selector">
-<fieldset class="toggle">
-<legend class="hidden-label">Select the visual</legend>
-<label for="theme" class="hidden-label">Colored</label>
-<input type="checkbox" id="switch" /><label for="switch">Gray Scale</label>
-</fieldset>
-</form>
-</div>
 
 </body>
 </html>

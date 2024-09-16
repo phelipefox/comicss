@@ -21,6 +21,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  content-visibility: auto;
 }
 
 .hidden-label {
@@ -32,3 +33,72 @@ section {
     position: absolute;
     white-space: nowrap;
 }
+
+.content-visibility {
+  content-visibility: auto;
+}
+
+.hidden-label {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.show-pages {
+    border: 5px solid red;
+}
+
+.fit-image {
+    object-fit: scale-down;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
+
+.top-layer {
+    z-index: 9;
+}
+
+.read-mode {
+	position: absolute;
+	width: 340px;
+	height: 480px;
+	right: 6%;
+	bottom: 4%;
+	background-image: url("../../assets/images/effects/red-arrow-down.png");
+	background-repeat: no-repeat;
+	z-index: 9;
+    animation: fade-out 5s cubic-bezier(.17,.84,.44,1) 1 forwards;
+}
+
+@keyframes fade-out {
+	0% { opacity: 1;}
+	90% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+.read-mode::before {
+    position: absolute;
+	content: 'Read Mode';
+	font-family: 'Titan One';
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+	text-shadow: -6px -6px 0 #333, 6px -6px 0 #333, -6px 6px 0 #333, 6px 6px 0 #333;
+    left: 14%;
+    top: 10%;
+}
+
+@media only screen and (max-width: 1500px) {
+
+.pages {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+}
+    

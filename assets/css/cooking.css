@@ -1,0 +1,714 @@
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section.title {
+
+  color: white;
+  background: black;
+}
+
+.box-text {
+  position: absolute;
+  background-color:#fff;
+  border:solid 2px #000;
+  margin:0;
+  padding:3px 10px;
+}
+
+.top-left {
+  left:-9px;
+  position:absolute;
+  top:-9px;
+  transform:skew(-15deg);
+}
+
+.top-right {
+  right:-9px;
+  position:absolute;
+  top:-9px;
+  transform:skew(-15deg);
+}
+
+.bottom-right {
+  bottom:-6px;
+  position:absolute;
+  right:-14px;
+  transform:skew(-15deg);
+}
+
+.textx {
+  position: absolute;
+  font-family: 'Boogaloo';
+  /*font-weight: bold;*/
+  font-style: italic;
+  color: var(--textx-color);
+  top: var(--textx-top); bottom: var(--textx-bottom); left: var(--textx-left); right: var(--textx-right);
+  /*font-weight: bold;*/
+  font-size: var(--textx-size);
+  line-height: 40px;
+  /*letter-spacing: -9px;*/
+  word-spacing: 10px;
+  transform: var(--textx-transform);
+  --textx-size: 2.5rem;
+  --textx-left: 60%;
+  padding-bottom: 64vh;
+}
+
+.texty {
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Boogaloo';
+  /*font-weight: bold;*/
+  font-style: italic;
+  top: var(--texty-top); left: var(--texty-left); right: var(--texty-right);
+  /*font-weight: bold;*/
+  font-size: var(--texty-size);
+  line-height: 40px;
+  /*letter-spacing: -9px;*/
+  word-spacing: 10px;
+  transform: var(--ttransform);
+  z-index: 3;
+}
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   width: 70vw;
+   margin: 0 auto;
+}
+
+.panel {
+  background-color: #fff;
+  background-color: var(--bg-color);
+  border: 4px solid #4a4a4a;
+  margin: 1.4%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.space {
+  position: relative;
+  z-index: -2;
+}
+
+.bg-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -3;
+    filter: opacity(62%);
+}
+
+.bg-gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(45deg, #ae3dac 0%, #fad0c4 99%, #fad0c4 100%);
+    background-repeat: no-repeat;
+    background-position: 1% 1%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -3;
+    filter: opacity(62%);
+}
+
+.effect-over {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -3;
+    filter: opacity(82%);
+}
+
+.screen-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    object-position: 50% 100%;
+    z-index: 1;
+}
+
+.screen-texture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.local-screentone {
+    position: absolute;
+    width: 60%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 0;
+}
+
+h1 {
+  --h1font-size: 9rem;
+  --h1top: -48%;
+  --h1color: #fff;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+    top: -100px;
+    left: -100px;
+}
+
+/*Page 1*/
+.ptext {
+    position: absolute;
+    color: #8332a8;
+    top: 56%;
+    z-index: 2;
+}
+
+.ps1 {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.p1 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url("../../assets/images/cooking/kitchen-bg.png"), linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-position: -10% 90%;
+    margin-bottom: -40px;
+    margin-right: -296px;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.name {
+    position: absolute;
+    font-family: 'Permanent Marker';
+    font-weight: bold;
+    font-size: 7rem;
+    text-align: center;
+    color: #ce4960;
+    top: 48%;
+    /*right: -35%;*/
+    z-index: 1;
+    transform: rotate(-4deg);
+}
+
+.p2 {
+    grid-row: span 6;
+    grid-column: span 1;
+}
+
+.balloon1{
+    margin-left: -46%;
+}
+
+.balloon1-1 {
+    max-height: 220px;
+    margin-left: -80%;
+    margin-top: 24vh;
+}
+
+.balloon2{
+    margin-left: -4%;
+    margin-top: 10vh;
+}
+.p3 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url("../../assets/images/cooking/karen-close-speak.png");
+    top: -16px;
+    margin-right: -170px;
+    margin-left: 40%;
+    z-index: 1;
+    transform: rotate(4deg);
+}
+
+.balloon-p3{
+    margin-left: -52%;
+    margin-top: 9vh;
+}
+
+.balloon3{
+    margin-left: -12%;
+    margin-top: -10vh;
+}
+
+.balloon4{
+    margin-left: -12%;
+    margin-top: -10vh;
+}
+
+/*Page 2*/
+.p4 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-image: url("../../assets/images/textures/kitchen-texture.png"), linear-gradient(to bottom, #fde5cb, pink, white);
+    background-position: 1% 1%;
+    margin-left: 161px;
+    overflow: hidden;
+}
+
+.p5 {
+    grid-row: span 4;
+    grid-column: span 1;
+    bottom: -12%;
+    width: 130%;
+}
+
+.space5 {
+    grid-row: span 4;
+    grid-column: span 1;
+}
+
+.p5-2 {
+    grid-row: span 4;
+    grid-column: span 1;
+    background-image: url("../../assets/images/textures/wood-texture.jpg"), linear-gradient(-225deg, #bf9576 0%, #886d64 52%, #FFB490 100%);
+    width: 460%;
+    left: -260%;
+    z-index: -3;
+}
+
+.list {
+    position: absolute;
+    font-family: 'Permanent Marker';
+    font-size: 1.2rem;
+    color: #592f36;
+    margin-top: 20%;
+    margin-left: 40%;
+    z-index: 3;
+}
+
+/*Page 3*/
+.p7 {
+    grid-row: span 3;
+    grid-column: span 1;
+    margin-top: -26px;
+    margin-right: -146px;
+    z-index: -3;
+}
+
+.red-arrows {
+  position: relative;
+  top: -20%;
+  left: 10%;
+  height: 60%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: contain;
+  z-index: 3;
+  object-fit: scale-down;
+}
+
+.p6 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url("../../assets/images/cooking/bowl-scene1.png"), radial-gradient(circle, rgba(255,222,154,0.5410363974691439) 0%, rgba(255,85,85,0.6082632882254464) 50%, rgba(252,176,69,0.767927153771665) 100%);
+    z-index: -3;
+}
+
+.bubble-p6 {
+  top: -140px;
+  left: -80px;
+}
+
+.p8 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url("../../assets/images/cooking/bowl-scene2.png");
+    overflow: hidden;
+    z-index: -3;
+}
+
+.bubble-p8 {
+  bottom: -130px;
+  left: -3px;
+  text-align: center;
+}
+
+.egg {
+    position: absolute;
+    top: 60%;
+    right: 40%;
+    height: 34%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+}
+
+.milk {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    --float-delay: 2s;
+}
+
+.sugar {
+    position: absolute;
+    top: 29%;
+    left: -10%;
+    height: 46%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 3;
+    --float-delay: 4s;
+}
+
+/*Page 4*/
+.p9 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-image: url("../../assets/images/cooking/kitchen-bg.png");
+    background-position: 10% 210%;
+    overflow: hidden;
+}
+
+h3 {
+     --h3top: 100px;
+     --h3left: 560px;
+}
+
+.image-over3 {
+    position: relative;
+    top: -136%;
+    left: 0%;
+    height: 106%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-image: url("../../assets/images/cooking/karen-half-body-cooking.png");
+    z-index: 2;
+}
+
+.image-over4 {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    background-image: url("../../assets/images/cooking/gas-stove.png");
+    z-index: 3;
+}
+
+.p10 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-image: url("../../assets/images/textures/kitchen-texture.png"), linear-gradient(45deg, #053131 0%, #d01da3 99%, #d9c4bf 100%);
+}
+
+.balloon-p10 {
+  top: -240px;
+}
+
+/*Page 5*/
+.p11 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-image: url("../../assets/images/cooking/bowl-scene3.png");
+    z-index: -3;
+}
+
+.bubble-p11 {
+  top: -90px;
+  right: -120px;
+  text-align: center;
+}
+
+.bubble2-p11 {
+  bottom: -46px;
+  left: -120px;
+}
+
+.p12 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url("../../assets/images/cooking/hand-over-pudim.png");
+    z-index: -3;
+}
+
+.bubble-p12 {
+  bottom: -96px;
+  left: -10px;
+}
+
+.p13 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url("../../assets/images/cooking/pudim-on-plate.png"), linear-gradient(to top, #494ab9 0%, #a3dcf2 100%);
+    margin-right: -120px;
+    z-index: -3;
+}
+
+/*Page 6*/
+.p14 {
+    grid-row: span 5;
+    grid-column: span 3;
+    background-image: radial-gradient(circle, rgba(255,222,154,0.5410363974691439) 0%, rgba(255,85,85,0.6082632882254464) 50%, rgba(252,176,69,0.767927153771665) 100%);
+    margin-top: 96px;
+    overflow: hidden;
+}
+
+/*Page 7*/
+.p15 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url("../../assets/images/cooking/karen-close-eating.png"), linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    margin-bottom: -46px;
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+
+.bp15 {
+    top: 30px;
+    right: -146px;
+    --brtransform: rotate(-10deg);
+}
+
+.p16 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url("../../assets/images/cooking/karen-chibi-eating.png");
+    margin-left: -220px;
+}
+
+.p17 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: radial-gradient(circle, rgb(240, 120, 227) 0%, rgb(240, 180, 231) 50%, rgb(255, 175, 117) 100%);
+    margin-left: -220px;
+}
+
+.text-p17 {
+  right: -40px;
+  font-family: 'Titan One';
+  font-weight: bold;
+  font-size: 4rem;
+  color: #ac85d2;
+  z-index: 4;
+}
+
+.bubble-p17 {
+  font-weight: bold;
+  bottom: -96px;
+  right: 100px;
+  --brtransform: rotate(16deg);
+}
+
+.image-over {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 1% 1%;
+    background-size: contain;
+    background-image
+    z-index: 3;
+}
+
+.image-over2 {
+    position: relative;
+    top: -18%;
+    left: 34%;
+    height: 140%;
+    background-repeat: no-repeat;
+    background-position: 1% 1%;
+    background-size: contain;
+    background-image
+    z-index: 3;
+    filter: drop-shadow(8px 8px 8px #ffffff82);
+}
+
+.pan-item {
+    position: absolute;
+    bottom: 11%;
+    left: 25%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4;
+}
+
+.pitens {
+    grid-row: span 2;
+    grid-column: span 3;
+    margin-bottom: -300px;
+}
+
+.author {
+  position: absolute;
+  text-shadow: -2px -2px 0 #FFF, 2px -2px 0 #FFF, -2px 2px 0 #FFF, 2px 2px 0 #FFF;
+  padding-top: 34vh;
+  padding-left: 20%;
+  --textx-color: #000;
+  --textx-size: 1.2rem;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 767px) {
+
+h1 {
+  --h1font-size: 7rem;
+  --h1top: -86%;
+}
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   width: 80vw;
+   margin-top: 10%;
+}
+
+.list {
+    margin-left: 68%;
+    right: -70%;
+}
+}
+
+@media only screen and (min-height: 1000px) {
+
+h1 {
+  --h1font-size: 10rem;
+  --h1top: -80%;
+}
+
+.author {
+  --textx-color: #000;
+  --textx-size: 2.4rem;
+}
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 260px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   height: 80vh;
+   width: 80vw;
+}
+
+.panel {
+  border: 7px solid #4a4a4a;
+}
+
+.balloon1-1 {
+  margin-left: -64%;
+  margin-top: 16vh;
+}
+
+.ptext {
+    font-size: 4rem;
+    top: 46%;
+    left: 30%;
+    z-index: 2;
+}
+
+.name {
+    right: 1%;
+}
+
+.p2 {
+  margin-left: -160px;
+}
+
+.p3 {
+  margin-left: 74px;
+  z-index: -2;
+}
+
+.p5 {
+  margin-left: -2%;
+  }
+
+.list {
+    margin-top: 100%;
+    margin-left: 60%;
+    right: -100%;
+}
+
+.hands {
+    top: 28%;
+    left: -24%;
+}
+
+.image-over4 {
+    background-position: 30% 100%;
+}
+
+.pan-item {
+    height: 34%;
+}
+
+.p14 {
+    margin-left: -90px;
+    margin-right: -90px;
+}
+
+.p15 {
+    margin-left: -90px;
+}
+
+.p16 {
+    margin-left: -320px;
+}
+
+.p17 {
+    margin-left: -322px;
+    margin-bottom: -190px;
+}
+
+.bubble-p17 {
+  bottom: -96px;
+  right: -120px;
+  --brtransform: rotate(16deg);
+}
+
+.text-p17 {
+  right: -70px;
+  font-size: 6rem;
+}
+}
+
+@media only screen and (min-width: 1600px) {
+
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(3, minmax(33%, 1fr));
+   width: 40vw;
+}
+
+h1 {
+  --h1font-size: 7rem;
+  --h1top: -26%;
+}
+
+.image-over3 {
+    width: 90%;
+}
+}
+

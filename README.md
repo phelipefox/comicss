@@ -8,6 +8,7 @@ I'm no expert in drawing or web programming, but I hope that my studies in this 
 
 Thanks and bye!
 
-# 🏖 [Sorceress also go to the beach](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)
-# ☔️ [Rainy Day](https://phelipefox.github.io/comicss/rainy-day.html)
+# 🍮️ [Cooking](https://phelipefox.github.io/comicss/cooking.html)
 # 🐈‍⬛ [Darkness](https://phelipefox.github.io/comicss/darkness.html)
+# ☔️ [Rainy Day](https://phelipefox.github.io/comicss/rainy-day.html)
+# 🏖 [Sorceress also go to the beach](https://phelipefox.github.io/comicss/sorceress-also-go-to-the-beach.html)

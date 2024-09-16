@@ -225,6 +225,7 @@ h2 {
     max-height: 220px;
     margin-left: -80%;
     margin-top: 24vh;
+    --bcolor: white;
 }
 
 .balloon2{
@@ -328,8 +329,9 @@ h2 {
 }
 
 .bubble-p6 {
-  top: -140px;
-  left: -80px;
+  --btop: -140px;
+  --bleft: -80px;
+  --bcolor: white;
 }
 
 .p8 {
@@ -342,8 +344,9 @@ h2 {
 
 .bubble-p8 {
   bottom: -130px;
-  left: -3px;
+  --bleft: -3px;
   text-align: center;
+  --bcolor: white;
 }
 
 .egg {
@@ -425,7 +428,7 @@ h3 {
 }
 
 .balloon-p10 {
-  top: -240px;
+  --btop: -240px;
 }
 
 /*Page 5*/
@@ -437,14 +440,16 @@ h3 {
 }
 
 .bubble-p11 {
-  top: -90px;
-  right: -120px;
+  --btop: -90px;
+  --bright: -120px;
   text-align: center;
+  --bcolor: white;
 }
 
 .bubble2-p11 {
   bottom: -46px;
-  left: -120px;
+  --bleft: -120px;
+  --bcolor: white;
 }
 
 .p12 {
@@ -456,7 +461,8 @@ h3 {
 
 .bubble-p12 {
   bottom: -96px;
-  left: -10px;
+  --left: -10px;
+  --bcolor: white;
 }
 
 .p13 {
@@ -487,8 +493,8 @@ h3 {
 }
 
 .bp15 {
-    top: 30px;
-    right: -146px;
+    --rtop: 30px;
+    --rright: -146px;
     --brtransform: rotate(-10deg);
 }
 
@@ -517,8 +523,8 @@ h3 {
 
 .bubble-p17 {
   font-weight: bold;
-  bottom: -96px;
-  right: 100px;
+  --rbottom: -96px;
+  --rright: 100px;
   --brtransform: rotate(16deg);
 }
 
@@ -682,8 +688,8 @@ h1 {
 }
 
 .bubble-p17 {
-  bottom: -96px;
-  right: -120px;
+  --rbottom: -96px;
+  --rright: -120px;
   --brtransform: rotate(16deg);
 }
 

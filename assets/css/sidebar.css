@@ -13,7 +13,7 @@
 .sidebar::before {
   position: absolute;
   content: "";
-  background-image: url("assets/images/comicss-logo.svg");
+  background-image: url("../../comicss-logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(-90deg);

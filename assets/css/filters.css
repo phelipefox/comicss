@@ -1,5 +1,9 @@
 .grayscale {
-   filter: grayscale(100%);
+   filter: var(--grayscale(100%));
+}
+
+.classic {
+    filter: saturate(0) brightness(0.8) contrast(1.5) opacity(1) sepia(50%);
 }
 
 .blur {
@@ -8,4 +12,73 @@
 
 .back-blur {
     backdrop-filter: blur(6px);
+}
+
+.blend-screen {
+    mix-blend-mode: screen;
+}
+
+.blend-light {
+    mix-blend-mode: plus-lighter;
+}
+
+.overlay {
+    mix-blend-mode: overlay;
+}
+
+.hatches-dot {
+    mix-blend-mode: multiply; background-image: url("../../assets/images/textures/dots-gradient.svg");
+    /*transform: rotate(12deg);*/
+}
+
+.cut {
+    overflow: hidden;
+}
+
+.hidden {
+    filter: opacity(0);
+}
+
+.erase {
+   mix-blend-mode: lighten;
+   filter: brightness(800%) drop-shadow(-3px 0px 0 black) drop-shadow(3px 0px 0 black) drop-shadow(0px 3px 0 black) drop-shadow(0px -3px 0 black);
+}
+
+.shadow {
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.solid-shadow {
+    filter: drop-shadow(2rem 1rem 0.2rem #00000091);
+}
+
+.bright {
+    filter: drop-shadow(0 0 0.75rem white);
+}
+
+.outline {
+   filter: drop-shadow(-4px 0px 0 white) drop-shadow(4px 0px 0 white) drop-shadow(0px 4px 0 white) drop-shadow(0px -4px 0 white);
+}
+
+.color-aberration {
+   mix-blend-mode: hard-light;
+   filter: drop-shadow(-3px 0px 0 #0c2ffb) drop-shadow(3px 0px 0 #2cfcfd) drop-shadow(0px 3px 0 #fb203b) drop-shadow(0px -3px 0 #fefc4b);
+}
+
+.black-outline {
+   filter: drop-shadow(-3px 0px 0 black) drop-shadow(3px 0px 0 black) drop-shadow(0px 3px 0 black) drop-shadow(0px -3px 0 black);
+}
+
+.rgb {
+  animation:animate 60s linear infinite;
+}
+@keyframes animate{
+	0%{
+	background-position: 0 0;
+	filter:hue-rotate(0deg);
+	}
+	100%{
+	background-position: 0 0;
+	filter:hue-rotate(360deg);
+	}
 }

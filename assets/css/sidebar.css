@@ -4,29 +4,42 @@
     top: 0;
     left: -8px;
     width: 80px;
-    height: 100%;
+    height: 100vh;
     /*border-radius: 0px 0px 14px 14px;*/
     background: #242424;
+    z-index: 9;
 }
 
-.logo {
-    transform: rotate(-90deg);
-    margin-top: 100%;
-    margin-left: -72%;
-    width: 200px;
+.sidebar::before {
+  position: absolute;
+  content: "";
+  background-image: url("assets/images/comicss-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  top: -7%;
+  left: -233%;
+  height: 50px;
+  width: 462px;
 }
 
-.title2sidebar {
-    font-size: 1em;
+.comic-name {
+    position: absolute;
+    font-family: 'Sevillana';
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
     transform: rotate(-90deg);
-    margin-top: 50vh;
-    margin-left: -20%;
-    width: 200px;
+    top: 50%;
+    right: -4%;
+    white-space: nowrap;
+    max-width: 100%;
 }
 
 .toggle {
+    position: absolute;
     transform: rotate(-90deg);
-    margin-top: 64vh;
+    bottom: 4%;
     margin-left: -125%;
     width: 200px;
 }
@@ -35,44 +48,43 @@
     border: 0;
 }
 
-/*.selector input[type="radio"]#coloron {*/
-/*}*/
-
-/*.selector input[type="radio"]#coloroff {*/
-/*}*/
-
 :root:has(:checked) {
 
 }
 
 :root:has(:checked) {
-    filter: grayscale(100%);
-}
+    filter: saturate(0) brightness(0.8) contrast(1.1) opacity(.94) sepia(90%);
+    mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
+    }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
 
 .sidebar {
-    position: fixed;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 70px;
-    /*border-radius: 0px 0px 14px 14px;*/
-    background: #242424;
 }
 
-.logo {
+.sidebar::before {
+  transform: rotate(0deg);
+  top: 12%;
+  left: 1%;
+  height: 50px;
+  width: 462px;
+}
+
+.comic-name {
     transform: rotate(0deg);
-    margin-top: 1.5%;
-    margin-left: 3%;
-    width: 180px;
+    top: -55%;
+    right: 37%;
 }
 
 .toggle {
     transform: rotate(0deg);
+    bottom: -20%;
     margin-top: -129px;
-    margin-left: 66%;
+    right: -5%;
     width: 200px;
 }
 }
@@ -80,33 +92,37 @@
 @media only screen and (min-height: 1000px) {
 
 .sidebar {
-    position: fixed;
-    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 90px;
-    /*border-radius: 0px 0px 14px 14px;*/
-    background: #242424;
 }
 
-.logo {
+.sidebar::before {
+  transform: rotate(0deg);
+  top: 12%;
+  left: 1%;
+  height: 64px;
+  width: 462px;
+}
+
+.comic-name {
+    font-size: 2.8rem;
     transform: rotate(0deg);
-    margin-top: 0.5%;
-    margin-left: 3%;
-    width: 280px;
+    top: -40%;
+    right: 44%;
 }
 
 .toggle {
     transform: rotate(0deg);
     margin-top: -142px;
-    margin-left: 76%;
+    top: 108%;
+    right: 1%;
     width: 200px;
 }
 }
 
 /*Toggle Switch*/
-
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -137,7 +153,7 @@ label:after {
 }
 
 input:checked + label {
-	background: #000;
+	background: #555;
 }
 
 input:checked + label:after {

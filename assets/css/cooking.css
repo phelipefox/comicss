@@ -428,8 +428,9 @@ h3 {
 }
 
 .balloon-p10 {
-  --btop: -240px;
+  --btop: 30px;
   --bcolor: white;
+  --ltop: -200px;
 }
 
 /*Page 5*/

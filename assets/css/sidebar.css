@@ -53,7 +53,7 @@
 }
 
 :root:has(:checked) {
-    filter: saturate(0) brightness(0.8) contrast(1.1) opacity(.94) sepia(90%);
+    filter: opacity(0.8) saturate(0) brightness(.9) contrast(1.5) sepia(30%);
     mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
     }
 

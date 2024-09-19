@@ -124,6 +124,17 @@
     transform-origin: bottom; }
 }
 
+.jump {
+    position: absolute;
+    animation: jump .6s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+}
+
+@keyframes jump {
+
+  0% { transform: translateY(0%); }
+100% { transform: translateY(20%); }
+}
+
 .spin-h {
     animation: spin-h .5s linear 0s infinite alternate;
 }

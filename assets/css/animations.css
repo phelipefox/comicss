@@ -344,20 +344,54 @@
 	51% {  transform: scale(0, 0) translate(-300px, 0); }	
 }
 
-.angry {
-    animation: angry .5s linear 0s infinite alternate;
-    /*animation: Frames .5s cubic-bezier(.66,0,.36,1.01) 0s infinite alternate;*/
+.angry, .shake {
+    animation: angry .1s linear 0s infinite alternate;
 }
 
 @keyframes angry {
 
-  10% {
-    transform: rotate3d(0, 0, 1, 3deg);
-  }
+  0% { transform: rotate(4deg); }
+100% { transform: rotate(-4deg) translateY(-30px); }
+}
 
-100% {
-    transform: rotate3d(0, 0, 1, -3deg);
-  }
+.shrink, .oppressed {
+    animation: shrink 16s linear 0s infinite alternate;
+}
+
+@keyframes shrink {
+
+  0% { transform: scale(1); }
+100% { transform: scale(.2); }
+}
+
+.grow, .oppressor {
+    animation: grow 16s linear 0s infinite alternate;
+}
+
+@keyframes grow {
+
+  0% { transform: scale(1); }
+100% { transform: scale(2); }
+}
+
+.vibrate {
+    animation: vibrate .1s cubic-bezier(.76,-2.11,.21,2.81) 0s infinite alternate;
+}
+
+@keyframes vibrate {
+
+  0% { transform: rotate(3deg) ;}
+100% { transform: rotate(-3deg) translateX(-10px); }
+}
+
+.walk, .speaking {
+    animation: walk .3s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+}
+
+@keyframes walk {
+
+  0% { transform: translateY(8px); }
+100% { transform: translateY(-8px); }
 }
 
 .blinkLight {

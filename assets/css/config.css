@@ -56,11 +56,20 @@ section {
     object-fit: scale-down;
 }
 
+.flip {
+    transform: scaleX(-1);
+}
+
 .upside-down {
     transform: rotate(180deg);
 }
 
 .top-layer {
+    z-index: 9;
+}
+
+.show-border, .display {
+    border: dashed 4px #2b2b2b;
     z-index: 9;
 }
 

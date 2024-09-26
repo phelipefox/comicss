@@ -1,10 +1,3 @@
-@media only screen and (max-width: 490px) {
-
-.bubble,.bubbleR,.bubbleL {
-  max-height: 20vh;
-}
-}
-
 .floatingtexty {
   display: flex;
   position: absolute;
@@ -182,4 +175,80 @@
     radial-gradient(circle closest-side at 88% 88%,var(--g)),
     radial-gradient(20% 20% at 48% 55%,var(--g)),
     radial-gradient(25% 25% at 25% 0,var(--g));
+}
+
+/*----------Balloom in Screen Positioning----------*/
+
+.balloom-top-center, .balloom-top-middle {
+  text-align: center;
+  top: calc(10% - 100px);
+  right: calc(50% - 150px);
+}
+
+.balloom-bottom-center, .balloom-bottom-middle {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  right: calc(50% - 150px);
+}
+
+.balloom-top-left {
+  text-align: center;
+  top: calc(10% - 100px);
+  left: calc(30% - 150px);
+}
+
+.balloom-top-right {
+  text-align: center;
+  top: calc(10% - 100px);
+  right: calc(30% - 150px);
+}
+
+.balloom-bottom-left {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  left: calc(30% - 150px);
+}
+
+.balloom-bottom-right {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  right: calc(30% - 150px);
+}
+
+/*----------Balloom in Panel Positioning----------*/
+
+.panel-balloom-top-center, .panel-balloom-top-middle {
+  text-align: center;
+  top: calc(10% - 100px);
+  right: calc(50% - 150px);
+}
+
+.panel-balloom-bottom-center, .panel-balloom-bottom-middle {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  right: calc(50% - 150px);
+}
+
+.panel-balloom-top-left {
+  text-align: center;
+  top: calc(10% - 100px);
+  left: calc(10% - 150px);
+}
+
+.panel-balloom-top-right {
+  text-align: center;
+  top: calc(10% - 100px);
+  right: calc(10% - 150px);
+}
+
+.panel-balloom-bottom-left {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  left: calc(10% - 150px);
+}
+
+.panel-balloom-bottom-right {
+  text-align: center;
+  bottom: calc(10% - 100px);
+  right: calc(10% - 150px);
 }

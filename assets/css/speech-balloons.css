@@ -149,8 +149,37 @@
   z-index: 1;
 }
 
-.shadow {
-  box-shadow: 0 0 3px 2px #000;
-  }
-  /*filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));*/
+.thinkR {
+  display: flex;
+  color: #000;
+  max-width: 14em;
+  height: 6em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-3px 0px 0 #3d3935) drop-shadow(3px 0px 0 #3d3935) drop-shadow(0px 3px 0 #3d3935) drop-shadow(0px -3px 0 #3d3935);
+}
+.thinkR {
+  --b: 3em;
+  --p: 50%;
+  --r: 1.2em;
+
+  padding: 1em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+}
+.thinkR:before {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: clamp(0%,var(--p) - var(--b)/4,100% - var(--b)/2);
+  width: var(--b);
+  aspect-ratio: 1;
+  background: inherit;
+  --g:#000 calc(100% - 1px),#0000;
+  -webkit-mask:
+    radial-gradient(circle closest-side at 88% 88%,var(--g)),
+    radial-gradient(20% 20% at 48% 55%,var(--g)),
+    radial-gradient(25% 25% at 25% 0,var(--g));
 }

@@ -131,8 +131,205 @@
 
 @keyframes jump {
 
-  0% { transform: translateY(0%); }
-100% { transform: translateY(20%); }
+  0% { transform: translateY(0%) scaleX(96%); }
+  100% { transform: translateY(24%) scaleY(98%); }
+}
+
+.divert {
+    position: absolute;
+    animation: divert .6s cubic-bezier(1,0,0,1) 0s infinite alternate;
+}
+
+@keyframes divert {
+
+  0% { transform: translateX(0%) scaleX(96%); }
+  100% { transform: translateX(24%) scaleX(98%); }
+}
+
+.deform {
+    position: absolute;
+    animation: deform .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+}
+
+.deform-slow {
+    position: absolute;
+    animation: deform 10s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+}
+
+.i-deform {
+    position: absolute;
+    animation: deform .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate-reverse;
+}
+
+@keyframes deform {
+
+  0% { transform: scaleX(90%); }
+  100% { transform: scaleY(90%); }
+}
+
+.water, .water-slow {
+    position: relative;
+    top: -12%;
+    left: -12%;
+    height: 120%;
+    width: 120%;
+    animation: water-distortion 10s cubic-bezier(.65,.17,.31,.75) 0s infinite alternate;
+}
+
+.water-fast {
+    position: relative;
+    top: -12%;
+    left: -12%;
+    height: 120%;
+    width: 120%;
+    animation: water-distortion .3s cubic-bezier(.65,.17,.31,.75) 0s infinite alternate;
+}
+
+@keyframes water-distortion {
+
+  0% { transform: scaleX(90%); }
+  100% { transform: scaleY(90%); }
+}
+
+.vertical-deform {
+    position: absolute;
+    animation: vertical-deform .6s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+}
+
+@keyframes vertical-deform {
+
+  0% { transform: translateY(10%) scaleX(90%); }
+  100% { transform: translateY(-20%); }
+}
+
+.horizontal-deform {
+    position: absolute;
+    animation: horizontal-deform .6s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+}
+
+@keyframes horizontal-deform {
+
+  0% { transform: translateX(20%) scaleX(80%); }
+  100% { transform: translateX(-20%); }
+}
+
+.pendulum {
+    position: absolute;
+    animation: pendulum 10s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes pendulum {
+
+  0% { transform: rotate(90deg) translateX(20%); transform-origin: top center; }
+  50% { transform: rotate(-90deg) translateX(-20%); transform-origin: top center; }
+  100% { transform: rotate(90deg) translateX(20%); transform-origin: top center; }
+}
+
+.pendulum-plus {
+    position: absolute;
+    animation: pendulum-plus 10s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes pendulum-plus {
+
+  0% { transform: rotate(90deg) translateY(40%); transform-origin: top center; }
+  50% { transform: rotate(-90deg) translateY(40%); transform-origin: top center; }
+  100% { transform: rotate(90deg) translateY(40%); transform-origin: top center; }
+}
+
+.swing {
+    position: absolute;
+    animation: swing 4s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes swing {
+
+  0% { transform: rotate(33deg) translateX(-5%); transform-origin: top center; }
+  50% { transform: rotate(-33deg) translateX(5%); transform-origin: top center; }
+  100% { transform: rotate(33deg) translateX(-5%); transform-origin: top center; }
+}
+
+.i-swing, .dizzy, .dizziness, .unbalanced {
+    position: absolute;
+    animation: i-swing 4s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes i-swing {
+
+  0% { transform: rotate(33deg) translateX(-5%); transform-origin: bottom center; }
+  50% { transform: rotate(-33deg) translateX(5%); transform-origin: bottom center; }
+  100% { transform: rotate(33deg) translateX(-5%); transform-origin: bottom center; }
+}
+
+.wind, .wave, .fall-leaf {
+    position: absolute;
+    animation: wind-movement 2.5s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes wind-movement {
+
+  0% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
+  50% { transform: rotate(-33deg) translateX(5%); transform-origin: top left; }
+  100% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
+}
+
+.wind-fast {
+    position: absolute;
+    animation: wind-fast-movement 2.5s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+}
+
+@keyframes wind-fast-movement {
+
+  0% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
+  25% { transform: rotate(-33deg) translateX(5%); transform-origin: bottom left; }
+  50% { transform: rotate(33deg) translateX(-5%); transform-origin: top right; }
+  75% { transform: rotate(-33deg) translateX(5%); transform-origin: bottom left; }
+  100% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
+}
+
+.flip-sides, .look-sides {
+    position: absolute;
+    animation: flip-sides .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+}
+
+@keyframes flip-sides {
+
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(-1); }
+}
+
+.rotate-arround {
+    position: absolute;
+    top: 50%;
+    animation: rotate-arround 10s linear 0s infinite;
+}
+
+@keyframes rotate-arround {
+
+  0% { transform: rotate(-360deg) translateX(40%); transform-origin: top center; }
+  100% { transform: rotate(360deg) translateX(40%); transform-origin: top center; }
+}
+
+.invert-rotate-arround {
+    position: absolute;
+    animation: invert-rotate-arround 10s linear 0s infinite;
+}
+
+@keyframes invert-rotate-arround {
+
+  0% { transform: rotate(360deg) translateX(30%); transform-origin: top center; }
+  100% { transform: rotate(-360deg) translateX(30%); transform-origin: top center; }
+}
+
+.spin-arround {
+    position: absolute;
+    animation: spin-arround 10s linear 0s infinite;
+}
+
+@keyframes spin-arround {
+
+  0% { transform: rotate(360deg) translateX(40%); transform-origin: bottom center; }
+  100% { transform: rotate(-360deg) translateX(40%); transform-origin: bottom center; }
 }
 
 .spin-h {
@@ -306,6 +503,16 @@
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+.i-float, .inverse-float {
+    animation: float 5s ease 0s infinite reverse forwards;
+}
+
+@keyframes float {
+	0% { transform: translatey(0px); }
+	50% { transform: translatey(-20px); }
+	100% { transform: translatey(0px); }
 }
 
 .zoomIn {

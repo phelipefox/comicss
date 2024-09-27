@@ -387,6 +387,109 @@ animation-delay: 2s;
     100% { transform: translate3d(0, 0, 1px) rotate(360deg); }
 }
 
+.fade-in {
+    animation: fade-in 6s cubic-bezier(.17,.84,.44,1) 1 forwards;
+    animation-delay: var(--delay-fade-in);
+}
+
+@keyframes fade-in {
+	0% { opacity: 0;}
+	90% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+.fade-out {
+    animation: fade-out 6s cubic-bezier(.17,.84,.44,1) 1 forwards;
+    animation-delay: var(--delay-fade-out);
+}
+
+@keyframes fade-out {
+	0% { opacity: 1;}
+	90% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+.fade-in-out {
+    animation-name: fade-in-out;
+    animation-duration: var(--time-fade-in-out);
+    animation-delay: var(--delay-fade-in-out);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: cubic-bezier(.17,.84,.44,1) ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-out {
+	0% { opacity: 0;}
+	10% { opacity: 1;}
+	90% { opacity: 1;}
+	100% { opacity: 0;}
+}
+
+.mirror, .left-mirror, .reflection, .reflection-left {
+    position: relative;
+    left: calc(-300px);
+    height: 100%;
+    width: 100%;
+    /*background: url(attr(mirror));*/
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 2;
+    object-fit: scale-down;
+    transform: scaleX(86%) scaleX(-1);
+    filter: opacity(0.7);
+    mix-blend-mode: color-burn;
+}
+
+.mirror, .right-mirror, .reflection, .reflection-right {
+    position: relative;
+    right: calc(-300px);
+    height: 100%;
+    width: 100%;
+    /*background: url(attr(mirror));*/
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 2;
+    object-fit: scale-down;
+    transform: scaleX(86%) scaleX(-1);
+    filter: opacity(0.7);
+    mix-blend-mode: color-burn;
+}
+
+.mirror, .top-mirror, .reflection, .reflection-top {
+    position: relative;
+    top: calc(-400px);
+    height: 100%;
+    width: 100%;
+    /*background: url(attr(mirror));*/
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 2;
+    object-fit: scale-down;
+    transform: scaleY(86%) scaleY(-1);
+    filter: opacity(0.7);
+    mix-blend-mode: color-burn;
+}
+
+.mirror, .bottom-mirror, .reflection, .reflection-bottom {
+    position: relative;
+    bottom: calc(-400px);
+    height: 100%;
+    width: 100%;
+    /*background: url(attr(mirror));*/
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 2;
+    object-fit: scale-down;
+    transform: scaleY(66%) scaleY(-1);
+    filter: opacity(0.7);
+    mix-blend-mode: color-burn;
+}
+
 .particles {
     position: absolute;
     width: 100%;

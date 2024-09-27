@@ -135,6 +135,17 @@
   100% { transform: translateY(24%) scaleY(98%); }
 }
 
+.i-jump {
+    position: absolute;
+    animation: i-jump .6s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+}
+
+@keyframes i-jump {
+
+  0% { transform: translateY(24%) scaleX(98%); }
+  100% { transform: translateY(0%) scaleY(96%); }
+}
+
 .divert {
     position: absolute;
     animation: divert .6s cubic-bezier(1,0,0,1) 0s infinite alternate;
@@ -392,6 +403,17 @@
 
   0% { transform: translateY(8px); }
 100% { transform: translateY(-8px); }
+}
+
+.i-walk, .i-speaking {
+    position: absolute;
+    animation: i-walk .3s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+}
+
+@keyframes i-walk {
+
+  0% { transform: translateY(-8px); }
+100% { transform: translateY(8px); }
 }
 
 .blinkLight {

@@ -73,6 +73,15 @@ section {
     z-index: 9;
 }
 
+.show-white-border, .white-display {
+    border: dashed 4px #fff;
+    z-index: 9;
+}
+
+.blink-element {
+    animation: fade-in-out 1s ease-out infinite backwards;
+}
+
 .read-mode {
 	position: absolute;
 	width: 340px;

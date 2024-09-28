@@ -182,13 +182,13 @@
 .balloom-top-center, .balloom-top-middle {
   text-align: center;
   top: calc(10% - 100px);
-  right: calc(50% - 150px);
+  right: calc(50% - 90px);
 }
 
 .balloom-bottom-center, .balloom-bottom-middle {
   text-align: center;
   bottom: calc(10% - 100px);
-  right: calc(50% - 150px);
+  right: calc(50% - 90px);
 }
 
 .balloom-top-left {
@@ -200,6 +200,18 @@
 .balloom-top-right {
   text-align: center;
   top: calc(10% - 100px);
+  right: calc(30% - 150px);
+}
+
+.balloom-center-left {
+  text-align: center;
+  top: calc(30% - 0px);
+  left: calc(30% - 150px);
+}
+
+.balloom-center-right {
+  text-align: center;
+  top: calc(30% - 0px);
   right: calc(30% - 150px);
 }
 
@@ -220,13 +232,13 @@
 .panel-balloom-top-center, .panel-balloom-top-middle {
   text-align: center;
   top: calc(10% - 100px);
-  right: calc(50% - 150px);
+  right: calc(50% - 90px);
 }
 
 .panel-balloom-bottom-center, .panel-balloom-bottom-middle {
   text-align: center;
   bottom: calc(10% - 100px);
-  right: calc(50% - 150px);
+  right: calc(50% - 90px);
 }
 
 .panel-balloom-top-left {
@@ -238,6 +250,18 @@
 .panel-balloom-top-right {
   text-align: center;
   top: calc(10% - 100px);
+  right: calc(10% - 150px);
+}
+
+.panel-balloom-center-left {
+  text-align: center;
+  top: calc(30% - 0px);
+  left: calc(10% - 150px);
+}
+
+.panel-balloom-center-right {
+  text-align: center;
+  top: calc(30% - 0px);
   right: calc(10% - 150px);
 }
 

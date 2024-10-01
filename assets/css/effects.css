@@ -111,6 +111,71 @@ animation-delay: 2s;
     100% { background-position: 0% 0%; }
 }
 
+.lens-flare-2d {
+    position: absolute;
+    width: 45vmin;
+    height: 45vmin;
+    border: solid #ee8546 2px;
+    border-radius: 100%;
+    background: #fdb4f859;
+    filter: blur(4px);
+}
+
+.lens-flare-2d::before {
+    position: absolute;
+    content: '';
+    width: 16vmin;
+    height: 16vmin;
+    top: -70px;
+    left: -60px;
+    border-radius: 100%;
+    background: #fafbccc9;
+}
+
+.lens-flare-2d::after {
+    position: absolute;
+    content: '';
+    width: 32vmin;
+    height: 32vmin;
+    top: 190px;
+    left: 190px;
+    border-radius: 100%;
+    background: #e5fbffe5;
+}
+
+.bubble-2d {
+    position: absolute;
+    width: 45vmin;
+    height: 45vmin;
+    border: solid #c0c9e6 4px;
+    border-radius: 100%;
+    background: #68b8e859;
+}
+
+.bubble-2d::before {
+    content: '';
+    width: 16vmin;
+    height: 16vmin;
+    top: 60px;
+    left: 40px;
+    position: absolute;
+    border-radius: 100%;
+    background: white;
+    filter: blur(24px);
+}
+
+.bubble-2d::after {
+    content: '';
+    width: 43vmin;
+    height: 43vmin;
+    position: absolute;
+    border-right: solid #16399f 18px;
+    border-radius: 100%;
+    background: #fff0;
+    filter: blur(14px);
+    transform: rotate(45deg);
+}
+
 .black-focal-gradient {
     position: absolute;
     height: 100%;

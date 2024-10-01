@@ -54,6 +54,11 @@ section.title {
    margin: 0 auto;
 }
 
+.rtl, .right-to-left, .invert-orientation, .oriental-read-mode {
+    grid-auto-flow: dense;
+    direction: rtl;
+}
+
 .panel {
   background-color: #fff;
   background-color: var(--panel-color);

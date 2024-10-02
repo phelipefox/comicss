@@ -73,6 +73,16 @@
 
 }
 
+.zoom-frames {
+    position: absolute;
+    animation: zoomFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+}
+
+@keyframes zoomFrames {
+	0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
 .i-frames {
     position: absolute;
     animation: iFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;

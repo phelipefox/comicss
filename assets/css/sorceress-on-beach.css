@@ -45,20 +45,36 @@ section {
   text-shadow: -6px -6px 0 #484848, 6px -6px 0 #484848, -6px 6px 0 #484848, 6px 6px 0 #484848;
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    height: 200%;
-    justify-content: center;
-    align-items: center;
+.page-layout {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(4, minmax(25%, 1fr));
+   width: 70vw;
+   margin: 0 auto;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3%;
-    justify-content: center;
-    align-items: center;
+.panel {
+  background-color: #fff;
+  background-color: var(--bg-color);
+  border: 4px solid #2b2b2b;
+  margin: 1.4%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.image-over {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+    object-position: 50% 6%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .balloons {
@@ -73,8 +89,6 @@ section {
     width: var(--floating-image-w);
     height: var(--floating-image-h);
     margin: 2%;
-    /*background-color: #8e8e8e;*/
-    /*border: 4px solid #000;*/
     background-repeat: no-repeat;
     background-position: center center;
     object-fit: scale-down;
@@ -83,18 +97,6 @@ section {
 .panel-locked {
     width: 20vw;
     min-width: 80vh;
-    height: auto;
-    margin: 2%;
-    background-color: #fff;
-    border: 4px solid #000;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.panel {
-    width: 50vw;
-    min-width: 70vw;
     height: auto;
     margin: 2%;
     background-color: #fff;
@@ -118,15 +120,14 @@ section {
 }
 
 .full-panel {
-    width: auto;
-    min-width: auto;
-    height: 100vh;
-    margin: 3%;
+   grid-row: span 6;
+   grid-column: span 4;
     background-color: #fff;
     border: 4px solid #000;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    z-index: 1;
 }
 
 .screen-cover {
@@ -138,10 +139,68 @@ section {
     object-position: 50% 20%;
 }
 
+.space-line {
+    grid-row: span 1;
+    grid-column: span 4;
+}
+
+.p1 {
+   grid-row: span 3;
+   grid-column: span 3;
+}
+
+.p2 {
+   grid-row: span 3;
+   grid-column: span 4;
+}
+
+.p3 {
+   grid-row: span 6;
+   grid-column: span 4;
+   margin-top: -10%;
+   margin-bottom: -10%;
+}
+
+.p4 {
+   grid-row: span 6;
+   grid-column: span 4;
+   margin-top: -10%;
+   margin-bottom: -10%;
+}
+
+.p5 {
+   grid-row: span 6;
+   grid-column: span 4;
+   margin-top: -10%;
+   margin-bottom: -10%;
+}
+
+.p6 {
+   grid-row: span 3;
+   grid-column: span 4;
+}
+
+.p7 {
+   grid-row: span 3;
+   grid-column: span 4;
+   background-image: url("../../assets/images/sb-p3p2.jpg");
+}
+
+.p8 {
+   grid-row: span 3;
+   grid-column: span 4;
+}
+
+.p9 {
+   grid-row: span 6;
+   grid-column: span 4;
+   margin-top: -20%;
+   margin-bottom: -10%;
+}
+
 /*----------------*/
 
 section:nth-child(1) {
-
   --h1color: #fff;
   --h1top: 50%;
   --h1font-size: 9vh;
@@ -160,53 +219,55 @@ section:nth-child(2) {
   --fontsize: 6rem;
   --ttop: 160%; --tleft: 74%;
 }
+
 .balloon1 {
   position: relative;
-  font-size: 3.4vw;
-   --lleft: 10%;
-   --ltop: 120%;
+font-size: 2rem;
+  --lleft: -18%;
+  --ltop: 15%;
    --brcolor: #ffffff;
 }
+
 .balloon2 {
   position: relative;
-  font-size: 3.4vw;
-   --lleft: 5%;
-   --ltop: 164%;
+  font-size: 2rem;
+   --lleft: -8%;
+   --ltop: 36%;
 }
-
 
 section:nth-child(3) {
   position: relative;
-  font-size: 4vw;
+font-size: 2rem;
   --bltransform: rotate(-12deg);
-  --ltop: 6%; --lleft: -12%;
+  --ltop: 11%;
+  --lleft: 2%;
 }
 
 section:nth-child(4) {
   position: relative;
-  font-size: 3.4vw;
+  font-size: 2rem;
  --lleft: -12%;  --ltop: 2%;
 }
 
 section:nth-child(5) {
   position: relative;
-  font-size: 4vw;
+  font-size: 2rem;
   --ltop: 2%; --lleft: -4%;
 }
 
 section:nth-child(6) {
   position: relative;
-  font-size: 3.4vw;
-  --ltop: 32%; --lleft: -9%;
+  font-size: 2rem;
+  --ltop: 32%; --lleft: -15%;
 }
 section:nth-child(7) {
   position: relative;
-  --h2top: 30%;
+  --h2top: 20vh;
 }
 section:nth-child(8) {
   --transform: rotate(12deg);
   --h1top: 19rem;
-  --h1font-size: 16vw;
+  --h1font-size: 12rem;
 }
 
 section:nth-child(9) {
@@ -214,24 +275,13 @@ section:nth-child(9) {
 
 section:nth-child(10) {
   position: relative;
-  --h1font-size: 14vw;
+  --h1font-size: 12rem;
 }
 
 .balloon7 {
-   font-size: 3.4vw;
+   font-size: 2rem;
    --bcolor: #fed9f5;
    --btop: 66vh; --bright: 6%;
-
-}
-
-.whitefade {
-   position: absolute;
-   bottom: 0%;
-   width: 100vw;
-   height: 26vh;
-   background: rgb(2,0,36);
-   background: linear-gradient(180deg, rgba(2,0,36,0) 16%, rgba(248, 247, 242) 80%);
-   z-index: 3;
 }
 
 section:nth-child(11) {
@@ -240,17 +290,15 @@ section:nth-child(11) {
    --panel-custom-w: 60vw;
    --panel-custom-h: 40vh;
    --panel-custom-position: 10% 20%;
-   }
+}
 
 .floating-image {
    --floating-image-w: 60vw;
    --floating-image-h: 40vh;
    margin-bottom: -30%;
-   }
+}
 
 .bubbleR {
   --rright: 10%;
-  font-size: 4vw;
-}
-
+  font-size: 3rem;
 }

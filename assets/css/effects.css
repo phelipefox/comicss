@@ -204,6 +204,26 @@ animation-delay: 2s;
     background-size: cover;
 }
 
+.orange-focal-gradient {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(230, 114, 114, 0.5) 50%, rgb(249, 205, 149) 80%, rgb(255, 190, 143) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blue-focal-gradient {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(114, 154, 230, 0.5) 50%, rgb(91, 93, 162) 80%, rgb(41, 42, 108) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .white-water-gradient-fast {
     position: absolute;
     top: -12%;
@@ -236,7 +256,7 @@ animation-delay: 2s;
   100% { opacity: 0; transform: scaleY(90%); }
 }
 
-.shame, .hot {
+.shame, .hot, .red {
     position: absolute;
     left: 25%;
     height: 100%;
@@ -257,7 +277,7 @@ animation-delay: 2s;
   100% { opacity: 1; }
 }
 
-.sad, .cold {
+.sad, .cold, .blue {
     position: absolute;
     left: 25%;
     height: 100%;

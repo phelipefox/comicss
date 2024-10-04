@@ -22,8 +22,24 @@
     mix-blend-mode: plus-lighter;
 }
 
+.plus-light {
+    mix-blend-mode: plus-lighter;
+}
+
+.color-burn {
+    mix-blend-mode: color-burn;
+}
+
 .overlay {
     mix-blend-mode: overlay;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.isolate {
+  isolation: isolate;
 }
 
 .hatches-dot {

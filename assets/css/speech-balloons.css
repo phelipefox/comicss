@@ -13,6 +13,52 @@
   top: var(--ttop); left: var(--tleft); right: var(--tright);
 }
 
+.speech-bubble, .speech-bubbleB {
+  display: flex;
+  color: #000;
+  max-width: 10em;
+  height: 8em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-3px 0px 0 #3d3935) drop-shadow(3px 0px 0 #3d3935) drop-shadow(0px 3px 0 #3d3935) drop-shadow(0px -3px 0 #3d3935);
+}
+
+.speech-bubble, .speech-bubbleB {
+  --speech-tail-base: 3em;
+  --speech-tail-height: 1.8em;
+  --speech-tail-thickness: .8;
+  --speech-tail-position: 50%;
+
+  padding: 1em;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+}
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  left: 98%;
+  top: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+  width: var(--speech-tail-height);
+  height: var(--speech-tail-base);
+  background: inherit;
+  border-top-right-radius: 100%;
+  mask: radial-gradient(105% calc(var(--speech-tail-thickness)*100%) at 0 100%,#0000 99%,#000 101%);
+}
+
+.speech-bubbleB:before {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+  width: var(--speech-tail-base);
+  height: var(--speech-tail-height);
+  background: inherit;
+  border-bottom-left-radius: 100%;
+  mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 105% at 100% 0,#0000 99%,#000 101%);
+}
+
 .bubble {
   display: grid;
   justify-content: center;

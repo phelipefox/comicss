@@ -111,3 +111,82 @@ section {
     left: 14%;
     top: 10%;
 }
+
+/*----------Fast Positioning System----------*/
+/*----------Normal----------*/
+
+.position-top-left {
+  position: absolute;
+  top: calc(0% - 100px);
+  left: calc(0% - 300px);
+}
+
+.position-top-right {
+  position: absolute;
+  top: calc(0% - 100px);
+  left: calc(300px - 0%);
+}
+
+.position-bottom-left {
+  position: absolute;
+  bottom: calc(0% - 100px);
+  left: calc(0% - 300px);
+}
+
+.position-bottom-right {
+  position: absolute;
+  bottom: calc(0% - 100px);
+  left: calc(300px - 0%);
+}
+
+/*----------Extremities----------*/
+
+.limit-position-top-left {
+  position: absolute;
+  top: calc(0% - 50%);
+  left: calc(0% - 50%);
+}
+
+.limit-position-top-right {
+  position: absolute;
+  top: calc(0% - 50%);
+  left: calc(50% - 0%);
+}
+
+.limit-position-bottom-left {
+  position: absolute;
+  bottom: calc(0% - 50%);
+  left: calc(0% - 50%);
+}
+
+.limit-position-bottom-right {
+  position: absolute;
+  bottom: calc(0% - 50%);
+  left: calc(50% - 0%);
+}
+
+/*----------Close----------*/
+
+.close-position-top-left {
+  position: absolute;
+  top: calc(0% - 150px);
+  left: calc(0% - 150px);
+}
+
+.close-position-top-right {
+  position: absolute;
+  top: calc(0% - 150px);
+  right: calc(0% - 150px);
+}
+
+.close-position-bottom-left {
+  position: absolute;
+  bottom: calc(0% - 150px);
+  left: calc(0% - 150px);
+}
+
+.close-position-bottom-right {
+  position: absolute;
+  bottom: calc(0% - 150px);
+  right: calc(0% - 150px);
+}

@@ -176,6 +176,18 @@ animation-delay: 2s;
     transform: rotate(45deg);
 }
 
+.black-gradient {
+   position: absolute;
+   left: -10%;
+   height: 120%;
+   width: 120%;
+   background-image: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(0,0,0,0.7525209913066789) 85%, rgb(0, 0, 0) 90%);
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 3;
+   mix-blend-mode: multiply;
+}
+
 .black-focal-gradient {
     position: absolute;
     height: 100%;
@@ -339,12 +351,12 @@ animation-delay: 2s;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    animation: flipaction .08s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation: shake-vertical .08s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
 }
 
-@keyframes flipaction {
-  0% { transform: rotate(0deg); }
-100% { transform: rotate(180deg); }
+@keyframes shake-vertical {
+  0% { transform: translateY(-1px); }
+100% { transform: translateY(1px); }
 }
 
 .fire-glow {
@@ -367,7 +379,7 @@ animation-delay: 2s;
 }
 
 .intense-glow {
-  background: radial-gradient(circle, rgba(255,255,255,1) 8%, rgba(164,198,255,0) 16%, rgba(79,26,26,0) 50%);
+  /*background: radial-gradient(circle, rgba(255,255,255,1) 8%, rgba(164,198,255,0) 16%, rgba(79,26,26,0) 50%);*/
   animation: intense-glow 2.5s infinite;
 }
 

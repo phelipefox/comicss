@@ -67,10 +67,8 @@
 }
 
 @keyframes Frames {
-
   0% { transform: rotate(-6deg); }
 100% { transform: rotate(6deg); }
-
 }
 
 .zoom-frames {
@@ -89,7 +87,6 @@
 }
 
 @keyframes iFrames {
-
   0% { transform: rotate(6deg); }
 100% { transform: rotate(-6deg); }
 
@@ -101,7 +98,6 @@
 }
 
 @keyframes lFrames {
-
     0% { transform: rotate(-6deg);
     transform-origin: left; }
     100% { transform: rotate(6deg);
@@ -114,7 +110,6 @@
 }
 
 @keyframes rFrames {
-
     0% { transform: rotate(-6deg);
     transform-origin: right; }
     100% { transform: rotate(6deg);
@@ -127,7 +122,6 @@
 }
 
 @keyframes bFrames {
-
     0% { transform: rotate(-6deg);
     transform-origin: bottom; }
     100% { transform: rotate(6deg);
@@ -140,7 +134,6 @@
 }
 
 @keyframes jump {
-
   0% { transform: translateY(0%) scaleX(96%); }
   100% { transform: translateY(24%) scaleY(98%); }
 }
@@ -151,7 +144,6 @@
 }
 
 @keyframes i-jump {
-
   0% { transform: translateY(24%) scaleX(98%); }
   100% { transform: translateY(0%) scaleY(96%); }
 }
@@ -162,7 +154,6 @@
 }
 
 @keyframes divert {
-
   0% { transform: translateX(0%) scaleX(96%); }
   100% { transform: translateX(24%) scaleX(98%); }
 }
@@ -183,7 +174,6 @@
 }
 
 @keyframes deform {
-
   0% { transform: scaleX(90%); }
   100% { transform: scaleY(90%); }
 }
@@ -207,7 +197,6 @@
 }
 
 @keyframes water-distortion {
-
   0% { transform: scaleX(90%); }
   100% { transform: scaleY(90%); }
 }
@@ -218,7 +207,6 @@
 }
 
 @keyframes vertical-deform {
-
   0% { transform: translateY(10%) scaleX(90%); }
   100% { transform: translateY(-20%); }
 }
@@ -229,7 +217,6 @@
 }
 
 @keyframes horizontal-deform {
-
   0% { transform: translateX(20%) scaleX(80%); }
   100% { transform: translateX(-20%); }
 }
@@ -240,7 +227,6 @@
 }
 
 @keyframes pendulum {
-
   0% { transform: rotate(90deg) translateX(20%); transform-origin: top center; }
   50% { transform: rotate(-90deg) translateX(-20%); transform-origin: top center; }
   100% { transform: rotate(90deg) translateX(20%); transform-origin: top center; }
@@ -252,10 +238,39 @@
 }
 
 @keyframes pendulum-plus {
-
   0% { transform: rotate(90deg) translateY(40%); transform-origin: top center; }
   50% { transform: rotate(-90deg) translateY(40%); transform-origin: top center; }
   100% { transform: rotate(90deg) translateY(40%); transform-origin: top center; }
+}
+
+.zig-zag-vertical, .speeking, .laughing {
+    position: absolute;
+    animation: zig-zag-vertical .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+}
+
+@keyframes zig-zag-vertical {
+  0% { transform: translateY(0%) scaleX(96%); }
+  100% { transform: translateY(4%) scaleY(98%); }
+}
+
+.zig-zag-horizontal {
+    position: absolute;
+    animation: zig-zag-horizontal .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+}
+
+@keyframes zig-zag-horizontal {
+  0% { transform: translateX(0%) scaleY(98%); }
+  100% { transform: translateX(4%) scaleX(96%); }
+}
+
+.zig-zag-center, .discussing {
+    position: absolute;
+    animation: zig-zag-center .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+}
+
+@keyframes zig-zag-center {
+  0% { transform: rotate(2deg); }
+  100% { transform: rotate(-2deg); }
 }
 
 .swing {
@@ -264,7 +279,6 @@
 }
 
 @keyframes swing {
-
   0% { transform: rotate(33deg) translateX(-5%); transform-origin: top center; }
   50% { transform: rotate(-33deg) translateX(5%); transform-origin: top center; }
   100% { transform: rotate(33deg) translateX(-5%); transform-origin: top center; }
@@ -276,7 +290,6 @@
 }
 
 @keyframes i-swing {
-
   0% { transform: rotate(33deg) translateX(-5%); transform-origin: bottom center; }
   50% { transform: rotate(-33deg) translateX(5%); transform-origin: bottom center; }
   100% { transform: rotate(33deg) translateX(-5%); transform-origin: bottom center; }
@@ -288,7 +301,6 @@
 }
 
 @keyframes wind-movement {
-
   0% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
   50% { transform: rotate(-33deg) translateX(5%); transform-origin: top left; }
   100% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
@@ -300,7 +312,6 @@
 }
 
 @keyframes wind-fast-movement {
-
   0% { transform: rotate(33deg) translateX(-5%); transform-origin: right center; }
   25% { transform: rotate(-33deg) translateX(5%); transform-origin: bottom left; }
   50% { transform: rotate(33deg) translateX(-5%); transform-origin: top right; }
@@ -314,7 +325,6 @@
 }
 
 @keyframes flip-sides {
-
   0% { transform: scaleX(1); }
   100% { transform: scaleX(-1); }
 }
@@ -326,7 +336,6 @@
 }
 
 @keyframes rotate-arround {
-
   0% { transform: rotate(-360deg) translateX(40%); transform-origin: top center; }
   100% { transform: rotate(360deg) translateX(40%); transform-origin: top center; }
 }
@@ -337,7 +346,6 @@
 }
 
 @keyframes invert-rotate-arround {
-
   0% { transform: rotate(360deg) translateX(30%); transform-origin: top center; }
   100% { transform: rotate(-360deg) translateX(30%); transform-origin: top center; }
 }
@@ -348,7 +356,6 @@
 }
 
 @keyframes spin-arround {
-
   0% { transform: rotate(360deg) translateX(40%); transform-origin: bottom center; }
   100% { transform: rotate(-360deg) translateX(40%); transform-origin: bottom center; }
 }
@@ -370,7 +377,6 @@
 }
 
 @keyframes angry {
-
   0% { transform: rotate(4deg); }
 100% { transform: rotate(-4deg) translateY(-30px); }
 }
@@ -380,7 +386,6 @@
 }
 
 @keyframes shrink {
-
   0% { transform: scale(1); }
 100% { transform: scale(.2); }
 }
@@ -390,7 +395,6 @@
 }
 
 @keyframes grow {
-
   0% { transform: scale(1); }
 100% { transform: scale(2); }
 }
@@ -400,7 +404,6 @@
 }
 
 @keyframes vibrate {
-
   0% { transform: rotate(3deg) ;}
 100% { transform: rotate(-3deg) translateX(-10px); }
 }
@@ -410,7 +413,6 @@
 }
 
 @keyframes walk {
-
   0% { transform: translateY(8px); }
 100% { transform: translateY(-8px); }
 }
@@ -421,7 +423,6 @@
 }
 
 @keyframes i-walk {
-
   0% { transform: translateY(-8px); }
 100% { transform: translateY(8px); }
 }
@@ -539,7 +540,7 @@
 }
 
 .stretch {
-    position: absolute;
+	position: absolute;
 	animation-name: stretch;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
@@ -555,6 +556,7 @@
 }
 
 .float {
+    position: absolute;
     animation: float 5s ease 0s infinite normal forwards;
     animation-delay: var(--float-delay);
 }
@@ -597,11 +599,21 @@
 	}
 }
 
-.pan {
-	animation: pan 18s ease 0s infinite normal forwards;
+.panorama-up-down,.panorama-y {
+	animation: pan-y 18s ease 0s infinite normal forwards;
 }
 
-@keyframes pan {
+@keyframes pan-y {
+	0% {background-position: 50% 100%;}
+	50% {background-position: 50% 0%;}
+	100% {background-position: 50% 100%;}
+}
+
+.panorama-sides, .panorama-x {
+	animation: pan-x 18s ease 0s infinite normal forwards;
+}
+
+@keyframes pan-x {
 	0% {background-position: 100% 50%;}
 	50% {background-position: 0% 50%;}
 	100% {background-position: 100% 50%;}
@@ -762,22 +774,52 @@
 }
 
 .rotate {
-	animation: rotate 280s infinite linear;
+	animation: rotate 80s infinite linear;
 	animation-delay: var(--delay-rotate);
 	/*background-size: 400% 400%;*/
 	/*height: 100vh;*/
 	}
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-  }
-  50% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+	0% {transform: rotate(0deg);}
+	100% { transform: rotate(360deg);}
+}
+
+@keyframes invert-rotate {
+	0% {transform: rotate(0deg);}
+	100% { transform: rotate(-360deg);}
+}
+
+.rotate2x {
+	animation: rotate 40s infinite linear;
+}
+
+.i-rotate2x {
+	animation: invert-rotate 40s infinite linear;
+}
+
+.rotate3x {
+	animation: rotate 20s infinite linear;
+}
+
+.i-rotate3x {
+	animation: invert-rotate 20s infinite linear;
+}
+
+.rotate4x {
+	animation: rotate 5s infinite linear;
+}
+
+.i-rotate4x {
+	animation: invert-rotate 5s infinite linear;
+}
+
+.rotate5x {
+	animation: rotate 2.5s infinite linear;
+}
+
+.i-rotate5x {
+	animation: invert-rotate 2.5s infinite linear;
 }
 
 .spin-gradient {

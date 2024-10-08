@@ -223,6 +223,29 @@
     radial-gradient(25% 25% at 25% 0,var(--g));
 }
 
+.custom-bubble {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    height: 23rem;
+    background-image: url("");
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.custom-bubble-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 23rem;
+    height: 19rem;
+    z-index: 4;
+}
+
 /*----------Balloom in Screen Positioning----------*/
 
 .balloom-top-center, .balloom-top-middle {

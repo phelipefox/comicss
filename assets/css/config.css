@@ -68,6 +68,18 @@ section {
     z-index: 9;
 }
 
+.resize2x {
+    transform: scale(1.5);
+}
+
+.resize-2x {
+    transform: scale(.7);
+}
+
+.resize-3x {
+    transform: scale(.5);
+}
+
 .show-border, .display {
     border: dashed 4px #2b2b2b;
     z-index: 9;

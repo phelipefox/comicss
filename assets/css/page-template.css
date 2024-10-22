@@ -191,10 +191,46 @@ section.title {
     z-index: 0;
 }
 
+.container {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: scale-down;
+}
+
+.lock-container {
+  position: absolute;
+  display: flex;
+  height: 480px;
+  width: 480px;
+  justify-content: center;
+  z-index: 3;
+  /*align-items: center;*/
+}
+
+.image-cover {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: scale-down;
+}
+
 .image-over {
     position: absolute;
     /*top: 10%;*/
-    left: -0%;
+    left: 0%;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -202,6 +238,19 @@ section.title {
     background-size: contain;
     z-index: 3;
     object-fit: scale-down;
+}
+
+.image-over-panel {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: cover;
+    z-index: 3;
+    object-fit: cover;
 }
 
 .fixed-center-top {

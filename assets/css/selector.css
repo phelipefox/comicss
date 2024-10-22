@@ -1,0 +1,98 @@
+.comic-selector {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(4, minmax(25%, 1fr));
+   column-gap: .5em;
+   height: 80vh;
+   width: 80vw;
+   margin-top: 0%;
+}
+
+.container:hover {
+    filter: grayscale(0%) drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 180, 0.8));
+    animation: angry .6s ease-in-out 0s 1 forwards;
+}
+
+.cover-title {
+   position: relative;
+   height: 25%;
+   width: 100%;
+   padding-top: 70%;
+   color: white;
+   font-family: 'Darumadrop One';
+   font-size: 2rem;
+   line-height: .8em;
+   text-shadow: 2px 2px 3px black;
+   text-align: center;
+   z-index: 4;
+}
+
+.new-tag {
+  position: absolute;
+  margin-top: -4px;
+  margin-left: -4px;
+  width: 90px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,0 100%);
+  background: linear-gradient(45deg,#FF9A51,#FF143B);
+  z-index: 5;
+}
+
+.new-tag::after {
+   position: absolute;
+   content: 'NEW';
+   top: 34px;
+   left: 2px;
+   height: 30%;
+   width: 20%;
+   border-radius: 0px 0px 100px 100px;
+   color: white;
+   font-family: 'Darumadrop One';
+   font-size: 2rem;
+   line-height: .8em;
+   text-align: center;
+   transform: rotate(-45deg);
+}
+
+.chapter-tag {
+  position: absolute;
+  top: 30px;
+  right: 3%;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  border-radius: 50%;
+  background: linear-gradient(45deg,#B54AA9,#3C1DA8);
+  font-family: 'Darumadrop One';
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  transform: rotate(-45deg);
+  z-index: 5;
+  /*mix-blend-mode: hard-light;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.p1, .p2, .p3, .p4 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url('');
+    /*background-position: 1% 1%;*/
+    /*margin-bottom: -146px;*/
+    /*margin-left: -46px;*/
+}
+
+@media only screen and (min-height: 1000px) {
+
+.p1, .p2, .p3, .p4 {
+    grid-row: span 3;
+    grid-column: span 1;
+    background-image: url('');
+    /*background-position: 1% 1%;*/
+    /*margin-bottom: -146px;*/
+    /*margin-left: -46px;*/
+}
+}

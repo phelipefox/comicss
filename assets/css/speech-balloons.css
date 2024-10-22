@@ -1,16 +1,8 @@
-.floatingtexty {
-  display: flex;
-  position: absolute;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  color: #fff;
-  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
-  font-family: 'Titan One', cursive;
-  font-weight: bold;
-  font-size: var(--fontsize);
-  line-height: 10px;
-  letter-spacing: -1px;
-  top: var(--ttop); left: var(--tleft); right: var(--tright);
+@media only screen and (min-height: 1000px) {
+
+p {
+    font-size: 2.5rem;
+}
 }
 
 .speech-bubble, .speech-bubbleB {
@@ -35,6 +27,7 @@
   background: #fff;
   position: absolute;
 }
+
 .speech-bubble:before {
   content: "";
   position: absolute;
@@ -59,29 +52,45 @@
   mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 105% at 100% 0,#0000 99%,#000 101%);
 }
 
+.floatingtexty {
+  display: flex;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #fff;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+  font-family: 'Titan One', cursive;
+  font-weight: bold;
+  font-size: var(--fontsize);
+  line-height: 10px;
+  letter-spacing: -1px;
+  top: var(--ttop); left: var(--tleft); right: var(--tright);
+}
+
 .bubble {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: var(--btop); left: var(--bleft); right: var(--bright);
+  /*top: var(--btop); left: var(--bleft); right: var(--bright);*/
   max-width: 12em;
   height: 10em;
-  padding-left: 4%;
+  padding-left: 2%;
   padding-right: 2%;
   border: solid 3px #3d3935;
   border-radius: 50%;
-  background-color: var(--bcolor);
+  background-color: #fff;
+  /*background-color: var(--bcolor);*/
   color: #3d3935;
   z-index: 4;
 }
 
 .bubbleR {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: var(--rtop); bottom: var(--rbottom); left: var(--rleft); right: var(--rright);
+  /*top: var(--rtop); bottom: var(--rbottom); left: var(--rleft); right: var(--rright);*/
   max-width: 12em;
   height: 10em;
   padding-left: 2%;
@@ -99,7 +108,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: var(--ltop); left: var(--lleft); right: var(--lright);
+  /*top: var(--ltop); left: var(--lleft); right: var(--lright);*/
   max-width: 12em;
   height: 10em;
   padding-left: 2%;
@@ -110,6 +119,7 @@
   color: #3d3935;
   transform: var(--bltransform);
   z-index: 4;
+  /*filter: opacity(0);*/
 }
 
 .bubbleR::after {
@@ -160,6 +170,11 @@
   content: "";
 }
 
+/*.bubbleL:hover {*/
+/*    animation: fade-in .5s cubic-bezier(.17,.84,.44,1) 1 forwards;*/
+/*    filter: opacity(1);*/
+/*}*/
+
 .square {
   display: grid;
   justify-content: center;
@@ -175,17 +190,44 @@
   z-index: 4;
 }
 
-.burst {
+.squareR {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: var(--bbtop); left: var(--bbleft); right: var(--bbright);
-  width: 30%;
-  height: 60%;
-  clip-path: polygon(47.64% 4.73%, 68.19% 22.85%, 89.94% 34.71%, 81.15% 59.94%, 83.29% 90.53%, 54.04% 99.75%, 16.64% 86.65%, 16.64% 59.94%, 11.19% 34.71%, 30.55% 24.12%);
-  background-color: #ffffff;
-  z-index: 1;
+  max-width: 14em;
+  height: 10em;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid 3px #3d3935;
+  border-radius: 10%;
+  background-color: #fff;
+  color: #3d3935;
+  z-index: 4;
+}
+
+.squareR::after {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: -15px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  content: "";
+}
+
+.squareR::before {
+  position: absolute;
+  left: -35px;
+  width: 15px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #3d3935;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  content: "";
 }
 
 .thinkR {
@@ -223,6 +265,56 @@
     radial-gradient(25% 25% at 25% 0,var(--g));
 }
 
+.hat-thinkR {
+  display: flex;
+  color: #000;
+  max-width: 14em;
+  height: 6em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(-3px 0px 0 #3d3935) drop-shadow(3px 0px 0 #3d3935) drop-shadow(0px 3px 0 #3d3935) drop-shadow(0px -3px 0 #3d3935);
+}
+.hat-thinkR {
+  --b: 3em; /* tail dimension */
+
+  --p: 50%;  /* main position (0%:left 100%:right) */
+  --r: 1.2em; /* the radius */
+
+  padding: 1em;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(255, 255, 255) 20%, rgb(124, 94, 181) 60%, rgb(65, 38, 94) 95%);
+  /*background: #5c3a7d;*/
+  position: absolute;
+}
+.hat-thinkR:before {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: clamp(0%,var(--p) - var(--b)/4,100% - var(--b)/2);
+  width: var(--b);
+  aspect-ratio: 1;
+  background: #6f53a0;
+  --g:#000 calc(100% - 1px),#0000;
+  -webkit-mask:
+    radial-gradient(circle closest-side at 88% 88%,var(--g)),
+    radial-gradient(20% 20% at 48% 55%,var(--g)),
+    radial-gradient(25% 25% at 25% 0,var(--g));
+}
+
+.burst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: var(--bbtop); left: var(--bbleft); right: var(--bbright);
+  width: 30%;
+  height: 60%;
+  clip-path: polygon(47.64% 4.73%, 68.19% 22.85%, 89.94% 34.71%, 81.15% 59.94%, 83.29% 90.53%, 54.04% 99.75%, 16.64% 86.65%, 16.64% 59.94%, 11.19% 34.71%, 30.55% 24.12%);
+  background-color: #ffffff;
+  z-index: 1;
+}
+
 .custom-bubble {
     position: absolute;
     display: flex;
@@ -246,54 +338,125 @@
     z-index: 4;
 }
 
+.shape-bubble {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 23rem;
+    height: 23rem;
+    background-image: url("speech-bubbles/ssshape.svg");
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.scream {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 18em;
+  height: 18em;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fff;
+  color: #3d3935;
+  z-index: 4;
+  aspect-ratio: 1;
+  --g:/30.26% 30.26% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: radial-gradient(100% 100%,#000 calc(31.417% - 1px),#0000 31.417%) intersect,radial-gradient(#000 0 0) exclude,100% 50% var(--g),81.174% 89.092% var(--g),38.874% 98.746% var(--g),4.952% 71.694% var(--g),4.952% 28.306% var(--g),38.874% 1.254% var(--g),81.174% 10.908% var(--g);
+}
+
+.starburst {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 12em;
+  height: 12em;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fff;
+  color: #3d3935;
+  z-index: 4;
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,87.86% 53.31%,99.24% 58.68%,86.71% 59.84%,96.98% 67.1%,84.44% 66.06%,93.3% 75%,81.13% 71.8%,88.3% 82.14%,76.87% 76.87%,82.14% 88.3%,71.8% 81.13%,75% 93.3%,66.06% 84.44%,67.1% 96.98%,59.84% 86.71%,58.68% 99.24%,53.31% 87.86%,50% 100%,46.69% 87.86%,41.32% 99.24%,40.16% 86.71%,32.9% 96.98%,33.94% 84.44%,25% 93.3%,28.2% 81.13%,17.86% 88.3%,23.13% 76.87%,11.7% 82.14%,18.87% 71.8%,6.7% 75%,15.56% 66.06%,3.02% 67.1%,13.29% 59.84%,0.76% 58.68%,12.14% 53.31%,0% 50%,12.14% 46.69%,0.76% 41.32%,13.29% 40.16%,3.02% 32.9%,15.56% 33.94%,6.7% 25%,18.87% 28.2%,11.7% 17.86%,23.13% 23.13%,17.86% 11.7%,28.2% 18.87%,25% 6.7%,33.94% 15.56%,32.9% 3.02%,40.16% 13.29%,41.32% 0.76%,46.69% 12.14%,50% 0%,53.31% 12.14%,58.68% 0.76%,59.84% 13.29%,67.1% 3.02%,66.06% 15.56%,75% 6.7%,71.8% 18.87%,82.14% 11.7%,76.87% 23.13%,88.3% 17.86%,81.13% 28.2%,93.3% 25%,84.44% 33.94%,96.98% 32.9%,86.71% 40.16%,99.24% 41.32%,87.86% 46.69%);
+}
+
+.starburst::after {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ max-width: 12em;
+ height: 12em;
+ padding-left: 2%;
+ padding-right: 2%;
+ background-color: #3d3935;
+ color: #3d3935;
+ z-index: 4;
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,87.86% 53.31%,99.24% 58.68%,86.71% 59.84%,96.98% 67.1%,84.44% 66.06%,93.3% 75%,81.13% 71.8%,88.3% 82.14%,76.87% 76.87%,82.14% 88.3%,71.8% 81.13%,75% 93.3%,66.06% 84.44%,67.1% 96.98%,59.84% 86.71%,58.68% 99.24%,53.31% 87.86%,50% 100%,46.69% 87.86%,41.32% 99.24%,40.16% 86.71%,32.9% 96.98%,33.94% 84.44%,25% 93.3%,28.2% 81.13%,17.86% 88.3%,23.13% 76.87%,11.7% 82.14%,18.87% 71.8%,6.7% 75%,15.56% 66.06%,3.02% 67.1%,13.29% 59.84%,0.76% 58.68%,12.14% 53.31%,0% 50%,12.14% 46.69%,0.76% 41.32%,13.29% 40.16%,3.02% 32.9%,15.56% 33.94%,6.7% 25%,18.87% 28.2%,11.7% 17.86%,23.13% 23.13%,17.86% 11.7%,28.2% 18.87%,25% 6.7%,33.94% 15.56%,32.9% 3.02%,40.16% 13.29%,41.32% 0.76%,46.69% 12.14%,50% 0%,53.31% 12.14%,58.68% 0.76%,59.84% 13.29%,67.1% 3.02%,66.06% 15.56%,75% 6.7%,71.8% 18.87%,82.14% 11.7%,76.87% 23.13%,88.3% 17.86%,81.13% 28.2%,93.3% 25%,84.44% 33.94%,96.98% 32.9%,86.71% 40.16%,99.24% 41.32%,87.86% 46.69%,100% 50%,87.86% 53.31%,calc(87.86% - 15.14px) calc(53.31% - 1.32px),calc(100% - 20px) calc(50% - 0px),calc(87.86% - 15.14px) calc(46.69% - -1.32px),calc(99.24% - 19.7px) calc(41.32% - -3.47px),calc(86.71% - 14.68px) calc(40.16% - -3.93px),calc(96.98% - 18.79px) calc(32.9% - -6.84px),calc(84.44% - 13.78px) calc(33.94% - -6.42px),calc(93.3% - 17.32px) calc(25% - -10px),calc(81.13% - 12.45px) calc(28.2% - -8.72px),calc(88.3% - 15.32px) calc(17.86% - -12.86px),calc(76.87% - 10.75px) calc(23.13% - -10.75px),calc(82.14% - 12.86px) calc(11.7% - -15.32px),calc(71.8% - 8.72px) calc(18.87% - -12.45px),calc(75% - 10px) calc(6.7% - -17.32px),calc(66.06% - 6.42px) calc(15.56% - -13.78px),calc(67.1% - 6.84px) calc(3.02% - -18.79px),calc(59.84% - 3.93px) calc(13.29% - -14.68px),calc(58.68% - 3.47px) calc(0.76% - -19.7px),calc(53.31% - 1.32px) calc(12.14% - -15.14px),calc(50% - 0px) calc(0% - -20px),calc(46.69% - -1.32px) calc(12.14% - -15.14px),calc(41.32% - -3.47px) calc(0.76% - -19.7px),calc(40.16% - -3.93px) calc(13.29% - -14.68px),calc(32.9% - -6.84px) calc(3.02% - -18.79px),calc(33.94% - -6.42px) calc(15.56% - -13.78px),calc(25% - -10px) calc(6.7% - -17.32px),calc(28.2% - -8.72px) calc(18.87% - -12.45px),calc(17.86% - -12.86px) calc(11.7% - -15.32px),calc(23.13% - -10.75px) calc(23.13% - -10.75px),calc(11.7% - -15.32px) calc(17.86% - -12.86px),calc(18.87% - -12.45px) calc(28.2% - -8.72px),calc(6.7% - -17.32px) calc(25% - -10px),calc(15.56% - -13.78px) calc(33.94% - -6.42px),calc(3.02% - -18.79px) calc(32.9% - -6.84px),calc(13.29% - -14.68px) calc(40.16% - -3.93px),calc(0.76% - -19.7px) calc(41.32% - -3.47px),calc(12.14% - -15.14px) calc(46.69% - -1.32px),calc(0% - -20px) calc(50% - 0px),calc(12.14% - -15.14px) calc(53.31% - 1.32px),calc(0.76% - -19.7px) calc(58.68% - 3.47px),calc(13.29% - -14.68px) calc(59.84% - 3.93px),calc(3.02% - -18.79px) calc(67.1% - 6.84px),calc(15.56% - -13.78px) calc(66.06% - 6.42px),calc(6.7% - -17.32px) calc(75% - 10px),calc(18.87% - -12.45px) calc(71.8% - 8.72px),calc(11.7% - -15.32px) calc(82.14% - 12.86px),calc(23.13% - -10.75px) calc(76.87% - 10.75px),calc(17.86% - -12.86px) calc(88.3% - 15.32px),calc(28.2% - -8.72px) calc(81.13% - 12.45px),calc(25% - -10px) calc(93.3% - 17.32px),calc(33.94% - -6.42px) calc(84.44% - 13.78px),calc(32.9% - -6.84px) calc(96.98% - 18.79px),calc(40.16% - -3.93px) calc(86.71% - 14.68px),calc(41.32% - -3.47px) calc(99.24% - 19.7px),calc(46.69% - -1.32px) calc(87.86% - 15.14px),calc(50% - 0px) calc(100% - 20px),calc(53.31% - 1.32px) calc(87.86% - 15.14px),calc(58.68% - 3.47px) calc(99.24% - 19.7px),calc(59.84% - 3.93px) calc(86.71% - 14.68px),calc(67.1% - 6.84px) calc(96.98% - 18.79px),calc(66.06% - 6.42px) calc(84.44% - 13.78px),calc(75% - 10px) calc(93.3% - 17.32px),calc(71.8% - 8.72px) calc(81.13% - 12.45px),calc(82.14% - 12.86px) calc(88.3% - 15.32px),calc(76.87% - 10.75px) calc(76.87% - 10.75px),calc(88.3% - 15.32px) calc(82.14% - 12.86px),calc(81.13% - 12.45px) calc(71.8% - 8.72px),calc(93.3% - 17.32px) calc(75% - 10px),calc(84.44% - 13.78px) calc(66.06% - 6.42px),calc(96.98% - 18.79px) calc(67.1% - 6.84px),calc(86.71% - 14.68px) calc(59.84% - 3.93px),calc(99.24% - 19.7px) calc(58.68% - 3.47px),calc(87.86% - 15.14px) calc(53.31% - 1.32px),calc(100% - 20px) calc(50% - 0px));
+ content: "";
+}
+
 /*----------Balloom in Screen Positioning----------*/
 
 .balloom-top-center, .balloom-top-middle {
+  position: absolute;
   text-align: center;
-  top: calc(10% - 100px);
-  right: calc(50% - 90px);
+  top: calc(10% - 250px);
+  left: calc(60% - 250px);
 }
 
 .balloom-bottom-center, .balloom-bottom-middle {
+  position: absolute;
   text-align: center;
-  bottom: calc(10% - 100px);
-  right: calc(50% - 90px);
+  bottom: calc(10% - 250px);
+  right: calc(60% - 250px);
 }
 
 .balloom-top-left {
+  position: absolute;
   text-align: center;
-  top: calc(10% - 100px);
-  left: calc(30% - 150px);
+  top: calc(10% - 250px);
+  left: calc(10% - 250px);
 }
 
 .balloom-top-right {
+  position: absolute;
   text-align: center;
-  top: calc(10% - 100px);
-  right: calc(30% - 150px);
+  top: calc(10% - 250px);
+  right: calc(10% - 250px);
 }
 
 .balloom-center-left {
+  position: absolute;
   text-align: center;
   top: calc(30% - 0px);
   left: calc(30% - 150px);
 }
 
 .balloom-center-right {
+  position: absolute;
   text-align: center;
   top: calc(30% - 0px);
   right: calc(30% - 150px);
 }
 
 .balloom-bottom-left {
+  position: absolute;
   text-align: center;
-  bottom: calc(10% - 100px);
-  left: calc(30% - 150px);
+  bottom: calc(10% - 250px);
+  left: calc(10% - 250px);
 }
 
 .balloom-bottom-right {
+  position: absolute;
   text-align: center;
-  bottom: calc(10% - 100px);
-  right: calc(30% - 150px);
+  bottom: calc(10% - 250px);
+  right: calc(10% - 250px);
 }
 
 /*----------Balloom in Panel Positioning----------*/

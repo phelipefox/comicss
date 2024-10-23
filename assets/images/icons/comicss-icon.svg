@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="comicss-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="20.108349"
+     inkscape:cy="22.097087"
+     inkscape:window-width="1597"
+     inkscape:window-height="1015"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <polygon
+       id="polygon2989"
+       points="255.778,512 107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 "
+       style="display:inline;fill:#ffffff"
+       transform="matrix(0.03078243,0,0,0.03078243,-1.5303021,-3.0789661)" />
+    <polygon
+       id="polygon2991"
+       points="256,130.894 256,480.523 376.03,447.246 404.27,130.894 "
+       style="display:inline;fill:#e6e6e6"
+       transform="matrix(0.03078243,0,0,0.03078243,-1.5361852,-3.0563164)" />
+    <path
+       id="path2999"
+       d="M 2.9497524,1.5550685 H 9.7502476 V 4.3989116 H 5.7935957 V 7.2427549 H 9.7502476 V 10.086597 H 2.9497524 Z"
+       inkscape:connector-curvature="0"
+       style="stroke-width:0.123645" />
+  </g>
+</svg>

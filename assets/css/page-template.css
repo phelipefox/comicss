@@ -59,6 +59,12 @@ section.title {
     direction: rtl;
 }
 
+.sub-page-layout {
+   display: grid;
+   height: 100%;
+   width: 100%;
+}
+
 .panel {
   background-color: #fff;
   background-color: var(--panel-color);

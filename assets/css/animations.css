@@ -381,6 +381,40 @@
 100% { transform: rotate(-4deg) translateY(-30px); }
 }
 
+.shake-zoom {
+    position: absolute;
+    animation: shake-zoom .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+}
+
+@keyframes shake-zoom {
+	0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+.tremor, .tremor-horizontal {
+  animation: tremor .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+}
+
+@keyframes tremor {
+  0% {left: 0;}
+  25% {left: 5px;}
+  50% {left: 0;}
+  75% {left: -5px;}
+  100% {left: 0;}
+}
+
+.earthquake, .very-angry  {
+  animation: earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+}
+
+@keyframes earthquake {
+  0% {top: 0; left: 0;}
+  25% {top: -6px; left: 4px;}
+  50% {top: 3px; left: 3;}
+  75% {top: -5px; left: -5px;}
+  100% {top: -8; left: 0;}
+}
+
 .shrink, .oppressed {
     animation: shrink 16s linear 0s infinite alternate;
 }

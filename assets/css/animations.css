@@ -410,9 +410,9 @@
 @keyframes earthquake {
   0% {top: 0; left: 0;}
   25% {top: -6px; left: 4px;}
-  50% {top: 3px; left: 3;}
+  50% {top: 3px; left: 3px;}
   75% {top: -5px; left: -5px;}
-  100% {top: -8; left: 0;}
+  100% {top: -8px; left: 0;}
 }
 
 .shrink, .oppressed {
@@ -595,25 +595,29 @@
     animation-delay: var(--float-delay);
 }
 
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-.i-float, .inverse-float {
-    animation: float 5s ease 0s infinite reverse forwards;
+.float-fast {
+    position: absolute;
+    animation: float 2s ease-in-out 0s infinite normal forwards;
+    animation-delay: var(--float-fast-delay);
 }
 
 @keyframes float {
 	0% { transform: translatey(0px); }
 	50% { transform: translatey(-20px); }
+	100% { transform: translatey(0px); }
+}
+
+.i-float, .inverse-float {
+    animation: i-float 5s ease 0s infinite reverse forwards;
+}
+
+.i-float-fast {
+    animation: i-float 2s ease-in-out 0s infinite reverse forwards;
+}
+
+@keyframes i-float {
+	0% { transform: translatey(0px); }
+	50% { transform: translatey(20px); }
 	100% { transform: translatey(0px); }
 }
 

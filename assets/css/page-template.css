@@ -51,6 +51,7 @@ section.title {
    grid-template-rows: repeat(6, 150px);
    grid-template-columns: repeat(4, minmax(25%, 1fr));
    column-gap: 1.4%;
+   row-gap: 1.4%;
    width: 70vw;
 }
 
@@ -62,6 +63,7 @@ section.title {
 .sub-page-layout {
    display: grid;
    column-gap: 1%;
+   row-gap: 1%;
    height: 100%;
    width: 100%;
 }

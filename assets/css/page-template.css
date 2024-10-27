@@ -326,3 +326,37 @@ section.title {
   z-index: 9;
   object-fit: scale-down;
 }
+
+.object-top-left {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  top: 6%;
+  left: 6%;
+}
+
+.object-top-right {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  top: 6%;
+  right: 6%;
+}
+
+.object-bottom-left {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  bottom: 6%;
+  left: 6%;
+}
+
+.object-bottom-right {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  bottom: 6%;
+  right: 6%;
+}

@@ -885,7 +885,7 @@
 	animation: rotate 40s infinite linear;
 }
 
-.i-rotate2x {
+.rotate-2x, .i-rotate2x {
 	animation: invert-rotate 40s infinite linear;
 }
 
@@ -893,7 +893,7 @@
 	animation: rotate 20s infinite linear;
 }
 
-.i-rotate3x {
+.rotate-3x, .i-rotate3x {
 	animation: invert-rotate 20s infinite linear;
 }
 
@@ -901,7 +901,7 @@
 	animation: rotate 5s infinite linear;
 }
 
-.i-rotate4x {
+.rotate-4x, .i-rotate4x {
 	animation: invert-rotate 5s infinite linear;
 }
 
@@ -909,7 +909,7 @@
 	animation: rotate 2.5s infinite linear;
 }
 
-.i-rotate5x {
+.rotate-5x, .i-rotate5x {
 	animation: invert-rotate 2.5s infinite linear;
 }
 

@@ -1,0 +1,99 @@
+header {
+    /*position: fixed;*/
+    /*height: 90px;*/
+    width: 100%;
+    /*background: #242424;*/
+    /*z-index: 9;*/
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: right;
+    width: 88%;
+    top: 0;
+    left: 0;
+    padding: 25px 6%;
+    height: 82px;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.logo {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-image: url("../../comicss-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 170px;
+  top: 20px;
+  margin: 25px 6%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.logo:hover {
+  transition: .5s ease;
+  filter: drop-shadow(0 0 0.75rem #004cff);
+}
+
+.logo-footer {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 14px;
+  height: 50px;
+}
+
+ul li:hover {
+  transition: .5s ease;
+  filter: drop-shadow(0 0 0.75rem #004cff);
+}
+
+@media only screen and (min-height: 1000px) {
+
+.navbar {
+    height: 140px;
+}
+
+.navbar::before {
+    content: "";
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    /*background: #242424;*/
+    z-index: 9;
+}
+
+.navbar a {
+    font-size: 2.5rem;
+}
+
+.logo {
+  top: 40px;
+  height: 77px;
+  width: 220px;
+}
+}

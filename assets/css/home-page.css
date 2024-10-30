@@ -183,7 +183,7 @@ footer {
 }
 
 .normal-page {
-    grid-row: span 4;
+    grid-row: span 3;
     grid-column: span 4;
     background-image: url("../../assets/images/stuffs/80605926_p0.jpg");
     background-position: 1% 1%;

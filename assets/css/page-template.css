@@ -85,6 +85,18 @@ section.title {
   position: relative;
 }
 
+.fit-panel {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+  object-fit: cover;
+}
+
 .hidden-panel-border, .panel-no-border {
   border: 0px;
   margin: 0;

@@ -94,6 +94,20 @@ footer {
     object-fit: scale-down;
 }
 
+.move-bg {
+    animation: move-bg 20s linear 0s infinite normal;
+}
+
+@keyframes move-bg-left {
+    0% { background-position: 550px -500px; }
+    100% { background-position: -1150px 0px; }
+}
+
+@keyframes move-bg {
+    0% { background-position: 1150px -550px; }
+    100% { background-position: -1150px 550px; }
+}
+
 .slow-s {
     animation: swing 24s ease-in-out 0s infinite alternate;
 }

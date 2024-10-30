@@ -76,7 +76,7 @@ a {
     text-decoration: none;
 }
 
-.p1, .p2, .p3, .p4 {
+.c1, .c2, .c3, .c4 {
     grid-row: span 3;
     grid-column: span 1;
     background-image: url('');
@@ -87,7 +87,7 @@ a {
 
 @media only screen and (min-height: 1000px) {
 
-.p1, .p2, .p3, .p4 {
+.c1, .c2, .c3, .c4 {
     grid-row: span 3;
     grid-column: span 1;
     background-image: url('');

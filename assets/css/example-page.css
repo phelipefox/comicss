@@ -1,0 +1,124 @@
+
+.p1 {
+    grid-row: span 3;
+    grid-column: span 4;
+    background: #cacaca;
+    background-image: url("../../assets/images/stuffs/fuzasa - 80605926_p0-clouds.png");
+    /*top: -10%;*/
+    /*left: -17%;*/
+    /*height: 106%;*/
+    /*width: 130%;*/
+    /*transform: skewY(-3deg);*/
+}
+
+.move-bg {
+    animation: move-bg 20s linear 0s infinite normal;
+}
+
+@keyframes move-bg-left {
+    0% { background-position: 550px -500px; }
+    100% { background-position: -1150px 0px; }
+}
+
+@keyframes move-bg {
+    0% { background-position: 1150px -550px; }
+    100% { background-position: -1150px 550px; }
+}
+
+.p2 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-image: url("");
+    /*margin-left: 15px;*/
+    /*animation: earthquake 0.2s linear 0s infinite alternate;*/
+    overflow: hidden;
+    /*transform: skew(0deg, -3deg);*/
+}
+
+.balloons-p2 {
+  position: absolute;
+  bottom: 0%;
+  /*left: 2%;*/
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  object-fit: scale-down;
+  z-index: 4;
+}
+
+.image-over-panel {
+    transform: scale(1.1);
+}
+
+.white-focus-lines {
+    z-index: 4;
+}
+
+.p3 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url("");
+    height: 70%;
+    overflow: hidden;
+    /*transform: skewY(-3deg);*/
+}
+
+.float-p3 {
+    animation: earthquake 4s linear 0s infinite alternate;
+}
+
+.p4 {
+    grid-row: span 1;
+    grid-column: span 2;
+    background-image: url("../../assets/images/stuffs/fuzasa - 80605926_p0-p5.gif");
+    background-position: 1% 40%;
+    height: 150%;
+    top: -55%;
+    z-index: 4;
+}
+
+.image-over-ch1 {
+    position: absolute;
+    top: -12%;
+    left: 25%;
+    height: 130%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 4;
+    object-fit: scale-down;
+    animation: float 2s ease-in-out .5s infinite normal forwards;
+}
+
+.image-over-ch2 {
+    position: absolute;
+    top: 10%;
+    left: -25%;
+    height: 90%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: scale-down;
+    animation: i-float 2s ease-in-out 0s infinite normal forwards;
+}
+
+.panel-parallax {
+  border: 2px solid #2b2b2b;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.page-layout-margin {
+    display: grid;
+    grid-template-rows: repeat(6, 130px);
+    grid-template-columns: repeat(4, minmax(25%, 1fr));
+    column-gap: 1.4%;
+    row-gap: 1.4%;
+    width: 64vw;
+    /*margin-top: 10%;*/
+}
+
+

@@ -162,6 +162,12 @@ section {
     z-index: -1;
 }
 
+.author-tag:hover, .compact-author-tag:hover {
+    cursor: pointer;
+    transition: .5s ease;
+    filter: drop-shadow(0 0 0.75rem #004cff);
+}
+
 .compact-author-tag {
     display: flex;
     justify-content: center;

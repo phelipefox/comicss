@@ -153,6 +153,10 @@
     animation: deform .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
 }
 
+.deform-fast {
+    animation: water-distortion-intense .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+}
+
 .deform-slow {
     animation: deform 10s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
 }
@@ -185,6 +189,11 @@
 @keyframes water-distortion {
   0% { transform: scaleX(90%); }
   100% { transform: scaleY(90%); }
+}
+
+@keyframes water-distortion-intense {
+  0% { transform: scaleX(90%) skew(10deg, 10deg); }
+  100% { transform: scaleY(90%) skew(-10deg, -10deg); }
 }
 
 .vertical-deform {

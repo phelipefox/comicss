@@ -371,15 +371,27 @@
 }
 
 .tremor, .tremor-horizontal {
-  animation: tremor .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+  animation: tremor-horizontal .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
 }
 
-@keyframes tremor {
+@keyframes tremor-horizontal {
   0% {left: 0;}
   25% {left: 5px;}
   50% {left: 0;}
   75% {left: -5px;}
   100% {left: 0;}
+}
+
+.tremor-vertical {
+  animation: tremor-vertical .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+}
+
+@keyframes tremor-vertical {
+  0% {top: 0;}
+  25% {top: 5px;}
+  50% {top: 0;}
+  75% {top: -5px;}
+  100% {top: 0;}
 }
 
 .earthquake, .very-angry  {

@@ -52,7 +52,7 @@
 
 }
 
-:root:has(:checked) {
+body:has(input[id="page-visual"]:checked) {
     filter: opacity(0.8) saturate(0) brightness(.9) contrast(1.5) sepia(30%);
     mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
     }

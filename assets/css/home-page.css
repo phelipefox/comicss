@@ -188,6 +188,8 @@ footer {
     background-image: url("../../assets/images/stuffs/80605926_p0.jpg");
     background-position: 1% 1%;
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .comicss-page {
@@ -196,6 +198,8 @@ footer {
     /*background-image: url("");*/
     background: white;
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 }
 

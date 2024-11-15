@@ -406,6 +406,18 @@
   100% {top: -8px; left: 0;}
 }
 
+.i-earthquake {
+  animation: inverse-earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+}
+
+@keyframes inverse-earthquake {
+  0% {top: 0; left: 0;}
+  25% {top: -8px; left: 0px;}
+  50% {top: -5px; left: -5px;}
+  75% {top: 3px; left: 3px;}
+  100% {top: -6px; left: 0;}
+}
+
 .shrink, .oppressed {
     animation: shrink 16s linear 0s infinite alternate;
 }

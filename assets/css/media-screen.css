@@ -52,10 +52,6 @@
    width: 85vw;
 }
 
-.panel {
-  border: 6px solid #4a4a4a;
-}
-
 .comic-selector {
    display: grid;
    grid-template-rows: repeat(6, 160px);

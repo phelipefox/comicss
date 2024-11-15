@@ -44,6 +44,7 @@
   background-repeat: no-repeat;
   object-fit: scale-down;
   z-index: 4;
+  animation: inverse-earthquake .3s linear 0s infinite alternate;
 }
 
 .image-over-panel {

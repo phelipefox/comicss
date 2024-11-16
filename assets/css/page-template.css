@@ -241,7 +241,7 @@ section.title {
   /*align-items: center;*/
 }
 
-.image-cover {
+.image-of-cover {
     position: absolute;
     /*top: 10%;*/
     left: 0%;
@@ -252,6 +252,19 @@ section.title {
     background-size: contain;
     z-index: 3;
     object-fit: scale-down;
+}
+
+.image-cover {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: cover;
 }
 
 .image-over {

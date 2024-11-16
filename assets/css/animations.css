@@ -261,6 +261,15 @@
   100% { transform: rotate(-2deg); }
 }
 
+.i-zig-zag-center {
+    animation: inverse-zig-zag-center .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+}
+
+@keyframes inverse-zig-zag-center {
+  0% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
 .swing {
     animation: swing 4s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
 }

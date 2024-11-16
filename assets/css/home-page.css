@@ -3,6 +3,27 @@ body {
   font: 200%/1.5 'Boogaloo', cursive, 'Noto Sans JP', bold;
 }
 
+body:has(input[id="button1-page1"]:checked) .illust1 {
+   filter: opacity(0.7) saturate(0) brightness(1.1) contrast(1.5) sepia(20%);
+   mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
+   transition: .3s ease;
+}
+
+section:has(input[id="button2-page1"]:checked) .image-over-kid {
+   filter: drop-shadow(-4px 0px 0 white) drop-shadow(4px 0px 0 white) drop-shadow(0px 4px 0 white) drop-shadow(0px -4px 0 white);
+   transition: .3s ease;
+}
+
+body:has(input[id="button3-page1"]:checked) {
+   mix-blend-mode: color-burn;
+   transition: .3s ease;
+}
+
+section:has(input[id="button4-page1"]:checked) .image-cover {
+   filter: blur(6px);
+   transition: .3s ease;
+}
+
 .bg-image-cover {
     position: absolute;
     top: 0%;
@@ -112,6 +133,67 @@ footer {
 
 .panel {
     border: 2px solid #2b2b2b;
+}
+
+.illust1 {
+    grid-row: span 5;
+    grid-column: span 4;
+    background-image: url("");
+    background-position: 1% 1%;
+    height: 90%;
+    width: 90%;
+    margin: 4.4px;
+    overflow: hidden;
+}
+
+.bg-zoom {
+    animation: shake-zoom 20s ease-in-out 0s infinite alternate;
+}
+
+.slow-fall {
+    animation: inverse-zig-zag-center 10s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
+}
+
+.slow-zoom-in-out {
+    animation: shake-zoom 20s ease-in-out 7s infinite alternate;
+}
+
+.illust-container {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  z-index: 3;
+}
+
+.image-over-kid {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: scale-down;
+    animation: shake-zoom 20s ease-in-out 7s infinite alternate;
+}
+
+.image-over-panel-dragon {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    height: 111%;
+    width: 111%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: cover;
+    z-index: 3;
+    object-fit: cover;
+    /*animation: shake-zoom 20s ease-in-out 4s infinite alternate;*/
+    animation: zig-zag-center 10s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
 }
 
 .normal-page {

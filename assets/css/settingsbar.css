@@ -1,0 +1,66 @@
+.settings-bar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    position: absolute;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+    background: black;
+    z-index: 16;
+}
+
+/*Toggle Switch*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 94px;
+	height: 40px;
+	background: #7d7d7d;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+	z-index: 16;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background-image: linear-gradient(to right, #8a87e3, #419dff);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 60px;
+}
+
+// centering
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}

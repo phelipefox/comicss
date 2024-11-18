@@ -141,7 +141,7 @@ footer {
     background-image: url("");
     background-position: 1% 1%;
     height: 90%;
-    width: 90%;
+    /*width: 90%;*/
     margin: 4.4px;
     overflow: hidden;
 }

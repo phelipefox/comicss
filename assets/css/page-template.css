@@ -358,6 +358,31 @@ section.title {
   object-fit: scale-down;
 }
 
+.object-center-center {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  top: auto;
+  left: auto;
+}
+
+.object-top-center {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  top: 6%;
+  left: auto;
+}
+
+.object-bottom-center {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  bottom: 6%;
+  left: auto;
+}
+
 .object-top-left {
   position: absolute;
   display: flex;

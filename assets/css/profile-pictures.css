@@ -1,3 +1,12 @@
+[id=icon-comicss] {
+    background-image: url("../../assets/images/icons/comicss-icon.svg");
+    background-repeat: no-repeat;
+}
+
+[id=icon-page] {
+    background-image: url("../../assets/images/icons/normal-page.svg");
+    background-repeat: no-repeat;
+}
 
 [id=profile-picture-fuuzasa] {
     background-image: url("../../assets/images/profile-pictures/fuuzasa.jpg");

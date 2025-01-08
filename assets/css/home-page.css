@@ -3,6 +3,15 @@ body {
   font: 200%/1.5 'Boogaloo', cursive, 'Noto Sans JP', bold;
 }
 
+h7 {
+    position: absolute;
+    font-family: 'Darumadrop One';
+    font-size: 5.5rem;
+    text-align: center;
+    color: #ce4960;
+    z-index: 9;
+}
+
 body:has(input[id="button1-page1"]:checked) .illust1 {
    filter: opacity(0.7) saturate(0) brightness(1.1) contrast(1.5) sepia(20%);
    mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
@@ -39,6 +48,12 @@ p {
     color: white;
     text-align: center;
     margin: 2%;
+}
+
+.text-home-page {
+    color: black;
+    text-align: center;
+    margin: 10% 8% 12% 8%;
 }
 
 footer {
@@ -242,11 +257,24 @@ footer {
     z-index: 9;
 }
 
-.page-layout {
-    margin-top: 16%;
+.page-layout-for-home {
+   display: grid;
+   grid-template-rows: repeat(6, 150px);
+   grid-template-columns: repeat(4, minmax(25%, 1fr));
+   width: 80vw;
+   margin-top: 25%;
 }
 
 @media only screen and (min-height: 1000px) {
+
+.page-layout-for-home {
+   display: grid;
+   grid-template-rows: repeat(6, 210px);
+   grid-template-columns: repeat(4, minmax(25%, 1fr));
+   height: 85vh;
+   width: 85vw;
+   margin-top: 10%;
+}
 
 .bg-image-cover {
     left: -30%;
@@ -265,8 +293,8 @@ footer {
 }
 
 .normal-page {
-    grid-row: span 3;
-    grid-column: span 4;
+    grid-row: span 4;
+    grid-column: span 3;
     background-image: url("../../assets/images/stuffs/80605926_p0.jpg");
     background-position: 1% 1%;
     width: 60%;
@@ -276,12 +304,20 @@ footer {
 
 .comicss-page {
     grid-row: span 3;
-    grid-column: span 4;
+    grid-column: span 3;
     /*background-image: url("");*/
     background: white;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.page-layout {
+    margin-top: 6%;
+}
+
+.text-home-page {
+    font-size: 3.5rem;
 }
 }
 

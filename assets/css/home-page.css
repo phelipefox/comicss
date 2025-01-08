@@ -215,7 +215,7 @@ footer {
     grid-row: span 4;
     grid-column: span 2;
     background-image: url("../../assets/images/stuffs/80605926_p0.jpg");
-    background-position: 1% 1%;
+    background-size: contain;
     /*width: 100%;*/
     margin: 4.4px;
     /*transform: rotate(-3deg);*/
@@ -303,7 +303,7 @@ footer {
 }
 
 .comicss-page {
-    grid-row: span 3;
+    grid-row: span 4;
     grid-column: span 3;
     /*background-image: url("");*/
     background: white;

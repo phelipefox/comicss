@@ -265,6 +265,19 @@ footer {
    margin-top: 25%;
 }
 
+.fixed-character-bottom {
+  position: absolute;
+  bottom: -5%;
+  left: 2%;
+  height: 50%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+  background-size: contain;
+  z-index: 9;
+  object-fit: scale-down;
+}
+
 @media only screen and (min-height: 1000px) {
 
 .page-layout-for-home {
@@ -318,6 +331,10 @@ footer {
 
 .text-home-page {
     font-size: 3.5rem;
+}
+
+.fixed-character-bottom {
+  height: auto;
 }
 }
 

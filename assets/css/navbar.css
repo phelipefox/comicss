@@ -36,6 +36,11 @@ ul li {
     margin-left: 35px;
 }
 
+.navbar-icon {
+    position: relative;
+    top: 4px;
+}
+
 .logo {
   position: fixed;
   display: flex;

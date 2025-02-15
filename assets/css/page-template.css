@@ -55,6 +55,16 @@ section.title {
    width: 70vw;
 }
 
+.page-layout-margin {
+   display: grid;
+   grid-template-rows: repeat(6, 130px);
+   grid-template-columns: repeat(4, minmax(25%, 1fr));
+   column-gap: 1.4%;
+   row-gap: 1.4%;
+   width: 70vw;
+   margin: 0 auto;
+}
+
 .rtl, .right-to-left, .invert-orientation, .oriental-read-mode {
     grid-auto-flow: dense;
     direction: rtl;

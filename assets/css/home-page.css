@@ -150,6 +150,39 @@ footer {
     border: 2px solid #2b2b2b;
 }
 
+.e-p1{
+    grid-row: span 2;
+    grid-column: span 4;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.e-p2{
+    grid-row: span 4;
+    grid-column: span 1;
+    background-image: radial-gradient(circle, yellow, orange);
+}
+
+.e-p3{
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: radial-gradient(circle, palegreen, yellowgreen);
+}
+
+.e-p4{
+    grid-row: span 2;
+    grid-column: span 1;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    transform: scale(1.2) rotate(8deg);
+    z-index: 2;
+}
+
+.e-p5{
+    grid-row: span 3;
+    grid-column: span 3;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+}
+
 .illust1 {
     grid-row: span 5;
     grid-column: span 4;

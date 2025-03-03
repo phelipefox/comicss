@@ -74,6 +74,42 @@ ul li:hover {
   filter: drop-shadow(0 0 0.75rem #004cff);
 }
 
+.to-up-area {
+    position: fixed;
+    cursor: url("../../assets/images/icons/black-pointer-up.cur"), auto;
+    top: 0px;
+    height: 36%;
+    width: 100vw;
+    z-index: 14;
+}
+
+.to-down-area {
+    position: fixed;
+    cursor: url("../../assets/images/icons/black-pointer-down.cur"), auto;
+    bottom: 0px;
+    height: 36%;
+    width: 100vw;
+    z-index: 14;
+}
+
+.to-left-area {
+    position: fixed;
+    cursor: url("../../assets/images/icons/white-pointer-left.svg"), auto;
+    left: 0px;
+    height: 100vh;
+    width: 36%;
+    z-index: 14;
+}
+
+.to-right-area {
+    position: fixed;
+    cursor: url("../../assets/images/icons/white-pointer-right.svg"), auto;
+    right: 0px;
+    height: 100vh;
+    width: 36%;
+    z-index: 14;
+}
+
 @media only screen and (min-height: 1000px) {
 
 .navbar {

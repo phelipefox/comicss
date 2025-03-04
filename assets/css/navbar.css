@@ -94,7 +94,7 @@ ul li:hover {
 
 .to-left-area {
     position: fixed;
-    cursor: url("../../assets/images/icons/white-pointer-left.svg"), auto;
+    cursor: url("../../assets/images/icons/black-pointer-left.svg"), auto;
     left: 0px;
     height: 100vh;
     width: 36%;
@@ -103,7 +103,7 @@ ul li:hover {
 
 .to-right-area {
     position: fixed;
-    cursor: url("../../assets/images/icons/white-pointer-right.svg"), auto;
+    cursor: url("../../assets/images/icons/black-pointer-right.svg"), auto;
     right: 0px;
     height: 100vh;
     width: 36%;

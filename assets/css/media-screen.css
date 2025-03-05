@@ -52,6 +52,14 @@
    width: 85vw;
 }
 
+.page-layout-horizontal {
+    display: grid;
+    grid-template-rows: repeat(6, 350px);
+    grid-template-columns: repeat(5, minmax(100%, 1fr));
+    width: 100vw;
+    height: 100vh;
+}
+
 .comic-selector {
    display: grid;
    grid-template-rows: repeat(6, 160px);

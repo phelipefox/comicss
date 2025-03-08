@@ -78,7 +78,7 @@ ul li:hover {
     position: fixed;
     cursor: url("../../assets/images/icons/black-pointer-up.cur"), auto;
     top: 0px;
-    height: 36%;
+    height: 30%;
     width: 100vw;
     z-index: 14;
 }
@@ -87,7 +87,7 @@ ul li:hover {
     position: fixed;
     cursor: url("../../assets/images/icons/black-pointer-down.cur"), auto;
     bottom: 0px;
-    height: 36%;
+    height: 30%;
     width: 100vw;
     z-index: 14;
 }
@@ -97,7 +97,7 @@ ul li:hover {
     cursor: url("../../assets/images/icons/black-pointer-left.svg"), auto;
     left: 0px;
     height: 100vh;
-    width: 36%;
+    width: 20%;
     z-index: 14;
 }
 
@@ -106,7 +106,7 @@ ul li:hover {
     cursor: url("../../assets/images/icons/black-pointer-right.svg"), auto;
     right: 0px;
     height: 100vh;
-    width: 36%;
+    width: 20%;
     z-index: 14;
 }
 

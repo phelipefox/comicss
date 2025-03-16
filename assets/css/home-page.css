@@ -23,7 +23,7 @@ section:has(input[id="button2-page1"]:checked) .image-over-kid {
    transition: .3s ease;
 }
 
-body:has(input[id="button3-page1"]:checked) {
+body:has(input[id="button3-page1"]:checked) .illust1 {
    mix-blend-mode: difference;
    transition: .3s ease;
 }

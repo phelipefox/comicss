@@ -13,8 +13,8 @@ h7 {
 }
 
 body:has(input[id="button1-page1"]:checked) .illust1 {
-   filter: opacity(0.7) saturate(0) brightness(1.1) contrast(1.5) sepia(20%);
-   mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
+   filter: saturate(0) contrast(1.5) sepia(20%);
+   mix-blend-mode: luminosity; 
    transition: .3s ease;
 }
 
@@ -24,7 +24,7 @@ section:has(input[id="button2-page1"]:checked) .image-over-kid {
 }
 
 body:has(input[id="button3-page1"]:checked) {
-   mix-blend-mode: color-burn;
+   mix-blend-mode: difference;
    transition: .3s ease;
 }
 

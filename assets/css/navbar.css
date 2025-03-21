@@ -101,8 +101,26 @@ ul li:hover {
     z-index: 14;
 }
 
+.to-left-area-on-page {
+    position: absolute;
+    cursor: url("../../assets/images/icons/black-pointer-left.svg"), auto;
+    left: 0px;
+    height: 100vh;
+    width: 20%;
+    z-index: 14;
+}
+
 .to-right-area {
     position: fixed;
+    cursor: url("../../assets/images/icons/black-pointer-right.svg"), auto;
+    right: 0px;
+    height: 100vh;
+    width: 20%;
+    z-index: 14;
+}
+
+.to-right-area-on-page {
+    position: absolute;
     cursor: url("../../assets/images/icons/black-pointer-right.svg"), auto;
     right: 0px;
     height: 100vh;

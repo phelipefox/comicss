@@ -13,6 +13,18 @@
     z-index: 16;
 }
 
+.flex-settings-bar {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    background: #333;
+}
+
 /*Toggle Switch*/
 input[type=checkbox]{
 	height: 0;

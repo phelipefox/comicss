@@ -1,22 +1,15 @@
 .panel-shake-hard {
-  animation-name: panelShakeHard;
-  animation-duration: 0.8s;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease;
-  animation-fill-mode: none;
+  animation: panelShakeHard 0.8s 0s infinite alternate ease;
+  animation-play-state: var(--pause, running);
 }
 
 @keyframes panelShakeHard {
   from {
-    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
   10%,
   20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
 
@@ -24,20 +17,19 @@
   50%,
   70%,
   90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
 
   40%,
   60%,
   80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
 }
 
 .shake {
     animation: Shake 0.8s linear 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes Shake {
@@ -63,6 +55,7 @@
 
 .frames {
     animation: Frames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes Frames {
@@ -72,6 +65,7 @@
 
 .zoom-frames {
     animation: zoomFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes zoomFrames {
@@ -81,6 +75,7 @@
 
 .i-frames {
     animation: iFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes iFrames {
@@ -91,6 +86,7 @@
 
 .l-frames {
     animation: lFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes lFrames {
@@ -102,6 +98,7 @@
 
 .r-frames {
     animation: rFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes rFrames {
@@ -113,6 +110,7 @@
 
 .b-frames {
     animation: bFrames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes bFrames {
@@ -124,6 +122,7 @@
 
 .jump {
     animation: jump .6s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes jump {
@@ -133,6 +132,7 @@
 
 .i-jump {
     animation: i-jump .6s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes i-jump {
@@ -142,6 +142,7 @@
 
 .divert {
     animation: divert .6s cubic-bezier(1,0,0,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes divert {
@@ -151,18 +152,22 @@
 
 .deform {
     animation: deform .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .deform-fast {
     animation: water-distortion-intense .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .deform-slow {
     animation: deform 10s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .i-deform {
     animation: deform .3s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate-reverse;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes deform {
@@ -176,6 +181,7 @@
     height: 120%;
     width: 120%;
     animation: water-distortion 10s cubic-bezier(.65,.17,.31,.75) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .water-fast {
@@ -184,6 +190,7 @@
     height: 120%;
     width: 120%;
     animation: water-distortion .3s cubic-bezier(.65,.17,.31,.75) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes water-distortion {
@@ -198,6 +205,7 @@
 
 .vertical-deform {
     animation: vertical-deform .6s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes vertical-deform {
@@ -207,6 +215,7 @@
 
 .horizontal-deform {
     animation: horizontal-deform .6s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes horizontal-deform {
@@ -216,6 +225,7 @@
 
 .pendulum {
     animation: pendulum 10s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes pendulum {
@@ -226,6 +236,7 @@
 
 .pendulum-plus {
     animation: pendulum-plus 10s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes pendulum-plus {
@@ -236,6 +247,7 @@
 
 .zig-zag-vertical, .speeking, .laughing {
     animation: zig-zag-vertical .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes zig-zag-vertical {
@@ -245,6 +257,7 @@
 
 .zig-zag-horizontal {
     animation: zig-zag-horizontal .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes zig-zag-horizontal {
@@ -254,6 +267,7 @@
 
 .zig-zag-center, .discussing {
     animation: zig-zag-center .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes zig-zag-center {
@@ -263,6 +277,7 @@
 
 .i-zig-zag-center {
     animation: inverse-zig-zag-center .1s cubic-bezier(1,0,0,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes inverse-zig-zag-center {
@@ -272,6 +287,7 @@
 
 .swing {
     animation: swing 4s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes swing {
@@ -282,6 +298,7 @@
 
 .i-swing, .dizzy, .dizziness, .unbalanced {
     animation: i-swing 4s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes i-swing {
@@ -292,6 +309,7 @@
 
 .wind, .wave, .fall-leaf {
     animation: wind-movement 2.5s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes wind-movement {
@@ -302,6 +320,7 @@
 
 .wind-fast {
     animation: wind-fast-movement 2.5s cubic-bezier(.65,.05,.36,1) 0s infinite backwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes wind-fast-movement {
@@ -314,6 +333,7 @@
 
 .flip-sides, .look-sides {
     animation: flip-sides .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes flip-sides {
@@ -324,6 +344,7 @@
 .rotate-arround {
     top: 50%;
     animation: rotate-arround 10s linear 0s infinite;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes rotate-arround {
@@ -333,6 +354,7 @@
 
 .invert-rotate-arround {
     animation: invert-rotate-arround 10s linear 0s infinite;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes invert-rotate-arround {
@@ -342,6 +364,7 @@
 
 .spin-arround {
     animation: spin-arround 10s linear 0s infinite;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes spin-arround {
@@ -351,6 +374,7 @@
 
 .spin-h {
     animation: spin-h .5s linear 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes spin-h {
@@ -363,6 +387,7 @@
 
 .angry, .shake {
     animation: angry .1s linear 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes angry {
@@ -372,6 +397,7 @@
 
 .shake-zoom {
     animation: shake-zoom .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes shake-zoom {
@@ -380,7 +406,8 @@
 }
 
 .tremor, .tremor-horizontal {
-  animation: tremor-horizontal .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation: tremor-horizontal .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes tremor-horizontal {
@@ -392,7 +419,8 @@
 }
 
 .tremor-vertical {
-  animation: tremor-vertical .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation: tremor-vertical .2s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes tremor-vertical {
@@ -404,7 +432,8 @@
 }
 
 .earthquake, .very-angry  {
-  animation: earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation: earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes earthquake {
@@ -416,7 +445,8 @@
 }
 
 .i-earthquake {
-  animation: inverse-earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation: inverse-earthquake .3s cubic-bezier(.79,.14,.15,.86) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes inverse-earthquake {
@@ -429,6 +459,7 @@
 
 .shrink, .oppressed {
     animation: shrink 16s linear 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes shrink {
@@ -438,6 +469,7 @@
 
 .grow, .oppressor {
     animation: grow 16s linear 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes grow {
@@ -447,6 +479,7 @@
 
 .vibrate {
     animation: vibrate .1s cubic-bezier(.76,-2.11,.21,2.81) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes vibrate {
@@ -456,6 +489,7 @@
 
 .walk, .speaking {
     animation: walk .3s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes walk {
@@ -465,6 +499,7 @@
 
 .i-walk, .i-speaking {
     animation: i-walk .3s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes i-walk {
@@ -473,25 +508,19 @@
 }
 
 .blinkLight {
-  animation: blinkLight 9s ease 0s infinite normal forwards;
+    animation: blinkLight 9s ease 0s infinite normal forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes blinkLight {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.2;
-	}
-
-	100% {
-		opacity: 1;
-	}
+	0% { opacity: 1; }
+	50% { opacity: 0.2; }
+	100% { opacity: 1; }
 }
 
 .bounce {
-  animation: bounce 1s ease-out 0s infinite alternate-reverse none;
+    animation: bounce 1s ease-out 0s infinite alternate-reverse none;
+    animation-play-state: var(--pause, running);animation-play-state: var(--pause, running);
 }
 
 @keyframes bounce {
@@ -542,6 +571,7 @@
 
 .pulse {
     animation: pulse 4s 0s infinite alternate ease none;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes pulse {
@@ -589,6 +619,7 @@
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease;
+        animation-play-state: var(--pause, running);
 }
 
 @keyframes stretch {
@@ -602,11 +633,13 @@
 .float {
     animation: float 5s ease 0s infinite normal forwards;
     animation-delay: var(--float-delay);
+    animation-play-state: var(--pause, running);
 }
 
 .float-fast {
     animation: float 2s ease-in-out 0s infinite normal forwards;
     animation-delay: var(--float-fast-delay);
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes float {
@@ -617,10 +650,12 @@
 
 .i-float, .inverse-float {
     animation: i-float 5s ease 0s infinite reverse forwards;
+    animation-play-state: var(--pause, running);
 }
 
 .i-float-fast {
     animation: i-float 2s ease-in-out 0s infinite reverse forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes i-float {
@@ -630,7 +665,8 @@
 }
 
 .arc-up-left {
-  animation: arc-up-left .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: arc-up-left .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes arc-up-left {
@@ -639,7 +675,8 @@
 }
 
 .arc-up {
-  animation: arc-up 1.2s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: arc-up 1.2s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes arc-up {
@@ -648,7 +685,8 @@
 }
 
 .arc-up-right {
-  animation: arc-up-right .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: arc-up-right .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes arc-up-right {
@@ -657,7 +695,8 @@
 }
 
 .slide-up-left {
-  animation: slide-up-left .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: slide-up-left .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes slide-up-left {
@@ -666,7 +705,8 @@
 }
 
 .slide-up {
-  animation: slide-up 0.9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: slide-up 0.9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes slide-up {
@@ -675,7 +715,8 @@
 }
 
 .slide-up-right {
-  animation: slide-up-right .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation: slide-up-right .9s cubic-bezier(.65,.05,.36,1) 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes slide-up-right {
@@ -684,7 +725,8 @@
 }
 
 .fade-slide-up-left {
-  animation: fade-slide-up-left 2s ease 0s infinite normal forwards;
+    animation: fade-slide-up-left 2s ease 0s infinite normal forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-slide-up-left {
@@ -695,7 +737,8 @@
 }
 
 .fade-slide-up {
-  animation: fade-slide-up 2s ease 0s infinite normal forwards;
+    animation: fade-slide-up 2s ease 0s infinite normal forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-slide-up {
@@ -706,7 +749,8 @@
 }
 
 .fade-slide-up-right {
-  animation: fade-slide-up-right 2s ease 0s infinite normal forwards;
+    animation: fade-slide-up-right 2s ease 0s infinite normal forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-slide-up-right {
@@ -718,6 +762,7 @@
 
 .zoomIn {
     animation: zoom 5s ease 0s infinite normal forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes zoom {
@@ -734,6 +779,7 @@
 
 .panorama-up-down,.panorama-y {
 	animation: pan-y 18s ease 0s infinite normal forwards;
+	animation-play-state: var(--pause, running);
 }
 
 @keyframes pan-y {
@@ -744,6 +790,7 @@
 
 .panorama-sides, .panorama-x {
 	animation: pan-x 18s ease 0s infinite normal forwards;
+	animation-play-state: var(--pause, running);
 }
 
 @keyframes pan-x {
@@ -801,6 +848,7 @@
 
 .blink {
 			animation: blink 4s infinite;
+	    		animation-play-state: var(--pause, running);
 		}
 @keyframes blink {
 	0%, 8% {
@@ -816,6 +864,7 @@
 
 .dblink {
 			animation: double-blink 4s infinite;
+			animation-play-state: var(--pause, running);
 		}
 @keyframes double-blink {
 	0%, 8% {
@@ -844,6 +893,7 @@
 	background-repeat: no-repeat;
   /*animation: sparkle var(--duration) var(--delay) infinite ease-in-out;*/
 	animation: sparkle 3s forwards ease-in-out;
+	animation-play-state: var(--pause, running);
 	z-index: 2;
 }
 
@@ -871,19 +921,14 @@
   filter: drop-shadow(4px 0px 44px #e13f3f);
   background-repeat: no-repeat;
   animation: FocusLightHard 2s infinite ease-in-out;
+  animation-play-state: var(--pause, running);
   z-index: 0;
 }
 
 @keyframes FocusLightHard {
- 0% {
-   opacity: 0;
- }
- 50% {
-   opacity: 0.80;
- }
- 100% {
-   opacity: 0;
- }
+ 0% { opacity: 0; }
+ 50% { opacity: 0.80; }
+ 100% { opacity: 0; }
 }
 
 .focus-light {
@@ -891,24 +936,20 @@
 	position: absolute;
 	background-repeat: no-repeat;
 	animation: FocusLightSoft 2s infinite ease-in-out;
+	animation-play-state: var(--pause, running);
 	z-index: 2;
 }
 
 @keyframes FocusLightSoft {
- 0% {
-   opacity: 0;
- }
- 50% {
-   opacity: 0.20;
- }
- 100% {
-   opacity: 0;
- }
+ 0% { opacity: 0; }
+ 50% { opacity: 0.20; }
+ 100% { opacity: 0; }
 }
 
 .rotate {
 	animation: rotate 80s infinite linear;
 	animation-delay: var(--delay-rotate);
+	animation-play-state: var(--pause, running);
 	/*background-size: 400% 400%;*/
 	/*height: 100vh;*/
 	}
@@ -925,53 +966,56 @@
 
 .rotate2x {
 	animation: rotate 40s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate-2x, .i-rotate2x {
 	animation: invert-rotate 40s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate3x {
 	animation: rotate 20s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate-3x, .i-rotate3x {
 	animation: invert-rotate 20s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate4x {
 	animation: rotate 5s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate-4x, .i-rotate4x {
 	animation: invert-rotate 5s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate5x {
 	animation: rotate 2.5s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .rotate-5x, .i-rotate5x {
 	animation: invert-rotate 2.5s infinite linear;
+	animation-play-state: var(--pause, running);
 }
 
 .spin-gradient {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+	animation-play-state: var(--pause, running);
 	width: 100%;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
 }
 
 .comic-zoom {
@@ -979,37 +1023,22 @@
 	height: 100%;
 	background-repeat: no-repeat;
 	animation: comicZoom 3s infinite ease-in-out;
+	animation-play-state: var(--pause, running);
 }
 
 @keyframes comicZoom {
- 0% {
-   transform: scale(1);
- }
- 10% {
-   transform: scale(1.5);
- }
- 20% {
-   transform: scale(1);
- }
- 30% {
-   transform: scale(1.5);
- }
- 40% {
-   transform: scale(1);
- }
- 90% {
-   transform: scale(1.7);
- }
- 100% {
-   transform: scale(1);
- }
+ 0% { transform: scale(1); }
+ 10% { transform: scale(1.5); }
+ 20% { transform: scale(1); }
+ 30% { transform: scale(1.5); }
+ 40% { transform: scale(1); }
+ 90% { transform: scale(1.7); }
+ 100% { transform: scale(1); }
 }
 
 /*------------------*/
 @keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
-    }
+    100% { transform: translate3d(0, 0, 1px) rotate(360deg); }
 }
 
 .bokeh {
@@ -1031,6 +1060,7 @@
     animation-duration: 4;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: var(--pause, running);
 }
 
 .bokeh span:nth-child(0) {
@@ -1442,6 +1472,7 @@
     animation-duration: 18;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: var(--pause, running);
 }
 
 .moving-stars span:nth-child(0) {

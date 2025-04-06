@@ -74,6 +74,7 @@
 
 .lightining-screen {
 	animation:lightining-screen 12s linear infinite;
+	animation-play-state: var(--pause, running);
 }
 
 @keyframes lightining-screen{
@@ -81,9 +82,10 @@
   96%, 99%, 100% {filter: brightness(2);} 
 }
 
-.flashit{
+.flashit {
 animation: flash ease-out 9s infinite;
 animation-delay: 2s;
+animation-play-state: var(--pause, running);
 }
 
 @keyframes flash {
@@ -104,6 +106,7 @@ animation-delay: 2s;
     width: 100%;
     background: url(../images/rainy-day/rain.png);
     animation: rain .3s linear infinite;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes rain {
@@ -246,6 +249,7 @@ animation-delay: 2s;
     background-repeat: no-repeat;
     background-size: cover;
     animation: water-gradient-distortion .3s cubic-bezier(.45,.05,.55,.95) .1s infinite alternate;
+    animation-play-state: var(--pause, running);
     z-index: 6;
 }
 
@@ -259,6 +263,7 @@ animation-delay: 2s;
     background-repeat: no-repeat;
     background-size: cover;
     animation: water-gradient-distortion 10s cubic-bezier(.45,.05,.55,.95) 3s infinite alternate;
+    animation-play-state: var(--pause, running);
     z-index: 6;
 }
 
@@ -280,6 +285,7 @@ animation-delay: 2s;
     filter: blur(30px);
     z-index: 9;
     animation: soft-illuminance 1.9s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes soft-illuminance {
@@ -301,6 +307,7 @@ animation-delay: 2s;
     filter: blur(40px);
     z-index: 9;
     animation: hot-color 6s cubic-bezier(.65,.05,.36,1) 3s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes hot-color {
@@ -322,6 +329,7 @@ animation-delay: 2s;
     filter: blur(40px);
     z-index: 9;
     animation: cold-color 8s cubic-bezier(.65,.05,.36,1) 3s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes cold-color {
@@ -342,6 +350,7 @@ animation-delay: 2s;
     background-position: 50% 50%;
     background-size: cover;
     animation: shakeaction .1s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .white-focus-lines {
@@ -355,6 +364,7 @@ animation-delay: 2s;
     background-position: 50% 50%;
     background-size: cover;
     animation: shakeaction .1s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes shakeaction {
@@ -373,6 +383,7 @@ animation-delay: 2s;
     background-position: 50% 50%;
     background-size: cover;
     animation: shake-vertical .08s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes shake-vertical {
@@ -383,6 +394,7 @@ animation-delay: 2s;
 .fire-glow {
   /*background: radial-gradient(circle, rgba(255,222,154,0.5410363974691439) 0%, rgba(255,85,85,0.6082632882254464) 50%, rgba(252,176,69,0.767927153771665) 100%);*/
   animation: fire-light .3s infinite;
+  animation-play-state: var(--pause, running);
 }
 
 @keyframes fire-light {
@@ -392,6 +404,7 @@ animation-delay: 2s;
 
 .glow {
   animation: glow 6s infinite;
+  animation-play-state: var(--pause, running);
 }
 
 @keyframes glow {
@@ -402,6 +415,7 @@ animation-delay: 2s;
 .intense-glow {
   /*background: radial-gradient(circle, rgba(255,255,255,1) 8%, rgba(164,198,255,0) 16%, rgba(79,26,26,0) 50%);*/
   animation: intense-glow 2.5s infinite;
+  animation-play-state: var(--pause, running);
 }
 
 @keyframes intense-glow {
@@ -430,6 +444,7 @@ animation-delay: 2s;
    background-position: 50% 50%;
    background-size: contain;
    animation: smoke 5s ease-in-out infinite normal;
+   animation-play-state: var(--pause, running);
 }
 
 @keyframes smoke {
@@ -447,6 +462,7 @@ animation-delay: 2s;
    background-position: 50% 50%;
    background-size: contain;
    animation: explosion 4.5s ease-in-out infinite normal;
+   animation-play-state: var(--pause, running);
 }
 
 @keyframes explosion {
@@ -459,6 +475,7 @@ animation-delay: 2s;
     background: linear-gradient(0deg, #fff, #6850a8, #0c0313);
     background-size: 200% 200%;
     animation: sadBG 8s cubic-bezier(.79,.14,.15,.86) infinite normal;
+    animation-play-state: var(--pause, running);
 }
 
 .happy-bg {
@@ -466,6 +483,7 @@ animation-delay: 2s;
     background: linear-gradient(0deg, #fff, #ec94c1, #f05858);
     background-size: 200% 200%;
     animation: happyBG 8s cubic-bezier(.79,.14,.15,.86) infinite normal;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes happyBG {
@@ -510,6 +528,7 @@ animation-delay: 2s;
 .fade-in {
     animation: fade-in 6s cubic-bezier(.17,.84,.44,1) 1 forwards;
     animation-delay: var(--delay-fade-in);
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-in {
@@ -521,6 +540,7 @@ animation-delay: 2s;
 .fade-out {
     animation: fade-out 6s cubic-bezier(.17,.84,.44,1) 1 forwards;
     animation-delay: var(--delay-fade-out);
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-out {
@@ -537,6 +557,7 @@ animation-delay: 2s;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(.17,.84,.44,1) ;
     animation-fill-mode: forwards;
+    animation-play-state: var(--pause, running);
 }
 
 @keyframes fade-in-out {
@@ -551,7 +572,6 @@ animation-delay: 2s;
     left: calc(-300px);
     height: 100%;
     width: 100%;
-    /*background: url(attr(mirror));*/
     background-repeat: no-repeat;
     /*background-position: 1% 1%;*/
     background-size: contain;
@@ -567,7 +587,6 @@ animation-delay: 2s;
     right: calc(-300px);
     height: 100%;
     width: 100%;
-    /*background: url(attr(mirror));*/
     background-repeat: no-repeat;
     /*background-position: 1% 1%;*/
     background-size: contain;
@@ -583,7 +602,6 @@ animation-delay: 2s;
     top: calc(-400px);
     height: 100%;
     width: 100%;
-    /*background: url(attr(mirror));*/
     background-repeat: no-repeat;
     /*background-position: 1% 1%;*/
     background-size: contain;
@@ -599,7 +617,6 @@ animation-delay: 2s;
     bottom: calc(-400px);
     height: 100%;
     width: 100%;
-    /*background: url(attr(mirror));*/
     background-repeat: no-repeat;
     /*background-position: 1% 1%;*/
     background-size: contain;
@@ -629,6 +646,7 @@ animation-delay: 2s;
     animation-duration: 12;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-play-state: var(--pause, running);
 }
 
 .particles span:nth-child(0) {

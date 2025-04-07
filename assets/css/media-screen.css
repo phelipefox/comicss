@@ -9,10 +9,9 @@
 
 .page-layout {
    display: grid;
-   grid-template-rows: repeat(6, 150px);
+   grid-template-rows: repeat(6, 140px);
    grid-template-columns: repeat(4, minmax(25%, 1fr));
    width: 80vw;
-   margin-top: 10%;
 }
 
 .chapter-tag {
@@ -45,11 +44,11 @@
 @media only screen and (min-height: 1000px) {
 
 .page-layout {
-   display: grid;
-   grid-template-rows: repeat(6, 210px);
-   grid-template-columns: repeat(4, minmax(25%, 1fr));
-   height: 85vh;
-   width: 85vw;
+  display: grid;
+  grid-template-rows: repeat(6, 230px);
+  grid-template-columns: repeat(4, minmax(25%, 1fr));
+  width: 70vw;
+  margin-top: -8%;
 }
 
 .page-layout-horizontal {
@@ -77,16 +76,26 @@
    line-height: .8em;
    text-shadow: 4px 4px 6px black;
 }
-
 }
 
 @media only screen and (min-width: 1600px) {
 
 .page-layout {
    display: grid;
-   grid-template-rows: repeat(6, 150px);
+   grid-template-rows: repeat(6, 130px);
    grid-template-columns: repeat(4, minmax(25%, 1fr));
-   width: 40vw;
+   width: 30vw;
+}
 }
 
+@media only screen and (min-width: 2560px) {
+
+.page-layout {
+  display: grid;
+  grid-template-rows: repeat(6, 130px);
+  grid-template-columns: repeat(4, minmax(25%, 1fr));
+  column-gap: 1.4%;
+  row-gap: 1.4%;
+  width: 30vw;
+}
 }

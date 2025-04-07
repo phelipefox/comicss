@@ -9,6 +9,60 @@ body {
   mix-blend-mode: multiply;  background-image: url("../../assets/images/textures/white-construction-paper-texture.jpg");
 }
 
+/*----------Switches-Config----------*/
+
+body:has(input[id="button1-setting-page"]:checked) {
+   background-image: url("../../assets/images/textures/seamless-background-texture.jpg");
+   filter: saturate(0) brightness(1) contrast(1.5) opacity(1) sepia(50%);
+   transition: .3s ease;
+}
+
+body:has(input[id="button2-setting-page"]:checked) {
+   background-image: url("../../assets/images/textures/white-construction-paper-texture.jpg");
+   transition: .3s ease;
+}
+
+section:has(input[id="button3-setting-page"]:checked) {
+   background: #404040;
+   transition: .3s ease;
+}
+
+body:has(input[id="button4-setting-page"]:checked)  {
+    --pause: paused !important;
+}
+
+body:has(input[id="button5-setting-page"]:checked) {
+   .page-layout-margin {
+       direction: rtl;
+   }
+   .page-layout {
+       direction: rtl;
+   }
+   .sub-page-layout {
+       direction: rtl;
+   }
+
+.top-left {
+  right: -2%;
+  left: auto;
+}
+
+.top-right {
+  left: -2%;
+  right: auto;
+}
+
+.bottom-left {
+  right: -2%;
+  left: auto;
+}
+
+.bottom-right {
+  left: -2%;
+  right: auto;
+}
+}
+
 html {
   scroll-snap-type: y mandatory;
 }
@@ -60,6 +114,10 @@ section {
     transform: scaleX(-1);
 }
 
+.y-90deg {
+    transform: rotate(-90deg);
+}
+
 .upside-down {
     transform: rotate(180deg);
 }
@@ -78,6 +136,19 @@ section {
 
 .resize-3x {
     transform: scale(.5);
+}
+
+.pause {
+    /*animation-play-state: paused !important;*/
+    animation: none !important;
+}
+
+.skew15 {
+    transform:skew(15deg);
+}
+
+.skew-15 {
+    transform:skew(-15deg);
 }
 
 .show-border, .display {

@@ -35,8 +35,13 @@ body:has(input[id="button5-setting-page"]:checked) {
    .page-layout-margin {
        direction: rtl;
    }
+
    .page-layout, .odd-page-layout, .sub-page-layout {
        direction: rtl;
+   }
+
+   img {
+      transform: scaleX(-1);
    }
 
 .top-left {
@@ -133,6 +138,11 @@ section {
 
 .resize-3x {
     transform: scale(.5);
+}
+
+.visible {
+    height: 100%;
+    width: 100%;
 }
 
 .pause {

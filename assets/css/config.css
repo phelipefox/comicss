@@ -44,6 +44,40 @@ body:has(input[id="button5-setting-page"]:checked) {
       transform: scaleX(-1);
    }
 
+   .bubbleR::before {
+     right: -36px;
+     width: 15px;
+     border-top: 10px solid transparent;
+     border-left: 10px solid #3d3935;
+     border-bottom: 10px solid transparent;
+     border-right: 10px solid transparent;
+}
+
+   .bubbleR::after {
+     right: -15px;
+     border-top: 8px solid transparent;
+     border-left: 8px solid #fff;
+     border-bottom: 8px solid transparent;
+     border-right: 8px solid transparent;
+}
+
+   .bubbleL::before {
+     left: -35px;
+     width: 15px;
+     border-top: 10px solid transparent;
+     border-right: 10px solid #3d3935;
+     border-bottom: 10px solid transparent;
+     border-left: 10px solid transparent;
+}
+
+   .bubbleL::after {
+     left: -15px;
+     border-top: 8px solid transparent;
+     border-right: 8px solid #fff;
+     border-bottom: 8px solid transparent;
+     border-left: 8px solid transparent;
+}
+
 .top-left {
   right: -2%;
   left: auto;

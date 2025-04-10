@@ -35,26 +35,65 @@ section.title {
     z-index: -1;
 }
 
+.center-center {
+  position:absolute;
+  text-align: center;
+  top: 50%;
+  left: 40%;
+}
+
+.top-center, .center-top {
+  position:absolute;
+  text-align: center;
+  top: 0%;
+  left: 40%;
+}
+
+.bottom-center, .center-bottom {
+  position:absolute;
+  text-align: center;
+  bottom: 0%;
+  left: 40%;
+}
+
+.center-left {
+  position:absolute;
+  text-align: center;
+  top: 50%;
+  left: -2%;
+}
+
+.center-right {
+  position:absolute;
+  text-align: center;
+  top: 50%;
+  right: -2%;
+}
+
 .top-left {
   position:absolute;
+  text-align: center;
   top: 0%;
   left: -2%;
 }
 
 .top-right {
   position:absolute;
+  text-align: center;
   top: 0%;
   right: -2%;
 }
 
 .bottom-left {
   position:absolute;
+  text-align: center;
   bottom: 0%;
   left: -2%;
 }
 
 .bottom-right {
   position:absolute;
+  text-align: center;
   bottom: 0%;
   right: -2%;
 }

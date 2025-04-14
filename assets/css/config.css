@@ -192,6 +192,26 @@ section {
     transform:skew(-15deg);
 }
 
+.font-size1rem {
+    font-size: 1rem;
+}
+
+.font-size1_5rem {
+    font-size: 1.5rem;
+}
+
+.font-size2rem {
+    font-size: 2rem;
+}
+
+.font-size3rem {
+    font-size: 3rem;
+}
+
+.font-size4rem {
+    font-size: 4rem;
+}
+
 .show-border, .display {
     border: dashed 4px #2b2b2b;
     z-index: 9;

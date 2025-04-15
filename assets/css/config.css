@@ -78,6 +78,22 @@ body:has(input[id="button5-setting-page"]:checked) {
      border-left: 8px solid transparent;
 }
 
+    .speech-bubbleR:before {
+      right: auto;
+      left: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+      border-bottom-right-radius: 1%;
+      border-bottom-left-radius: 100%;
+      mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 105% at 100% 0,#0000 99%,#000 101%);
+}
+
+    .speech-bubbleL:before {
+      left: auto;
+      right: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+      border-bottom-left-radius: 1%;
+      border-bottom-right-radius: 100%;
+      mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 100% at 1% 0,#0000 99%,#000 101%);
+}
+
 .top-left {
   right: -2%;
   left: auto;

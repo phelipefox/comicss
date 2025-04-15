@@ -1,11 +1,4 @@
-@media only screen and (min-height: 1000px) {
-
-p {
-    font-size: 2.5rem;
-}
-}
-
-.speech-bubble, .speech-bubbleB {
+.speech-bubble, .speech-bubbleL, .speech-bubbleLS, .speech-bubbleR, .speech-bubbleRS {
   display: flex;
   color: #000;
   max-width: 10em;
@@ -14,9 +7,10 @@ p {
   justify-content: center;
   align-items: center;
   filter: drop-shadow(-3px 0px 0 #3d3935) drop-shadow(3px 0px 0 #3d3935) drop-shadow(0px 3px 0 #3d3935) drop-shadow(0px -3px 0 #3d3935);
+  z-index: 4;
 }
 
-.speech-bubble, .speech-bubbleB {
+.speech-bubble, .speech-bubbleL, .speech-bubbleLS, .speech-bubbleR, .speech-bubbleRS {
   --speech-tail-base: 3em;
   --speech-tail-height: 1.8em;
   --speech-tail-thickness: .8;
@@ -28,19 +22,7 @@ p {
   position: absolute;
 }
 
-.speech-bubble:before {
-  content: "";
-  position: absolute;
-  left: 98%;
-  top: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
-  width: var(--speech-tail-height);
-  height: var(--speech-tail-base);
-  background: inherit;
-  border-top-right-radius: 100%;
-  mask: radial-gradient(105% calc(var(--speech-tail-thickness)*100%) at 0 100%,#0000 99%,#000 101%);
-}
-
-.speech-bubbleB:before {
+.speech-bubbleL:before {
   content: "";
   position: absolute;
   top: 98%;
@@ -50,6 +32,42 @@ p {
   background: inherit;
   border-bottom-left-radius: 100%;
   mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 105% at 100% 0,#0000 99%,#000 101%);
+}
+
+.speech-bubbleLS:before {
+  content: "";
+  position: absolute;
+  right: 98%;
+  bottom: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+  width: var(--speech-tail-height);
+  height: var(--speech-tail-base);
+  background: inherit;
+  border-bottom-left-radius: 100%;
+  mask: radial-gradient(100% calc(var(--speech-tail-thickness)*100%) at 100% 1%,#0000 99%,#000 101%);
+}
+
+.speech-bubbleR:before {
+  content: "";
+  position: absolute;
+  top: 98%;
+  right: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+  width: var(--speech-tail-base);
+  height: var(--speech-tail-height);
+  background: inherit;
+  border-bottom-right-radius: 100%;
+  mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 100% at 1% 0,#0000 99%,#000 101%);
+}
+
+.speech-bubbleRS:before {
+  content: "";
+  position: absolute;
+  left: 98%;
+  top: clamp(0%,var(--speech-tail-position) - (1 - var(--speech-tail-thickness))*var(--speech-tail-base)/2,100% - (1 - var(--speech-tail-thickness))*var(--speech-tail-base));
+  width: var(--speech-tail-height);
+  height: var(--speech-tail-base);
+  background: inherit;
+  border-top-right-radius: 100%;
+  mask: radial-gradient(105% calc(var(--speech-tail-thickness)*100%) at 0 100%,#0000 99%,#000 101%);
 }
 
 .floatingtexty {

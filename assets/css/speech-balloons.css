@@ -93,8 +93,7 @@
   /*top: var(--btop); left: var(--bleft); right: var(--bright);*/
   max-width: 12em;
   height: 10em;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 1em;
   border: solid 3px #3d3935;
   border-radius: 50%;
   background-color: #fff;
@@ -111,8 +110,7 @@
   /*top: var(--rtop); bottom: var(--rbottom); left: var(--rleft); right: var(--rright);*/
   max-width: 12em;
   height: 10em;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 1em;
   border: solid 3px #3d3935;
   border-radius: 50%;
   background-color: #fff;
@@ -129,8 +127,7 @@
   /*top: var(--ltop); left: var(--lleft); right: var(--lright);*/
   max-width: 12em;
   height: 10em;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 1em;
   border: solid 3px #3d3935;
   border-radius: 50%;
   background-color: #fff;

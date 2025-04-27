@@ -45,6 +45,7 @@ body:has(input[id="button5-setting-page"]:checked) {
    }
 
    .bubbleR::before {
+     left: auto;
      right: -36px;
      width: 15px;
      border-top: 10px solid transparent;
@@ -54,6 +55,7 @@ body:has(input[id="button5-setting-page"]:checked) {
 }
 
    .bubbleR::after {
+     left: auto;
      right: -15px;
      border-top: 8px solid transparent;
      border-left: 8px solid #fff;
@@ -63,6 +65,7 @@ body:has(input[id="button5-setting-page"]:checked) {
 
    .bubbleL::before {
      left: -35px;
+     right: auto;
      width: 15px;
      border-top: 10px solid transparent;
      border-right: 10px solid #3d3935;
@@ -72,6 +75,7 @@ body:has(input[id="button5-setting-page"]:checked) {
 
    .bubbleL::after {
      left: -15px;
+     right: auto;
      border-top: 8px solid transparent;
      border-right: 8px solid #fff;
      border-bottom: 8px solid transparent;

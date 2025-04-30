@@ -98,6 +98,16 @@ body:has(input[id="button5-setting-page"]:checked) {
       mask: radial-gradient(calc(var(--speech-tail-thickness)*100%) 100% at 1% 0,#0000 99%,#000 101%);
 }
 
+.center-left {
+  right: -2%;
+  left: auto;
+}
+
+.center-right {
+  left: -2%;
+  right: auto;
+}
+
 .top-left {
   right: -2%;
   left: auto;
@@ -148,16 +158,6 @@ section {
   content-visibility: auto;
 }
 
-.hidden-label {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-}
-
 .show-pages {
     border: 5px solid red;
 }
@@ -184,6 +184,10 @@ section {
 
 .resize2x {
     transform: scale(1.5);
+}
+
+.resize3x {
+    transform: scale(2);
 }
 
 .resize-2x {

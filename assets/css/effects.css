@@ -551,9 +551,9 @@ animation-play-state: var(--pause, running);
 
 .fade-in-out {
     animation-name: fade-in-out;
-    animation-duration: var(--time-fade-in-out);
+    animation-duration: var(--time-fade-in-out, 4s);
     animation-delay: var(--delay-fade-in-out);
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: cubic-bezier(.17,.84,.44,1) ;
     animation-fill-mode: forwards;
@@ -562,8 +562,8 @@ animation-play-state: var(--pause, running);
 
 @keyframes fade-in-out {
 	0% { opacity: 0;}
-	10% { opacity: 1;}
-	90% { opacity: 1;}
+	20% { opacity: 1;}
+	80% { opacity: 1;}
 	100% { opacity: 0;}
 }
 

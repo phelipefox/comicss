@@ -4,27 +4,16 @@
 }
 
 @keyframes panelShakeHard {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
+  from { transform: scale3d(1, 1, 1); }
   10%,
-  20% {
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-  }
-
+  20% {  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
   30%,
   50%,
   70%,
-  90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
+  90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
   40%,
   60%,
-  80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
+  80% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
 }
 
 .shake {
@@ -35,22 +24,14 @@
 @keyframes Shake {
 
   10%,
-  40% {
-    transform: rotate3d(0, 0, 1, 3deg);
-  }
-
+  40% { transform: rotate3d(0, 0, 1, 3deg); }
   20%,
   50%,
   70%,
-  90% {
-    transform: rotate3d(0, 0, 1, -3deg);
-  }
-
+  90% { transform: rotate3d(0, 0, 1, -3deg); }
   30%,
   60%,
-  80% {
-    transform: rotate3d(0, 0, 1, 3deg);
-  }
+  80% { transform: rotate3d(0, 0, 1, 3deg); }
 }
 
 .frames {
@@ -736,6 +717,13 @@
   100% { transform: translateY(-50%) translateX(-50%); opacity: 0; }
 }
 
+@keyframes fade-slide-left {
+  0% { transform: opacity: 1; }
+  86% { transform: translateX(-46%); opacity: 1; }
+  98% { transform: translateX(-48%); opacity: 0; }
+  100% { transform: translateX(-50%); opacity: 0; }
+}
+
 .fade-slide-up {
     animation: fade-slide-up 2s ease 0s infinite normal forwards;
     animation-play-state: var(--pause, running);
@@ -758,6 +746,13 @@
   86% { transform: translateY(-46%) translateX(46%); opacity: 1; }
   98% { transform: translateY(-48%) translateX(48%); opacity: 0; }
   100% { transform: translateY(-50%) translateX(50%); opacity: 0; }
+}
+
+@keyframes fade-slide-right {
+  0% { transform: opacity: 1; }
+  86% { transform: translateX(46%); opacity: 1; }
+  98% { transform: translateX(48%); opacity: 0; }
+  100% { transform: translateX(50%); opacity: 0; }
 }
 
 .zoomIn {
@@ -851,15 +846,9 @@
 	    		animation-play-state: var(--pause, running);
 		}
 @keyframes blink {
-	0%, 8% {
-		height: 40px;
-	}
-	10%, 12% {
-		height: 5px;
-	}
-	14%, 100% {
-		height: 40px;
-	}
+	0%, 8% { height: 40px; }
+	10%, 12% { height: 5px; }
+	14%, 100% { height: 40px; }
 }
 
 .dblink {
@@ -867,21 +856,11 @@
 			animation-play-state: var(--pause, running);
 		}
 @keyframes double-blink {
-	0%, 8% {
-		height: 40px;
-	}
-	10%, 12% {
-		height: 10px;
-	}
-	13% {
-		height: 40px;
-	}
-	14%, 16% {
-		height: 0;
-	}
-	18%, 100% {
-		height: 40px;
-	}
+	0%, 8% { height: 40px; }
+	10%, 12% { height: 10px; }
+	13% { height: 40px; }
+	14%, 16% { height: 0; }
+	18%, 100% { height: 40px; }
 }
 
 .sparkles {
@@ -898,22 +877,11 @@
 }
 
 @keyframes sparkle {
- 0% {
-   transform: scale(0);
-   /*opacity: 0;*/
- }
- 50% {
-   transform: scale(0);
- }
- 70% {
-   transform: scale(-1, 0);
- }
- 80% {
-   transform: scale(1);
- }
- 100% {
-   transform: scale(0);
- }
+ 0% { transform: scale(0);
+ 50% { transform: scale(0); }
+ 70% { transform: scale(-1, 0); }
+ 80% { transform: scale(1); }
+ 100% { transform: scale(0); }
 }
 
 .out-light {

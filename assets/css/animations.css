@@ -777,6 +777,11 @@
     animation-play-state: var(--pause, running);
 }
 
+.zoom-in-out-scale {
+    animation: zoom-in-out-scale 5s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
+}
+
 @keyframes zoom-in-out {
 	0% {
 		background-position: center top;
@@ -786,6 +791,18 @@
 	100% {
 		background-position: center top;
 		background-size: 150%;
+	}
+}
+
+@keyframes zoom-in-out-scale {
+	0% {
+		background-position: center top;
+		transform: scale(1);
+	}
+
+	100% {
+		background-position: center top;
+		transform: scale(2);
 	}
 }
 

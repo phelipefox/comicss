@@ -755,12 +755,29 @@
   100% { transform: translateX(50%); opacity: 0; }
 }
 
-.zoomIn {
+.zoom-in {
     animation: zoom 5s ease 0s infinite normal forwards;
     animation-play-state: var(--pause, running);
 }
 
 @keyframes zoom {
+	0% {
+		background-position: center top;
+		background-size: 100%;
+	}
+
+	100% {
+		background-position: center top;
+		background-size: 150%;
+	}
+}
+
+.zoom-in-out {
+    animation: zoom-in-out 5s ease-in-out 0s infinite alternate forwards;
+    animation-play-state: var(--pause, running);
+}
+
+@keyframes zoom-in-out {
 	0% {
 		background-position: center top;
 		background-size: 100%;

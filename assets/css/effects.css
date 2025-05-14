@@ -636,6 +636,15 @@ animation-play-state: var(--pause, running);
     	100% {filter: saturate(6) brightness(2);}
 }
 
+.extreme-light {
+    animation: extreme-light 5s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes extreme-light {
+    	0% {filter: saturate(1) brightness(1);}
+    	100% {filter: saturate(0) brightness(1.4) contrast(1.5);}
+}
+
 .particles {
     position: absolute;
     width: 100%;

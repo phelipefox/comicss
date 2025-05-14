@@ -216,6 +216,14 @@ section {
     transform:skew(-15deg);
 }
 
+.text-up-to-down {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  line-height: 40px;
+  letter-spacing: 8%;
+  word-spacing: -5px;
+}
+
 .font-size1rem {
     font-size: 1rem;
 }

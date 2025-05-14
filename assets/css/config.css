@@ -216,6 +216,14 @@ section {
     transform:skew(-15deg);
 }
 
+.skew30 {
+    transform:skew(30deg);
+}
+
+.skew-30 {
+    transform:skew(-30deg);
+}
+
 .text-up-to-down {
   text-orientation: upright;
   writing-mode: vertical-lr;

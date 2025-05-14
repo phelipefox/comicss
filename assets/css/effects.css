@@ -627,6 +627,15 @@ animation-play-state: var(--pause, running);
     mix-blend-mode: color-burn;
 }
 
+.saturate-light {
+    animation: saturate-light 5s ease-in-out 0s infinite alternate forwards;
+}
+
+@keyframes saturate-light {
+    	0% {filter: saturate(1) brightness(1);}
+    	100% {filter: saturate(6) brightness(2);}
+}
+
 .particles {
     position: absolute;
     width: 100%;

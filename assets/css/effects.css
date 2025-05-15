@@ -382,13 +382,13 @@ animation-play-state: var(--pause, running);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    animation: shake-vertical .08s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
+    animation: speed-lines-horizonal .08s linear(0 0%, 0 38.8%, 1 61.2%, 1 100%) 0s infinite alternate;
     animation-play-state: var(--pause, running);
 }
 
-@keyframes shake-vertical {
-  0% { transform: translateY(-1px); }
-100% { transform: translateY(1px); }
+@keyframes speed-lines-horizonal {
+  0% { transform: translateX(-20px); }
+100% { transform: translateX(30px); }
 }
 
 .fire-glow {

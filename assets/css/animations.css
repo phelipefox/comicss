@@ -1038,6 +1038,23 @@
  100% { transform: scale(1); }
 }
 
+.dramatic-replay {
+	width: 110%;
+	height: 140%;
+	background-repeat: no-repeat;
+	animation: dramatic-replay 5s infinite ease-in-out;
+	animation-play-state: var(--pause, running);
+}
+
+@keyframes dramatic-replay {
+ 0% { top: -10%; }
+ 10% { top: -30%; }
+ 11% { top: -10%; }
+ 30% { top: -30%; }
+ 31% { top: -10%; }
+ 100% { top: -30%; }
+}
+
 /*------------------*/
 @keyframes move {
     100% { transform: translate3d(0, 0, 1px) rotate(360deg); }

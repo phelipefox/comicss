@@ -372,23 +372,85 @@ animation-play-state: var(--pause, running);
 100% { transform: rotate(6deg); }
 }
 
-.speed-lines {
+.speed-lines, .speed-lines-horizontal {
     position: absolute;
-    top: -22%;
-    right: -22%;
+    top: -20%;
+    right: -12%;
     height: 140%;
     width: 140%;
     background: url("../../assets/images/effects/horizontal-speed-lines.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    animation: speed-lines-horizonal .08s linear(0 0%, 0 38.8%, 1 61.2%, 1 100%) 0s infinite alternate;
+    animation: speed-lines-horizonal .08s linear(0.5 0%, 0 49.6%, 1 49.6%, 0.5 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
+}
+
+@keyframes shake-vertical {
+  0% { transform: translateY(-1px); }
+100% { transform: translateY(1px); }
+}
+
+.speed-lines-vertical {
+    position: absolute;
+    top: -100%;
+    right: -24%;
+    height: 250%;
+    width: 140%;
+    background: url("../../assets/images/effects/vertical-speed-lines.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    animation: speed-lines-vertical .08s linear(0.5 0%, 0 49.6%, 1 49.6%, 0.5 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
+}
+
+.speed-lines-skew30 {
+    position: absolute;
+    top: -100%;
+    right: -50%;
+    height: 250%;
+    width: 250%;
+    background: url("../../assets/images/effects/vertical-speed-lines.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    animation: speed-lines-skew30 .08s linear(0.5 0%, 0 49.6%, 1 49.6%, 0.5 100%) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
+}
+
+.speed-lines-skew-30 {
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    height: 250%;
+    width: 250%;
+    background: url("../../assets/images/effects/vertical-speed-lines.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    animation: speed-lines-skew-30 .08s linear(0.5 0%, 0 49.6%, 1 49.6%, 0.5 100%) 0s infinite alternate;
     animation-play-state: var(--pause, running);
 }
 
 @keyframes speed-lines-horizonal {
-  0% { transform: translateX(-20px); }
-100% { transform: translateX(30px); }
+  0% { transform: translateX(0px); }
+100% { transform: translateX(90px); }
+}
+
+@keyframes speed-lines-vertical {
+  0% { transform: translateY(0px); }
+100% { transform: translateY(120px); }
+}
+
+@keyframes speed-lines-skew30 {
+  0% { transform: translateY(0px) skew(30deg); }
+100% { transform: translateY(120px) skew(30deg); }
+}
+
+@keyframes speed-lines-skew-30 {
+  0% { transform: translateY(0px) skew(-30deg); }
+100% { transform: translateY(120px) skew(-30deg); }
 }
 
 .fire-glow {

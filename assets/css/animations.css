@@ -34,6 +34,43 @@
   80% { transform: rotate3d(0, 0, 1, 3deg); }
 }
 
+/*Still working in this 😅️*/
+.move-bg-left {
+   animation: move-bg-to-left 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-left {
+   0% { background-position: -100%; }
+   100% { background-position: 250%; }
+}
+
+.move-bg-right {
+   animation: move-bg-to-right 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-right {
+   0% { background-position: 250%; }
+   100% { background-position: -100%; }
+}
+
+.move-bg-up {
+   animation: move-bg-to-up 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-up {
+   0% { background-position: 0 -100%; }
+   100% { background-position: 0 250%; }
+}
+
+.move-bg-down {
+   animation: move-bg-to-down 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-down {
+   0% { background-position: 0 250%; }
+   100% { background-position: 0 -100%; }
+}
+
 .frames {
     animation: Frames .6s linear(0 0%, 0 50%, 1 50%, 1 100%) 0s infinite alternate;
     animation-play-state: var(--pause, running);

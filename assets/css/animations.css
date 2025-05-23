@@ -62,12 +62,48 @@
    100% { background-position: 0 250%; }
 }
 
+.move-bg-up-left {
+   animation: move-bg-to-up-left 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-up-left {
+   0% { background-position: 0 -100%; }
+   100% { background-position: 250% 250%; }
+}
+
+.move-bg-up-right {
+   animation: move-bg-to-up-right 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-up-right {
+   0% { background-position: 0 -100%; }
+   100% { background-position: -250% 250%; }
+}
+
 .move-bg-down {
    animation: move-bg-to-down 10s linear 0s infinite normal;
 }
 
 @keyframes move-bg-to-down {
    0% { background-position: 0 250%; }
+   100% { background-position: 0 -100%; }
+}
+
+.move-bg-down-left {
+   animation: move-bg-to-down-left 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-down-left {
+   0% { background-position: -250% 250%; }
+   100% { background-position: 0 -100%; }
+}
+
+.move-bg-down-right {
+   animation: move-bg-to-down-right 10s linear 0s infinite normal;
+}
+
+@keyframes move-bg-to-down-right {
+   0% { background-position: 250% 250%; }
    100% { background-position: 0 -100%; }
 }
 
@@ -710,6 +746,18 @@
 @keyframes arc-up-right {
   0% { transform-origin: left top; }
   100% { transform: rotate(-45deg) translateX(50%); }
+}
+
+.fast-fade-in {
+  animation: fast-fade-in 4s cubic-bezier(.22,.61,.36,1) 1 forwards;
+  animation-play-state: running;
+  animation-play-state: var(--pause, running);
+}
+
+@keyframes fast-fade-in {
+	0% { opacity: 0;}
+	20% { opacity: 1;}
+	100% { opacity: 1;}
 }
 
 .slide-up-left {

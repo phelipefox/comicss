@@ -222,6 +222,17 @@ section.title {
    position: relative;
 }
 
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%,-50%);
+}
+
 .space {
   margin: 2%;
   position: relative;

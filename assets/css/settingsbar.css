@@ -18,12 +18,13 @@
     display: flex;
     position: absolute;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     text-align: center;
     font-size: 1.5rem;
     height: 100%;
     width: 100%;
     background: #333;
+    padding-top: 10%;
 }
 
 /*Toggle Switch*/

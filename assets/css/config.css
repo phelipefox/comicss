@@ -24,6 +24,7 @@ body:has(input[id="button2-setting-page"]:checked) {
 
 section:has(input[id="button3-setting-page"]:checked) {
    background: #404040;
+   mix-blend-mode: normal;
    transition: .3s ease;
 }
 
@@ -126,6 +127,17 @@ body:has(input[id="button5-setting-page"]:checked) {
 .bottom-right {
   left: -2%;
   right: auto;
+}
+}
+
+body:has(input[id="button6-setting-page"]:checked) {
+    p {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  /*font-weight: bold;*/
+  line-height: 40px;
+  letter-spacing: 8%;
+  word-spacing: -5px;
 }
 }
 

@@ -70,6 +70,11 @@
   mask: radial-gradient(105% calc(var(--speech-tail-thickness)*100%) at 0 100%,#0000 99%,#000 101%);
 }
 
+.dashed, .whisper {
+  border: 3px #3d3935 dashed !important;
+  filter: drop-shadow(-1px 0px 0 #fff) drop-shadow(1px 0px 0 #fff) drop-shadow(0px 1px 0 #fff) drop-shadow(0px -1px 0 #fff);
+}
+
 .floatingtexty {
   display: flex;
   position: absolute;

@@ -102,6 +102,7 @@ section.title {
    display: grid;
    grid-template-rows: repeat(8, 100px);
    grid-template-columns: repeat(4, minmax(25%, 1fr));
+   reading-flow: grid-columns;
    column-gap: 1.4%;
    row-gap: 1.4%;
    width: 48vw;
@@ -112,6 +113,7 @@ section.title {
    display: grid;
    grid-template-rows: repeat(6, 130px);
    grid-template-columns: repeat(3, minmax(33%, 1fr));
+   reading-flow: grid-columns;
    column-gap: 1.4%;
    row-gap: 1.4%;
    width: 50vw;

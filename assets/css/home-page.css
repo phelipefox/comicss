@@ -123,6 +123,7 @@ footer {
   filter: blur(30px);
   z-index: 9;
   animation: soft-illuminance 1.9s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
+  animation-play-state: var(--pause, running);
 }
 
 .old-street-light {
@@ -138,6 +139,7 @@ footer {
 
 .slow-s {
     animation: swing 24s ease-in-out 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .particles {
@@ -226,14 +228,17 @@ footer {
 
 .bg-zoom {
     animation: shake-zoom 20s ease-in-out 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .slow-fall {
     animation: inverse-zig-zag-center 10s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .slow-zoom-in-out {
     animation: shake-zoom 20s ease-in-out 7s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .illust-container {
@@ -257,6 +262,7 @@ footer {
     z-index: 3;
     object-fit: scale-down;
     animation: shake-zoom 20s ease-in-out 7s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .image-over-panel-dragon {
@@ -272,6 +278,7 @@ footer {
     object-fit: cover;
     /*animation: shake-zoom 20s ease-in-out 4s infinite alternate;*/
     animation: zig-zag-center 10s cubic-bezier(.45,.05,.55,.95) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
 }
 
 .normal-page {

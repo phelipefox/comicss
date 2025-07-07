@@ -48,13 +48,13 @@
 
 .page-layout {
   grid-template-rows: repeat(8, 180px);
-  width: 70vw;
+  width: 80vw;
   margin-top: -12%;
 }
 
 .odd-page-layout {
   grid-template-rows: repeat(6, 230px);
-  width: 70vw;
+  width: 80vw;
   margin-top: -8%;
 }
 

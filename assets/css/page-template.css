@@ -1,5 +1,5 @@
 html, body, section {
-  block-size: 100%;
+  block-size: 100dvh;
 }
 
 html {

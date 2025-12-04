@@ -83,6 +83,22 @@
    line-height: .8em;
    text-shadow: 4px 4px 6px black;
 }
+
+.text-top-left {
+  top: 10%;
+}
+
+.text-top-right {
+  top: 10%;
+}
+
+.text-bottom-left {
+  bottom: 10%;
+}
+
+.text-bottom-right {
+  bottom: 10%;
+}
 }
 
 @media only screen and (min-width: 1600px) {

@@ -98,6 +98,49 @@ section.title {
   right: -2%;
 }
 
+/*---------- Text positioning ----------*/
+.text-center-left {
+  position:absolute;
+  text-align: center;
+  top: 40%;
+  left: calc(50% - 300px);
+}
+
+.text-center-right {
+  position:absolute;
+  text-align: center;
+  top: 40%;
+  right: calc(50% - 300px);
+}
+
+.text-top-left {
+  position:absolute;
+  text-align: center;
+  top: 0%;
+  left: calc(50% - 300px);
+}
+
+.text-top-right {
+  position:absolute;
+  text-align: center;
+  top: 0%;
+  right: calc(50% - 300px);
+}
+
+.text-bottom-left {
+  position:absolute;
+  text-align: center;
+  bottom: 0%;
+  left: calc(50% - 300px);
+}
+
+.text-bottom-right {
+  position:absolute;
+  text-align: center;
+  bottom: 0%;
+  right: calc(50% - 300px);
+}
+
 .page-layout {
    display: grid;
    grid-template-rows: repeat(8, 100px);

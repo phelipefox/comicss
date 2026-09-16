@@ -60,7 +60,7 @@
   height: 100%;
   /*object-fit: cover;*/
   mask-image: url("../../assets/images/textures/white-dots-gradient.svg"); /*add custom masks*/
-  mask-size: contain;
+  mask-size: cover;
   mask-repeat: no-repeat;
   mask-mode: luminance;
 }

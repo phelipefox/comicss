@@ -42,9 +42,27 @@
   isolation: isolate;
 }
 
-.hatches-dot {
-    mix-blend-mode: multiply; background-image: url("../../assets/images/textures/dots-gradient.svg");
-    /*transform: rotate(12deg);*/
+.mask-container img {
+    position: absolute;
+    /*top: 10%;*/
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    /*background-position: 1% 1%;*/
+    background-size: contain;
+    z-index: 3;
+    object-fit: contain;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/
+  mask-image: url("../../assets/images/textures/white-dots-gradient.svg"); /*add custom masks*/
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-mode: luminance;
 }
 
 .cut {

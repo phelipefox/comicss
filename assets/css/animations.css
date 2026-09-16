@@ -184,6 +184,26 @@
   100% { transform: translateY(24%) scaleY(98%); }
 }
 
+.jump-less {
+    animation: jump-less .5s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
+}
+
+@keyframes jump-less {
+  0% { transform: translateY(0%) scaleX(96%); }
+  100% { transform: translateY(12%) scaleY(100%); }
+}
+
+.i-jump-less {
+    animation: i-jump-less .5s cubic-bezier(.65,.05,.36,1) 0s infinite alternate;
+    animation-play-state: var(--pause, running);
+}
+
+@keyframes i-jump-less {
+  0% { transform: translateY(12%) scaleX(100%); }
+  100% { transform: translateY(0%) scaleY(96%); }
+}
+
 .i-jump {
     animation: i-jump .6s cubic-bezier(.76,.01,.66,.36) 0s infinite alternate;
     animation-play-state: var(--pause, running);

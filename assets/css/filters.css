@@ -52,7 +52,6 @@
     /*background-position: 1% 1%;*/
     background-size: contain;
     z-index: 3;
-    object-fit: contain;
 }
 
 .mask {
